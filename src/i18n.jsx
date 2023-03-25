@@ -16,7 +16,7 @@ i18next
         // },
         az:{
             translation:{
-                learn:"React orgen"
+                learn:"React Örgən"
             }
         }
     }
