@@ -1,83 +1,121 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  /* margin: 0 !important;
+  padding: 0 !important; */
+  box-sizing: border-box !important;
+  /* font-family: "Gilroy"; */
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+}
+#bg {
+  width: 100% !important;
+  height: 10vh !important;
+  background-color: #5282ff !important;
+}
+.bgUl{
+  background-color: #5282ff !important;
+  margin: 0;
+  
 }
 
+#vector {
+  position: absolute !important;
+  top: 45% !important;
+  right: 0 !important;
+}
+.container {
+  width: 90% !important;
+  margin: 0 auto !important;
+}
+#topPanel {
+  display: flex !important;
+  height: 10vh !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 10px 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.29) !important;
+}
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 16.59px !important;
+  font-weight: 500 !important;
+}
+h2 {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+#content {
+  margin-right: auto !important;
+}
+img {
+  object-fit: cover !important;
+}
+.user {
+  width: 16px !important;
+}
+.white {
+  color: white !important;
+}
+#langFlag {
+  width: 46.72px !important;
+}
+#d-flex {
+  display: flex !important;
+  gap: 10px;
+  align-items: center !important;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+#whiteCircle {
+  width: 46.72px !important;
+  height: 46.72px !important;
+  border-radius: 50% !important;
+  background-color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-button:hover {
-  border-color: #646cff;
+li {
+  gap: 50px !important;
+  padding: 20px 0 !important;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+ul {
+  padding: 20px 0 !important;
+  list-style: none !important;
+  margin: 0;
+}
+b {
+  font-size: 20px !important;
+  font-family: "Inter";
+  font-weight: 900 !important;
+}
+#up {
+  text-transform: uppercase !important;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.contactBtn {
+  background-color: white !important;
+  color: #000000 !important;
+  font-weight: 600;
+  margin-right: auto !important;
+}
+.footer {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  padding: 0 20px;
+}
+.ft {
+  height: 45vh;
+  display: flex;
+  align-items: flex-end;
 }
 
 @font-face {
-  font-family: "GilroyRegular";
-  src: local("GilroyRegular"),
-    url("./fonts/Gilroy-Regular.otf") format("opentype");
-  font-weight: normal;
+  font-family: "Gilroy";
+  src: url("./Fonts/gilroy/Gilroy-Regular.ttf");
 }
 
-/* Example */
-.hello{
-  font-family: "GilroyRegular";
-  font-weight: 500;
-  font-size: 16px;
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./Fonts/gilroy/Gilroy-SemiBold.ttf");
 }

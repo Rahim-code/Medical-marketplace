@@ -6,17 +6,24 @@ i18next
 .use(initReactI18next)
 .use(LanguageDetector)
 .init({
+    lng:"en",
+    lngs:["az","en","ru"],
     debug:true,
     fallbackLng:"az",
     resources:{
-        // en:{
-        //     translation:{
-        //         learn:"Learn React"
-        //     }
-        // },
+        en:{
+            translation:{
+                learn:"Learn React"
+            }
+        },
         az:{
             translation:{
                 learn:"React Örgən"
+            }
+        },
+        ru:{
+            translation:{
+                learn:"Научитесь реагировать"
             }
         }
     }
