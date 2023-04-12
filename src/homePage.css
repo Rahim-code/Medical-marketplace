@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  font-family: "Gilroy";
+}
+
+#bg {
+  width: 100% !important;
+  /* height: 10vh !important; */
+  background-color: #5282ff !important;
+  padding: 20px;
+}
+
+.container {
+  width: 85% !important;
+  margin: 0 auto !important;
+}
+
+.container1 {
+  height: 10vh;
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px;
+}
+
+.mR {
+  margin-right: auto !important;
+}
+#rubl {
+  width: 30px;
+}
+
+#flag {
+  width: 30px;
+  /* height: 15px; */
+  /* object-fit: cover; */
+}
+
+#ulList {
+  display: flex !important;
+  align-items: center !important;
+  height: 10vh;
+  gap: 30px;
+}
+.question {
+  width: 30px !important;
+  height: 30px !important;
+  background-color: white !important;
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dFlex {
+  display: flex;
+  gap: 10px !important;
+  align-items: center;
+}
+
+.Arrow {
+  margin-right: 5px !important;
+}
+
+.button {
+  background-color: white !important;
+  color: #5282ff !important;
+  /* padding: 10px !important ; */
+  width: 127px !important;
+  height: 51px !important;
+}
+.heart {
+  width: 27px !important;
+  height: 22px !important;
+}
+
+.fontMed {
+  color: white;
+  font-weight: 300;
+  font-size: 66px !important;
+}
+#bgHome {
+  width: 100% !important;
+  padding-top: 70px !important;
+  background-color: #5282ff !important;
+  height: 430px !important;
+}
+.text {
+  color: white !important;
+  font-size: 26px;
+}
+.textMed {
+  color: white !important;
+  font-weight: 500;
+  font-size: 33.25px !important;
+}
+.medMarket {
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+}
+.textFlex {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+#inputDiv {
+  background-color: white !important;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  /* margin-top: -5px !important; */
+}
+.inputBtn {
+  width: 161.35px !important;
+  height: 56px !important;
+  margin-left: 15px !important;
+  border-radius: 1;
+}
+.btn_ {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom: none !important;
+}
+#marginBTN {
+  padding-left: 30px !important;
+  padding-top: 70px !important;
+}
+#inputSearch {
+  width: 528px !important;
+  height: 42px !important;
+  border-radius: 0 !important;
+  padding-left: 10px;
+}
+#inputEnviroment {
+  width: 528px !important;
+  height: 42px !important;
+  padding-left: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 415px);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  height: 416px;
+}
+.box1 {
+  grid-column: span 1;
+  grid-row: span 2;
+  border: 1px solid #d0d0d0;
+  height: 100%;
+  border-radius: 9px;
+  border-color: #d0d0d0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  overflow: hidden;
+}
+.box2 {
+  grid-column: span 1;
+  grid-row: span 1;
+  border: 1px solid none;
+  display: flex;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  align-items: flex-end;
+  color: white;
+  font-weight: 700;
+  font-size: 30px !important;
+  border-radius: 12px;
+}
+.box1_1 {
+  grid-column: 6/13;
+  grid-row: 4/13;
+  background: url("./assets/Images/girlImage.png") no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+}
+.box1_2 {
+  grid-column: 1/7;
+  grid-row: 1/7;
+}
+#_box2 {
+  background: linear-gradient(180deg, rgba(82, 130, 255, 0) 0%, #5282ff 100%),
+    url("./assets//Images/Doctors41.png") no-repeat center/cover;
+}
+
+#_box2_2 {
+  background: linear-gradient(180deg, rgba(82, 130, 255, 0) 0%, #5282ff 100%),
+    url("./assets//Images/arm43.png") no-repeat center/cover;
+}
+#_box2_3 {
+  background: linear-gradient(180deg, rgba(82, 130, 255, 0) 0%, #5282ff 100%),
+    url("./assets//Images/eyeOfMan47.png") no-repeat center/cover;
+}
+
+#_box2_4 {
+  background: linear-gradient(180deg, rgba(82, 130, 255, 0) 0%, #5282ff 100%),
+    url("./assets//Images/eyeOfMan47.png") no-repeat center/cover;
+}
+.box1_3 {
+  grid-column: 1/7;
+  grid-row: 7/13;
+}
+
+.first {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  width: 300px;
+  height: 275px;
+  background: url("./assets/Images/girlImage.png") no-repeat center/cover;
+  /* padding: 50px; */
+}
+.bgDoctor {
+  background: linear-gradient(180deg, rgba(82, 130, 255, 0) 0%, #5282ff 100%),
+    url("./assets//Images/doctorOperation.png") no-repeat top/cover;
+
+  width: 100%;
+  height: 178px;
+  border: 1px solid none;
+  border-radius: 12px;
+}
+
+.grid_2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4,1fr); */
+  gap: 20px;
+
+  /* height: 600px; */
+}
+.grid_3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* height: 285px; */
+  gap: 20px;
+}
+.grid_4{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.grid_5{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+}
+.grid_6{
+  display: grid;
+  grid-template-columns: repeat(3, 425px);
+  gap: 20px;
+
+}
+
+.bgFooter{
+  background-color: #5282ff !important;
+  
+}
+.rowGrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: start;
+  border-bottom: 1px solid #91AFFF !important;
+  padding-bottom: 10px;
+}
+
+#textFooterid>ul{
+  display: inline-block;
+  line-height:"45px"
+}
+
+#textFooterid:before{
+  content: url("./assets/Images/Vector.svg");
+  display: inline-block;
+  height: 82px;
+  width: 82px;
+}
+
+.footerIcons{
+  display: flex;
+  justify-content: flex-end;
+  gap:30px;
+  align-items: center;
+  height: 10vh;
+  
+}
+
+.pad{
+  padding-bottom: 42px;
+    padding-top: 15px;
+    padding-left: 53px;
+    padding-right: 46px;
+    border-radius: 10.36px;
+    color: #000000;
+}
+
+
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./Fonts/gilroy/Gilroy-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./Fonts/Inter/static/Inter-Regular.ttf");
+}

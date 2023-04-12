@@ -24,8 +24,8 @@ const MobileLogin = () => {
 
   return (
     <div>
-      <div id="bg">
-        <div className="container">
+      <div className="bg">
+        <div style={{ paddingTop: "10px" }} className="container">
           <div id="topPanel">
             <img src={vectorWhite} />
             <div id="content">
@@ -46,10 +46,10 @@ const MobileLogin = () => {
       <div className="bgUl">
         <div className="container">
           {isOpen && (
-            <div style={{paddingBottom:"8vh"}}>
+            <div style={{ paddingBottom: "8vh" }}>
               <img src={vector} alt="medicalMarketPlace" id="vector" />
-              <ul>
-                <li id="d-flex">
+              <ul className="ul">
+                <li className="li" id="d-flex">
                   <div id="d-flex">
                     <div id="whiteCircle">
                       <img id="rublicon" src={rublicon} />
@@ -61,7 +61,7 @@ const MobileLogin = () => {
                     <p className="white">RU</p>
                   </div>
                 </li>
-                <li>
+                <li className="li">
                   <div id="d-flex">
                     <div id="whiteCircle">
                       <img style={{ width: "14px" }} src={question} />
@@ -71,7 +71,7 @@ const MobileLogin = () => {
                     </p>
                   </div>
                 </li>
-                <li>
+                <li className="li">
                   <div id="d-flex">
                     <img style={{ width: "45px" }} src={heart} />
                     <p className="white" id="up">
@@ -87,12 +87,27 @@ const MobileLogin = () => {
             <div className="ft">
               <div className="container">
                 <div className="footer">
-                  <Button className="contactBtn">КОНТАКТ</Button>
-                  <img src={facebook} />
-                  <img style={{ width: "40px" }} src={vk} />
-                  <img src={instagram} />
+                  <div style={{paddingRight:"10px"}}>
+                    {" "}
+                    <Button
+                      style={{
+                        fontFamily: "Gilroy",
+                        fontSize: "14.46px",
+                        fontWeight: "600",
+                      }}
+                      className="contactBtn"
+                    >
+                      КОНТАКТ
+                    </Button>
+                  </div>
+                  <img style={{ width: "24px" }} src={facebook} />
+                  <img style={{ width: "30px" }} src={vk} />
+                  <img style={{ width: "24px" }} src={instagram} />
                 </div>
-                <p className="white" style={{ textAlign: "center",paddingBottom:"30px" }}>
+                <p
+                  className="white"
+                  style={{ textAlign: "center", paddingBottom: "30px" }}
+                >
                   © All rights reserved 2023. 112 Med
                 </p>
               </div>
