@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import "./index.css";
+// import "./index.css";
 import "./Configs/i18n";
 import { store } from "./store/store";
 import { Provider } from "react-redux";
@@ -15,18 +15,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <ConfigProvider
           theme={
             {
-              // token: {
-              //   colorBgContainer: "#5282FF",
-              //   lineWidth:30,
-              //   lineHeight:61
-              // },
-              // components:{
-              //   Button:{
-              //     colorPrimary:"#00b98b",
-              //     colorBgContainer:"blue",
-              //     colorBorderBg:"red"
-              //   }
-              // }
+             
+              components:{
+                Button:{
+                  // colorPrimary:"#00b98b",
+                  // colorBgContainer:"blue",
+                  // colorBorderBg:"red",
+                  colorBgTextHover:"transparent"
+                }
+               }
             }
           }
         >
