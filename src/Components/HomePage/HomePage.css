@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box !important;
-  margin: 0 !important;
+  /* margin: 0 !important; */
   font-family: "Gilroy";
 }
 
@@ -72,18 +72,20 @@
 .heart {
   width: 27px !important;
   height: 22px !important;
+  object-fit: cover !important;
 }
 
 .fontMed {
   color: white;
   font-weight: 300;
   font-size: 66px !important;
+  margin: 0px !important;
 }
 #bgHome {
   width: 100% !important;
   padding-top: 70px !important;
   background-color: #5282ff !important;
-  height: 430px !important;
+  height: 485px !important;
 }
 .text {
   color: white !important;
@@ -171,7 +173,7 @@
 .box1_1 {
   grid-column: 6/13;
   grid-row: 4/13;
-  background: url("./assets/Images/girlImage.png") no-repeat center/cover;
+  background: url("../../assets/Images/girlImage.png") no-repeat center/cover;
   width: 100%;
   height: 100%;
 }
@@ -181,21 +183,21 @@
 }
 #_box2 {
   background: linear-gradient(180deg, rgba(82, 130, 255, 0) 0%, #5282ff 100%),
-    url("./assets//Images/Doctors41.png") no-repeat center/cover;
+    url("../../assets//Images/Doctors41.png") no-repeat center/cover;
 }
 
 #_box2_2 {
   background: linear-gradient(180deg, rgba(82, 130, 255, 0) 0%, #5282ff 100%),
-    url("./assets//Images/arm43.png") no-repeat center/cover;
+    url("../../assets//Images/arm43.png") no-repeat center/cover;
 }
 #_box2_3 {
   background: linear-gradient(180deg, rgba(82, 130, 255, 0) 0%, #5282ff 100%),
-    url("./assets//Images/eyeOfMan47.png") no-repeat center/cover;
+    url("../../assets//Images/eyeOfMan47.png") no-repeat center/cover;
 }
 
 #_box2_4 {
   background: linear-gradient(180deg, rgba(82, 130, 255, 0) 0%, #5282ff 100%),
-    url("./assets//Images/eyeOfMan47.png") no-repeat center/cover;
+    url("../../assets//Images/eyeOfMan47.png") no-repeat center/cover;
 }
 .box1_3 {
   grid-column: 1/7;
@@ -208,12 +210,12 @@
   grid-template-rows: repeat(12, 1fr);
   width: 300px;
   height: 275px;
-  background: url("./assets/Images/girlImage.png") no-repeat center/cover;
+  background: url("../../assets/Images/girlImage.png") no-repeat center/cover;
   /* padding: 50px; */
 }
 .bgDoctor {
   background: linear-gradient(180deg, rgba(82, 130, 255, 0) 0%, #5282ff 100%),
-    url("./assets//Images/doctorOperation.png") no-repeat top/cover;
+    url("../../assets//Images/doctorOperation.png") no-repeat top/cover;
 
   width: 100%;
   height: 178px;
@@ -225,7 +227,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /* grid-template-rows: repeat(4,1fr); */
-  gap: 20px;
+  gap: 25px 0px;
 
   /* height: 600px; */
 }
@@ -272,7 +274,7 @@
 }
 
 #textFooterid:before{
-  content: url("./assets/Images/Vector.svg");
+  content: url("../../assets/Images/Vector.svg");
   display: inline-block;
   height: 82px;
   width: 82px;
@@ -300,9 +302,10 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url("./Fonts/gilroy/Gilroy-Regular.ttf");
+  src: url("../../Fonts/gilroy/Gilroy-Regular.ttf");
 }
+
 @font-face {
   font-family: "Inter";
-  src: url("./Fonts/Inter/static/Inter-Regular.ttf");
+  src: url("../../Fonts/Inter/static/Inter-Regular.ttf");
 }

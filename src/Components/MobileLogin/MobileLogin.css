@@ -48,9 +48,9 @@ h2 {
 #content {
   margin-right: auto !important;
 }
-img {
-  object-fit: cover !important;
-}
+/* img {
+  object-fit: cover;
+} */
 .user {
   width: 16px !important;
 }
@@ -114,10 +114,11 @@ b {
 
 @font-face {
   font-family: "Gilroy";
-  src: url("./Fonts/gilroy/Gilroy-Regular.ttf");
+  src: url("../../Fonts/gilroy/Gilroy-Regular.ttf");
 }
+
 
 @font-face {
   font-family: "Gilroy-Bold";
-  src: url("./Fonts/gilroy/Gilroy-SemiBold.ttf");
+  src: url("../../Fonts/gilroy/Gilroy-SemiBold.ttf");
 }

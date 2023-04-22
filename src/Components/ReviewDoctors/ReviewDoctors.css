@@ -1,0 +1,37 @@
+.displayGridReviewDr{
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr) minmax(auto, 3fr);
+    gap: 30px;
+    padding-top: 30px;
+}
+.display_grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    width: 131px;
+
+}
+.cardReviewDoctors{
+    display: flex !important;
+    border: 0.705342px solid #DADADA;
+    border-radius: 11px;
+    height: 178px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#doctorImage{
+    grid-column: 1/13;
+    grid-row: 1/13 ;
+    object-fit: cover;
+}
+#likeImage{
+    grid-column: 11/12;
+    grid-row: 1/2;
+    padding-top: 9px;
+    object-fit:cover
+}
+.buttonsNav{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}

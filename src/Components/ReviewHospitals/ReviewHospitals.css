@@ -1,0 +1,15 @@
+.cardHospitals{
+    display: flex !important;
+    border: 0.705342px solid #DADADA;
+    border-radius: 11px;
+    height: 198px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#likeImageHospitals{
+    grid-column: 12/13;
+    grid-row: 1/2;
+    padding-top: 9px;
+    object-fit:cover
+}

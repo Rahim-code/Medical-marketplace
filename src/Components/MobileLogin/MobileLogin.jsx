@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import { Button } from "antd";
 import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
 
-import vector from "../assets/Images/vector.png";
-import vectorWhite from "../assets/Images/vector_white.png";
-import user from "../assets/Images/user.png";
-import russianFlag from "../assets/Images/russianFlagIcon.png";
-import rublicon from "../assets/Images/rublicon.png";
-import question from "../assets/Images/question.png";
-import heart from "../assets/Images/heart.png";
-import facebook from "../assets/Images/facebook.png";
-import instagram from "../assets/Images/instagram.png";
-import vk from "../assets/Images/vk.png";
+import vector from "../../assets/Images/vector.png";
+import vectorWhite from "../../assets/Images/vector_white.png";
+import user from "../../assets/Images/user.png";
+import russianFlag from "../../assets/Images/russianFlagIcon.png";
+import rublicon from "../../assets/Images/rublicon.png";
+import question from "../../assets/Images/question.png";
+import heart from "../../assets/Images/heart.png";
+import facebook from "../../assets/Images/facebook.png";
+import instagram from "../../assets/Images/instagram.png";
+import vk from "../../assets/Images/vk.png";
 
-import "../index.css";
+import "../MobileLogin/MobileLogin.css";
 
 const MobileLogin = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -73,7 +73,7 @@ const MobileLogin = () => {
                 </li>
                 <li className="li">
                   <div id="d-flex">
-                    <img style={{ width: "45px" }} src={heart} />
+                    <img  style={{ width: "45px" }} src={heart} />
                     <p className="white" id="up">
                       избранная
                     </p>

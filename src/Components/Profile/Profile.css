@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("./Fonts/gilroy/Gilroy-Regular.ttf");
+}
+
+.menuNav {
+  border: 1px solid #ebebeb;
+  border-radius: 5px !important;
+  padding: 15px;
+}
+.displayGrid {
+  display: grid;
+  grid-template-columns: minmax(auto, 350px) minmax(auto, 700px);
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.userForm{
+    border: 1px solid #ebebeb;
+    border-radius: 5px !important;
+}
+
+.menuNav > ul > li:hover {
+  background-color: #f2f5ff;
+  border-radius: 5px !important;
+}
+.menuNav>ul{
+    padding-left: 0 !important;
+}
+
+
+.inputName {
+  background-color: #f9f9f9 !important;
+  border: 1 px solid #e0e0e0 !important;
+ border-radius: 0 !important;
+ padding: 10px 15px;
+}
+.lastInputName{
+    background-color: #f9f9f9 !important;
+    border: 1 px solid #e0e0e0 !important;
+   border-radius: 0 !important;
+   padding: 10px 15px;
+}
+
+.emailInput{
+    background-color: #f9f9f9 !important;
+    border: 1 px solid #e0e0e0 !important;
+   border-radius: 0 !important;
+   padding: 10px 15px;
+}
+.passwordInput{
+    background-color: #f9f9f9 !important;
+    border: 1 px solid #e0e0e0 !important;
+   border-radius: 0 !important;
+   padding: 10px 15px;
+}
+.datePicker{
+    background-color: #f9f9f9 !important;
+    border: 1 px solid #e0e0e0 !important;
+   border-radius: 0 !important;
+   padding: 10px 15px;
+   width: 100%;
+}
+

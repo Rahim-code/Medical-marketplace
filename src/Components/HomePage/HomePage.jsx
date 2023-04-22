@@ -6,42 +6,44 @@ import {
 } from "@ant-design/icons";
 import { Button, Dropdown, Space, Input, Row, Col } from "antd";
 
-import Vector from "../assets/Images/Vector.svg";
+import Vector from "../../assets/Images/Vector.svg";
 
-import rublicon from "../assets/Images/rublicon_.png";
-import russianFlag from "../assets/Images/russianFlagIcon.png";
-import question from "../assets/Images/question.png";
-import heart from "../assets/Images/heart.png";
-import euro from "../assets/Images/euro.png";
-import group from "../assets/Images/Group1.png";
-import group2 from "../assets/Images/Group2.png";
-import group3 from "../assets/Images/Group3.png";
-import group4 from "../assets/Images/Group4 (2).png";
-import group5 from "../assets/Images/Group5.png";
-import group6 from "../assets/Images/Group6.png";
-import group7 from "../assets/Images/Group7.png";
-import group8 from "../assets/Images/Group8.png";
-import group9 from "../assets/Images/Group9.png";
-import group10 from "../assets/Images/Group10.png";
-import group11 from "../assets/Images/Group11.png";
-import group12 from "../assets/Images/Group12.png";
-import group13 from "../assets/Images/Group13.png";
-import group14 from "../assets/Images/Group14.png";
-import group15 from "../assets/Images/Group15.png";
-import group16 from "../assets/Images/Group16.png";
-import group17 from "../assets/Images/Group17.png";
-import group18 from "../assets/Images/Group18.png";
+import rublicon from "../../assets/Images/rublicon_.png";
+import russianFlag from "../../assets/Images/russianFlagIcon.png";
+import question from "../../assets/Images/question.png";
+import heart from "../../assets/Images/heart.png";
+import euro from "../../assets/Images/euro.png";
+import group from "../../assets/Images/Group1.png";
+import group2 from "../../assets/Images/Group2.png";
+import group3 from "../../assets/Images/Group3.png";
+import group4 from "../../assets/Images/Group4 (2).png";
+import group5 from "../../assets/Images/Group5.png";
+import group6 from "../../assets/Images/Group6.png";
+import group7 from "../../assets/Images/Group7.png";
+import group8 from "../../assets/Images/Group8.png";
+import group9 from "../../assets/Images/Group9.png";
+import group10 from "../../assets/Images/Group10.png";
+import group11 from "../../assets/Images/Group11.png";
+import group12 from "../../assets/Images/Group12.png";
+import group13 from "../../assets/Images/Group13.png";
+import group14 from "../../assets/Images/Group14.png";
+import group15 from "../../assets/Images/Group15.png";
+import group16 from "../../assets/Images/Group16.png";
+import group17 from "../../assets/Images/Group17.png";
+import group18 from "../../assets/Images/Group18.png";
 
-import facebook from "../assets/Images/facebook.png";
-import instagram from "../assets/Images/instagram.png";
-import vk from "../assets/Images/vk.png";
-import USD from "../assets/Svg/usdIcon.svg";
-import EUO from "../assets/Svg/GroupEuro.svg";
-import POU from "../assets/Svg/GroupPound.svg";
-import RUB from "../assets/Svg/rub.svg";
+import facebook from "../../assets/Images/facebook.png";
+import instagram from "../../assets/Images/instagram.png";
+import vk from "../../assets/Images/vk.png";
+import USD from "../../assets/Svg/usdIcon.svg";
+import EUO from "../../assets/Svg/GroupEuro.svg";
+import POU from "../../assets/Svg/GroupPound.svg";
+import RUB from "../../assets/Svg/rub.svg";
+import azFlag from "../../assets/Svg/azFlag.svg";
+import trFlag from "../../assets/Svg/trFlag.svg";
+import absFlag from "../../assets/Svg/absFlag.svg";
 
-
-import "../homePage.css";
+import "../HomePage/HomePage.css";
 
 const handleMenuClick = (e) => {
   console.log("click", e);
@@ -121,7 +123,6 @@ const items = [
   },
 ];
 
-
 const itemsFlag = [
   {
     label: (
@@ -134,14 +135,14 @@ const itemsFlag = [
           paddingLeft: "10px",
         }}
       >
-        USD
+        AZ
       </span>
     ),
     key: "1",
     icon: (
       <img
         style={{ width: "30px", objectFit: "cover", marginLeft: "20px" }}
-        src={USD}
+        src={azFlag}
       />
     ),
   },
@@ -156,14 +157,14 @@ const itemsFlag = [
           paddingLeft: "10px",
         }}
       >
-        EUR
+        TR
       </span>
     ),
     key: "2",
     icon: (
       <img
         style={{ width: "30px", objectFit: "cover", marginLeft: "20px" }}
-        src={EUO}
+        src={trFlag}
       />
     ),
   },
@@ -179,14 +180,14 @@ const itemsFlag = [
         }}
       >
         {" "}
-        GBP
+        en
       </span>
     ),
     key: "3",
     icon: (
       <img
         style={{ width: "30px", objectFit: "cover", marginLeft: "20px" }}
-        src={POU}
+        src={absFlag}
       />
     ),
   },
@@ -197,11 +198,9 @@ const menuProps = {
   onClick: handleMenuClick,
 };
 const menuPropsFlag = {
-  items:itemsFlag,
+  items: itemsFlag,
   onClick: handleMenuFlagClick,
 };
-
-
 
 const HomePage = () => {
   return (
@@ -217,9 +216,9 @@ const HomePage = () => {
           </div>
           <div className="dropdownBefore">
             <ul className="ul" id="ulList">
-              <li style={{paddingBottom:"15px"}}>
-                <Dropdown    menu={menuProps}>
-                  <Button   type="text">
+              <li style={{ paddingBottom: "15px" }}>
+                <Dropdown menu={menuProps}>
+                  <Button type="text">
                     <Space>
                       <img id="rubl" src={RUB} />
                       <span
@@ -228,24 +227,34 @@ const HomePage = () => {
                           fontSize: "17.5px",
                           fontWeight: "500",
                           color: "white",
-                         
                         }}
-                      >RUB</span>
+                      >
+                        RUB
+                      </span>
                     </Space>
                   </Button>
                 </Dropdown>
               </li>
-              <li style={{paddingBottom:"15px"}}>
-                <Dropdown  menu={menuPropsFlag}>
+              <li style={{ paddingBottom: "15px" }}>
+                <Dropdown menu={menuPropsFlag}>
                   <Button type="text">
                     <Space>
                       <img id="flag" src={russianFlag} />
-                      RUB
+                      <span
+                        style={{
+                          fontFamily: "Gilroy",
+                          fontSize: "17.5px",
+                          fontWeight: "500",
+                          color: "white",
+                        }}
+                      >
+                        RU
+                      </span>
                     </Space>
                   </Button>
                 </Dropdown>
               </li>
-              <li style={{paddingBottom:"15px"}} className="dFlex">
+              <li style={{ paddingBottom: "15px" }} className="dFlex">
                 <div className="question">
                   <img src={question} />
                 </div>
@@ -253,10 +262,14 @@ const HomePage = () => {
                   <p>связаться с нами </p>
                 </div>
               </li>
-              <li style={{paddingBottom:"15px"}}>
-                <img className="heart" src={heart} />
+              <li style={{ paddingBottom: "15px" }}>
+                <img
+                  style={{ objectFit: "cover !important" }}
+                  className="heart"
+                  src={heart}
+                />
               </li>
-              <li style={{paddingBottom:"15px"}}>
+              <li style={{ paddingBottom: "15px" }}>
                 <Button
                   className="button"
                   type="primary"
@@ -558,17 +571,19 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div
-        style={{ paddingTop: "30px", paddingBottom: "60px" }}
-        className="container"
-      >
+      <div style={{ paddingTop: "30px" }} className="container">
         <div className="bgDoctor">
           <p>Нейрохирургия</p>
         </div>
       </div>
       <div className="container">
         <p
-          style={{ fontSize: "38px", fontWeight: "600", paddingBottom: "10px" }}
+          style={{
+            fontSize: "38px",
+            fontWeight: "600",
+            paddingBottom: "10px",
+            marginBottom: "0px",
+          }}
         >
           Лучшие предложения
         </p>
@@ -606,6 +621,7 @@ const HomePage = () => {
             fontWeight: "600",
             paddingBottom: "10px",
             paddingTop: "20px",
+            margin: "0px",
           }}
         >
           Baм понравится
@@ -640,6 +656,7 @@ const HomePage = () => {
             fontWeight: "600",
             paddingBottom: "10px",
             paddingTop: "20px",
+            margin: "0px",
           }}
         >
           Хиты продаж
@@ -871,6 +888,7 @@ const HomePage = () => {
             paddingBottom: "15px",
             paddingTop: "15px",
             backgroundColor: "#2A52BA",
+            margin: "0px",
           }}
         >
           © All rights reserved 2023. 112 Med
