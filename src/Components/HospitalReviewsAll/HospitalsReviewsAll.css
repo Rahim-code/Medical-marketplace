@@ -1,0 +1,40 @@
+.singleStarIcon {
+  transform: translate(2px, -35px);
+}
+.HospitalReviewsDisplayGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 210px;
+  width: 299px;
+}
+#hospitalReviewImage{
+grid-column: 1/13;
+grid-row: 1/13;
+}
+#hospitalReviewLike{
+    grid-column: 11/12;
+    grid-row: 2/3;
+    width: 42px;
+    height: 42px;
+}
+
+#hospitalNewRed{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.userFlag{
+    transform: translate(-12px,-2px);
+}
+.userIconOrFlag{
+    transform: translate(3px, 16px);
+}
+.checkIcon{
+    transform: translate(4px, 5px);
+}
+.likeIcon{
+    transform: translate(-12px, 4px);
+}
+.unlikeIcon{
+    transform: translate(-12px, 6px);
+}

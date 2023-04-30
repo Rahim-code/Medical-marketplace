@@ -37,6 +37,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 colorText: "#000",
                 fontSize: 19,
               },
+              Checkbox:{
+                colorBgContainer:"white"
+              }
             },
           }}
         >
