@@ -9,6 +9,9 @@ import FavHospitals from "./Components/FavHospitals/FavHospitals";
 import Hospitals from "./Components/Hospitals/Hospitals";
 import Doctors from "./Components/Doctors/Doctors";
 import HospitalsReviewsAll from './Components/HospitalReviewsAll/HospitalsReviewsAll'
+import DoctorsReviewsAll from "./Components/DoctorsReviewsAll/DoctorsReviewsAll";
+import FAQ from "./Components/FAQ/FAQ";
+import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy'
 
 
 import Slider from "./Components/Slider";
@@ -25,7 +28,10 @@ const App = () => {
       {/* <FavHospitals /> */}
       {/* <Hospitals/> */}
       {/* <Doctors/> */}
-      <HospitalsReviewsAll/>
+      {/* <HospitalsReviewsAll/> */}
+      {/* <DoctorsReviewsAll/> */}
+      {/* <FAQ/> */}
+      <PrivacyPolicy/>
 
       {/* <Slider/> */}
     </>
