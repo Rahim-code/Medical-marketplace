@@ -1,0 +1,15 @@
+.ContacUs_Grid{
+    display: grid;
+    grid-template-columns: 645px 401px;
+    padding-bottom: 20px;
+    gap: 20px;
+    
+}
+.mailContactUs{
+    background-color:#FFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    width: 645px;
+    height: 622px;
+    padding: 20px;
+}

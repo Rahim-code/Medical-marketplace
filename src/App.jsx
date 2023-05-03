@@ -12,9 +12,11 @@ import HospitalsReviewsAll from './Components/HospitalReviewsAll/HospitalsReview
 import DoctorsReviewsAll from "./Components/DoctorsReviewsAll/DoctorsReviewsAll";
 import FAQ from "./Components/FAQ/FAQ";
 import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy'
+import ContactUs from "./Components/ContactUs/ContactUs";
 
 
 import Slider from "./Components/Slider";
+
 
 const App = () => {
   return (
@@ -31,7 +33,8 @@ const App = () => {
       {/* <HospitalsReviewsAll/> */}
       {/* <DoctorsReviewsAll/> */}
       {/* <FAQ/> */}
-      <PrivacyPolicy/>
+      {/* <PrivacyPolicy/> */}
+      <ContactUs/>
 
       {/* <Slider/> */}
     </>
