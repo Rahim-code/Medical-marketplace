@@ -5,14 +5,13 @@ import {
   EnvironmentOutlined,
 } from "@ant-design/icons";
 import { Button, Dropdown, Space, Input, Row, Col } from "antd";
+import Slider from "../Slider";
 
 import Vector from "../../assets/Images/Vector.svg";
 
-import rublicon from "../../assets/Images/rublicon_.png";
 import russianFlag from "../../assets/Images/russianFlagIcon.png";
 import question from "../../assets/Images/question.png";
 import heart from "../../assets/Images/heart.png";
-import euro from "../../assets/Images/euro.png";
 import group from "../../assets/Images/Group1.png";
 import group2 from "../../assets/Images/Group2.png";
 import group3 from "../../assets/Images/Group3.png";
@@ -693,6 +692,9 @@ const HomePage = () => {
         <div>
           <img style={{ width: "99%" }} src={group18} />
         </div>
+      </div>
+      <div className="container">
+          <Slider/>
       </div>
       <div className="bgFooter">
         <div style={{ paddingTop: "100px" }} className="container">

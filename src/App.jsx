@@ -22,7 +22,7 @@ const App = () => {
   return (
     <>
       {/* <MobileLogin /> */}
-      {/* <HomePage/> */}
+      <HomePage/>
       {/* <Profile/> */}
       {/* <ReviewDoctors/> */}
       {/* <ReviewHospitals/> */}
@@ -34,7 +34,7 @@ const App = () => {
       {/* <DoctorsReviewsAll/> */}
       {/* <FAQ/> */}
       {/* <PrivacyPolicy/> */}
-      <ContactUs/>
+      {/* <ContactUs/> */}
 
       {/* <Slider/> */}
     </>
