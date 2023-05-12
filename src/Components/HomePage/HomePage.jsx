@@ -5,9 +5,10 @@ import {
   EnvironmentOutlined,
 } from "@ant-design/icons";
 import { Button, Dropdown, Space, Input, Row, Col } from "antd";
-import Slider from "../Slider";
 
-import Vector from "../../assets/Images/Vector.svg";
+import Slider from "../Slider";
+import SliderSecond from "../SliderSecond/SliderSecond";
+import SliderThird from "../SliderThird/SliderThird";
 
 import russianFlag from "../../assets/Images/russianFlagIcon.png";
 import question from "../../assets/Images/question.png";
@@ -30,10 +31,11 @@ import group15 from "../../assets/Images/Group15.png";
 import group16 from "../../assets/Images/Group16.png";
 import group17 from "../../assets/Images/Group17.png";
 import group18 from "../../assets/Images/Group18.png";
-
 import facebook from "../../assets/Images/facebook.png";
 import instagram from "../../assets/Images/instagram.png";
 import vk from "../../assets/Images/vk.png";
+
+import Vector from "../../assets/Images/Vector.svg";
 import USD from "../../assets/Svg/usdIcon.svg";
 import EUO from "../../assets/Svg/GroupEuro.svg";
 import POU from "../../assets/Svg/GroupPound.svg";
@@ -694,14 +696,71 @@ const HomePage = () => {
         </div>
       </div>
       <div className="container">
-          <Slider/>
+        <h3
+          style={{
+            fontSize: "38px",
+            marginLeft: "12px",
+            marginTop: "10px",
+            marginBottom: "10px",
+          }}
+        >
+          Выберите клинику в другой стране дешевле
+        </h3>
+        <p style={{ marginLeft: "12px", marginBottom: "40px" }}>
+          Поиск по странам, популярные направления
+        </p>
       </div>
+      <div className="containerSliderSecond">
+        {" "}
+        <Slider />
+      </div>
+      <div
+        className="container"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "flex-end",
+        }}
+      >
+        <div>
+          {" "}
+          <h3 style={{ fontSize: "38px", marginBottom: "5px" }}>
+            Бронируйте медицинскую услугу <br /> со скидкой до - 50%
+          </h3>
+          <p style={{ margin: "0px",fontSize:"22px" }}>Поиск по бюджетy</p>
+        </div>
+        <Button
+          style={{
+            color: "#5282FF",
+            width: "281px",
+            height: "57px",
+            fontSize: "20px",
+            border: "1px solid #5282FF",
+          }}
+        >
+          Посмотреть категории
+        </Button>
+      </div>
+
+      <div className="containerSliderSecond" style={{ paddingTop: "50px" }}>
+        <SliderSecond />
+      </div>
+
+      <div className="container">
+        <h3 style={{ fontSize: "38px", marginBottom: "15px" }}>
+          Спецпредложения
+        </h3>
+        <p style={{ fontSize: "22px", marginTop: "10px" }}>
+          Акции, скидки и специалные предложения для вас.
+        </p>
+      </div>
+      <div className="containerSliderSecond">
+        <SliderThird />
+      </div>
+
       <div className="bgFooter">
         <div style={{ paddingTop: "100px" }} className="container">
           <div className="rowGrid">
-            {/* <div>
-              <img style={{ width: "82px" }} src={Vector} />
-                    </div> */}
             <div id="textFooterid" style={{ paddingLeft: "15px" }}>
               <ul style={{ listStyle: "none" }}>
                 <li

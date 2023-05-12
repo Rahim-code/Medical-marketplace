@@ -2,10 +2,8 @@ import React from "react";
 import Cards from "./Cards/Cards";
 import Carousel from "react-elastic-carousel";
 import "../Slider.css";
-import BakuPic from '../../src/assets/Images/BakuPic.png'
-import IstanbulPic from '../../src/assets/Images/IstanbulPic.png'
-import MoskovaPic from '../../src/assets/Images/MoskovaPic.png'
-
+import BakuPic from "../../src/assets/Images/BakuPic.png";
+import MoskovaPic from "../../src/assets/Images/MoskovaPic.png";
 
 const Slider = () => {
   const breakPoints = [
@@ -17,11 +15,13 @@ const Slider = () => {
   return (
     <>
       <Carousel breakPoints={breakPoints}>
-        <Cards img={BakuPic}/>
-        <Cards img={IstanbulPic}/>
-        <Cards img={MoskovaPic }/>
+        <Cards img={BakuPic} />
+        <Cards img={BakuPic} />
+        <Cards img={MoskovaPic} />
+        <Cards img={BakuPic} />
+        <Cards img={BakuPic} />
+        <Cards img={MoskovaPic} />
       </Carousel>
-      
     </>
   );
 };

@@ -297,7 +297,22 @@
     border-radius: 10.36px;
     color: #000000;
 }
-
+.rec-arrow-right,.rec-arrow-left{
+  width: 27px !important;
+  height: 27px !important;
+  min-width: 27px !important;
+  font-size: 18px !important;
+  line-height: 30px !important;
+  box-shadow: none !important;
+  background-color: none !important;
+}
+.rec-pagination{
+  visibility: hidden !important;
+}
+.containerSliderSecond{
+  width: 94% !important;
+  margin: 0 auto !important;
+}
 
 
 @font-face {

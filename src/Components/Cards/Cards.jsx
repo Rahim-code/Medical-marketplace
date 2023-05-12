@@ -1,6 +1,10 @@
-import React from 'react';
-import '../Cards/Cards.css'
+import React from "react";
+import "../Cards/Cards.css";
 
-const Cards = ({img}) =><div className='card'><img src={img}/></div>
+const Cards = ({ img }) => (
+  <div style={{ borderRadius: "12px" }} className="card">
+    <img src={img} />
+  </div>
+);
 
 export default Cards;
