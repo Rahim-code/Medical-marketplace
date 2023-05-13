@@ -24,8 +24,8 @@ const App = () => {
       {/* <MobileLogin /> */}
       {/* <HomePage/> */}
       {/* <Profile/> */}
-      <ReviewDoctors/>
-      {/* <ReviewHospitals/> */}
+      {/*<ReviewDoctors/>*/}
+       <ReviewHospitals/>
       {/* <FavDoctors/> */}
       {/* <FavHospitals /> */}
       {/* <Hospitals/> */}
