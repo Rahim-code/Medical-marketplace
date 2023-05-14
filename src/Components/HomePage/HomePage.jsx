@@ -656,215 +656,111 @@ const HomePage = () => {
         </Button>
       </div>
 
-      {/*<div className="container">*/}
-      {/*  <h3 style={{ fontSize: "38px", marginBottom: "15px" }}>*/}
-      {/*    Спецпредложения*/}
-      {/*  </h3>*/}
-      {/*  <p style={{ fontSize: "22px", marginTop: "10px" }}>*/}
-      {/*    Акции, скидки и специалные предложения для вас.*/}
-      {/*  </p>*/}
-      {/*</div>*/}
-      {/*<div className="containerSliderSecond">*/}
-      {/*  <SliderThird />*/}
-      {/*</div>*/}
+      <div className="container">
+        <h3 className={"foreign-title"}>
+          Спецпредложения
+        </h3>
+        <p className={"foreign-subtitle"}>
+          Акции, скидки и специалные предложения для вас.
+        </p>
+      </div>
+      <div className="containerSliderSecond">
+        <SliderThird />
+      </div>
 
-      {/*<div className="bgFooter">*/}
-      {/*  <div style={{ paddingTop: "100px" }} className="container">*/}
-      {/*    <div className="rowGrid">*/}
-      {/*      <div id="textFooterid" style={{ paddingLeft: "15px" }}>*/}
-      {/*        <ul style={{ listStyle: "none" }}>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "white",*/}
-      {/*              fontSize: "33.25px",*/}
-      {/*              fontWeight: "500",*/}
-      {/*              lineHeight: "45px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            112 Med*/}
-      {/*          </li>*/}
-      {/*          <li style={{ color: "white", fontSize: "18px" }}>*/}
-      {/*            Медицинский <br />*/}
-      {/*            маркетплейс*/}
-      {/*          </li>*/}
-      {/*        </ul>*/}
-      {/*      </div>*/}
-      {/*      <div>*/}
-      {/*        <ul style={{ listStyle: "none" }}>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "white",*/}
-      {/*              fontWeight: "500px",*/}
-      {/*              fontFamily: "Inter",*/}
-      {/*              fontSize: "22px",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            Для пациентов*/}
-      {/*          </li>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "#B6D0FF",*/}
-      {/*              fontFamily: "Gilroy",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            Врачи{" "}*/}
-      {/*          </li>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "#B6D0FF",*/}
-      {/*              fontFamily: "Gilroy",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            Больницы*/}
-      {/*          </li>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "#B6D0FF",*/}
-      {/*              fontFamily: "Gilroy",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            Услуги*/}
-      {/*          </li>*/}
-      {/*        </ul>*/}
-      {/*      </div>*/}
-      {/*      <div>*/}
-      {/*        <ul style={{ listStyle: "none" }}>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "white",*/}
-      {/*              fontWeight: "500px",*/}
-      {/*              fontFamily: "Inter",*/}
-      {/*              fontSize: "22px",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            O Hас*/}
-      {/*          </li>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "#B6D0FF",*/}
-      {/*              fontFamily: "Gilroy",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            Условия Эксплуатации*/}
-      {/*          </li>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "#B6D0FF",*/}
-      {/*              fontFamily: "Gilroy",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            {" "}*/}
-      {/*            Политика Oтзывов*/}
-      {/*          </li>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "#B6D0FF",*/}
-      {/*              fontFamily: "Gilroy",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            О «112 мед».*/}
-      {/*          </li>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "#B6D0FF",*/}
-      {/*              fontFamily: "Gilroy",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            FAQ*/}
-      {/*          </li>*/}
-      {/*        </ul>*/}
-      {/*      </div>*/}
-      {/*      <div>*/}
-      {/*        <ul style={{ listStyle: "none" }}>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "white",*/}
-      {/*              fontWeight: "500px",*/}
-      {/*              fontFamily: "Inter",*/}
-      {/*              fontSize: "22px",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            Для партнеров*/}
-      {/*          </li>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "#B6D0FF",*/}
-      {/*              fontFamily: "Gilroy",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            Добавить больницу*/}
-      {/*          </li>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "#B6D0FF",*/}
-      {/*              fontFamily: "Gilroy",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            {" "}*/}
-      {/*            добавить врача*/}
-      {/*          </li>*/}
-      {/*          <li*/}
-      {/*            style={{*/}
-      {/*              color: "#B6D0FF",*/}
-      {/*              fontFamily: "Gilroy",*/}
-      {/*              paddingBottom: "10px",*/}
-      {/*            }}*/}
-      {/*          >*/}
-      {/*            Войти как партнер*/}
-      {/*          </li>*/}
-      {/*        </ul>*/}
-      {/*      </div>*/}
-      {/*    </div>*/}
-      {/*    <div style={{ padding: "100px 0" }} className="footerIcons">*/}
-      {/*      <div>*/}
-      {/*        <img style={{ width: "30.66px" }} src={facebook} />*/}
-      {/*      </div>*/}
-      {/*      <div>*/}
-      {/*        <img style={{ width: "36.66px" }} src={vk} />*/}
-      {/*      </div>*/}
-      {/*      <div>*/}
-      {/*        <img style={{ width: "30.66px" }} src={instagram} />*/}
-      {/*      </div>*/}
+      <div className="bgFooter">
+        <div style={{ paddingTop: "100px" }} className="container">
+          <div className="rowGrid">
+            <div id="textFooterid" style={{ paddingLeft: "15px" }}>
+              <ul style={{ listStyle: "none" }}>
+                <li className={"footer-title"}
+                >
+                  112 Med
+                </li>
+                <li className={"footer-subtitle"} >
+                  Медицинский <br />
+                  маркетплейс
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul style={{ listStyle: "none" }}>
+                <li className={"footer-nav-title"}>
+                  Для пациентов
+                </li>
+                <li className={"footer-nav-link"}>
+                  Врачи{" "}
+                </li>
+                <li className={"footer-nav-link"}>
+                  Больницы
+                </li>
+                <li className={"footer-nav-link"}>
+                  Услуги
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul style={{ listStyle: "none" }}>
+                <li className={"footer-nav-title"}>
+                  O Hас
+                </li>
+                <li className={"footer-nav-link"}>
+                  Условия Эксплуатации
+                </li>
+                <li className={"footer-nav-link"}>
+                  {" "}
+                  Политика Oтзывов
+                </li>
+                <li className={"footer-nav-link"}>
+                  О «112 мед».
+                </li>
+                <li className={"footer-nav-link"}>
+                  FAQ
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul style={{ listStyle: "none" }}>
+                <li className={"footer-nav-title"}>
+                  Для партнеров
+                </li>
+                <li className={"footer-nav-link"}>
+                  Добавить больницу
+                </li>
+                <li className={"footer-nav-link"}>
+                  {" "}
+                  добавить врача
+                </li>
+                <li className={"footer-nav-link"}>
+                  Войти как партнер
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div style={{ padding: "100px 0" }} className="footerIcons">
+            <div style={{display:"flex", gap:"16px",marginTop:"10px"}}>
+              <div >
+                <img className={"footer-social"} src={facebook} />
+              </div>
+              <div>
+                <img className={"footer-social"} src={vk} />
+              </div>
+              <div>
+                <img className={"footer-social"} src={instagram} />
+              </div>
+            </div>
 
-      {/*      <div style={{ paddingLeft: "30px" }}>*/}
-      {/*        <Button*/}
-      {/*          style={{*/}
-      {/*            fontFamily: "Gilroy",*/}
-      {/*            fontSize: "20px",*/}
-      {/*            fontWeight: "600",*/}
-      {/*          }}*/}
-      {/*          className="pad"*/}
-      {/*        >*/}
-      {/*          КОНТАКТ*/}
-      {/*        </Button>*/}
-      {/*      </div>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*  <p*/}
-      {/*    className="white"*/}
-      {/*    style={{*/}
-      {/*      textAlign: "center",*/}
-      {/*      paddingBottom: "15px",*/}
-      {/*      paddingTop: "15px",*/}
-      {/*      backgroundColor: "#2A52BA",*/}
-      {/*      margin: "0px",*/}
-      {/*    }}*/}
-      {/*  >*/}
-      {/*    © All rights reserved 2023. 112 Med*/}
-      {/*  </p>*/}
-      {/*</div>*/}
+            <div style={{ paddingLeft: "30px" }}>
+              <Button className="pad">
+                КОНТАКТ
+              </Button>
+            </div>
+          </div>
+        </div>
+        <p className="footer-copy">
+          © All rights reserved 2023. 112 Med
+        </p>
+      </div>
     </>
   );
 };
