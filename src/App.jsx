@@ -22,9 +22,9 @@ const App = () => {
   return (
     <>
        {/*<MobileLogin />*/}
-       <HomePage/>
-      {/* <Profile/> */}
-      {/*<ReviewDoctors/>*/}
+       {/*<HomePage/>*/}
+       {/*<Profile/>*/}
+      <ReviewDoctors/>
       {/* <ReviewHospitals/>*/}
       {/* <FavDoctors/> */}
       {/* <FavHospitals /> */}

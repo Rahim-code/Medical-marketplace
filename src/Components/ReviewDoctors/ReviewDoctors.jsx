@@ -266,6 +266,7 @@ const ReviewDoctors = () => {
         </div>
       </header>
 
+      {/*breadcrumbs*/}
       <div style={{ paddingTop: "30px" }} className="container">
         <div style={{ borderBottom: "1px solid #E7E7E7", padding: "20px 0" }}>
           <Breadcrumb
@@ -293,6 +294,7 @@ const ReviewDoctors = () => {
           />
         </div>
       </div>
+
       <div className="container">
         <div className="displayGridReviewDr">
           <div style={{ height: "320px" }} className="menuNav">
@@ -375,49 +377,24 @@ const ReviewDoctors = () => {
           <div className="menuRight">
             <div className="buttonsNav">
               <Button
-                style={{
-                  height: "36px",
-                  color: "white",
-                  backgroundColor: "#5282FF",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn doc-nav-btn-active"}
                 type="primary"
               >
                 Наши рекомендации
               </Button>
-              <Button
-                style={{
-                  backgroundColor: "#ECECEC",
-                  color: "#000",
-                  height: "36px",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+              <Button className={"doc-nav-btn"}
                 type="primary"
               >
                 Самая низкая цена в начале
               </Button>
               <Button
-                style={{
-                  backgroundColor: "#ECECEC",
-                  color: "#000",
-                  height: "36px",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn"}
                 type="primary"
               >
                 Количество звезд и цена
               </Button>
               <Button
-                style={{
-                  backgroundColor: "#ECECEC",
-                  color: "#000",
-                  height: "36px",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn"}
                 type="primary"
               >
                 Оценка + кол-во отзывов
