@@ -21,11 +21,11 @@ import Slider from "./Components/Slider";
 const App = () => {
   return (
     <>
-      {/* <MobileLogin /> */}
-      {/* <HomePage/> */}
+       {/*<MobileLogin />*/}
+       <HomePage/>
       {/* <Profile/> */}
       {/*<ReviewDoctors/>*/}
-       <ReviewHospitals/>
+      {/* <ReviewHospitals/>*/}
       {/* <FavDoctors/> */}
       {/* <FavHospitals /> */}
       {/* <Hospitals/> */}

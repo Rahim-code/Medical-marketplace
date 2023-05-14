@@ -8,4 +8,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+@media (max-width: 576px){
+    .card{
+        width: 244px;
+        height: 286px;
+    }
 }

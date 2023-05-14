@@ -4,8 +4,8 @@ import Carousel from "react-elastic-carousel";
 
 const SliderSecond = () => {
   const breakPoints = [
-    { width: 500, itemsToShow: 3.5 },
-    { width: 768, itemsToShow: 3.5 },
+    { width: 500, itemsToShow: 1 },
+    { width: 768, itemsToShow: 2.5 },
     { width: 1200, itemsToShow: 3.5 },
     { width: 1500, itemsToShow: 3.5 },
   ];

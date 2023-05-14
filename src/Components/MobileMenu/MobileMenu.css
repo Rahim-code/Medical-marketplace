@@ -1,0 +1,31 @@
+.divider {
+    width: calc(100% - 46px);
+    margin: 26px 23px;
+    height: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.29);
+}
+
+.menuFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.reverse {
+    margin: 20px 0;
+    flex-direction: row-reverse;
+}
+
+.menuList {
+    padding: 0;
+    margin: 26px 23px;
+}
+.menuListItem{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
