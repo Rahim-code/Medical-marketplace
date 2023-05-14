@@ -3,6 +3,7 @@
   src: url("./Fonts/gilroy/Gilroy-Regular.ttf");
 }
 
+
 .menuNav {
   border: 1px solid #ebebeb;
   border-radius: 5px !important;
@@ -18,6 +19,7 @@
 .userForm{
     border: 1px solid #ebebeb;
     border-radius: 5px !important;
+    padding: 40px;
 }
 
 .menuNav > ul > li:hover {
@@ -31,34 +33,55 @@
 
 .inputName {
   background-color: #f9f9f9 !important;
-  border: 1 px solid #e0e0e0 !important;
+  border: 1px solid #e0e0e0 !important;
  border-radius: 0 !important;
  padding: 10px 15px;
 }
 .lastInputName{
     background-color: #f9f9f9 !important;
-    border: 1 px solid #e0e0e0 !important;
+    border: 1px solid #e0e0e0 !important;
    border-radius: 0 !important;
    padding: 10px 15px;
 }
 
 .emailInput{
     background-color: #f9f9f9 !important;
-    border: 1 px solid #e0e0e0 !important;
+    border: 1px solid #e0e0e0 !important;
    border-radius: 0 !important;
    padding: 10px 15px;
 }
 .passwordInput{
     background-color: #f9f9f9 !important;
-    border: 1 px solid #e0e0e0 !important;
+    border: 1px solid #e0e0e0 !important;
    border-radius: 0 !important;
    padding: 10px 15px;
 }
 .datePicker{
     background-color: #f9f9f9 !important;
-    border: 1 px solid #e0e0e0 !important;
+    border: 1px solid #e0e0e0 !important;
    border-radius: 0 !important;
    padding: 10px 15px;
    width: 100%;
+}
+.phone-select .ant-select-selector {
+    height: 44px !important; /* Set the desired height */
+    line-height: 40px; /* Set the same value as height for vertical alignment */
+}
+@media (max-width: 756px) {
+    .container{
+        width: 90% !important;
+    }
+    .displayGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .userForm{
+        grid-row:1;
+        padding: 10px;
+    }
+    .menuNav {
+        grid-row:2;
+    }
+
 }
 

@@ -413,7 +413,7 @@ const Profile = () => {
             </ul>
           </div>
 
-          <div className="userForm" style={{ padding: "40px" }}>
+          <div className="userForm">
             <div
               style={{
                 borderBottom: "1px solid #E7E7E7",
@@ -472,8 +472,9 @@ const Profile = () => {
                       <Col span={12}>
                         <MyFormItem name="number" label="Номер телефона">
                           <Row gutter={8}>
-                            <Col span={8}>
+                            <Col span={10}>
                               <Select
+                                className={"phone-select"}
                                 defaultValue="+994"
                                 onChange={handleChange}
                                 options={[
@@ -497,7 +498,7 @@ const Profile = () => {
                               />
                             </Col>
 
-                            <Col span={16}>
+                            <Col span={14}>
                               <Input type="tel" className="lastInputName" />
                             </Col>
                           </Row>
