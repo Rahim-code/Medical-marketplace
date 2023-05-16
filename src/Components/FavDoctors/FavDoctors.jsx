@@ -267,6 +267,7 @@ const FavDoctors = () => {
           </div>
         </div>
       </header>
+
       <div style={{ paddingTop: "30px" }} className="container">
         <div style={{ borderBottom: "1px solid #E7E7E7", padding: "20px 0" }}>
           <Breadcrumb
@@ -376,50 +377,25 @@ const FavDoctors = () => {
 
           <div className="menuRight">
             <div className="buttonsNav">
-              <Button
-                style={{
-                  height: "36px",
-                  color: "white",
-                  backgroundColor: "#5282FF",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+              <Button className={"doc-nav-btn doc-nav-btn-active"}
                 type="primary"
               >
                 Наши рекомендации
               </Button>
               <Button
-                style={{
-                  backgroundColor: "#ECECEC",
-                  color: "#000",
-                  height: "36px",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn"}
                 type="primary"
               >
                 Самая низкая цена в начале
               </Button>
               <Button
-                style={{
-                  backgroundColor: "#ECECEC",
-                  color: "#000",
-                  height: "36px",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn"}
                 type="primary"
               >
                 Количество звезд и цена
               </Button>
               <Button
-                style={{
-                  backgroundColor: "#ECECEC",
-                  color: "#000",
-                  height: "36px",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn"}
                 type="primary"
               >
                 Оценка + кол-во отзывов
@@ -427,20 +403,9 @@ const FavDoctors = () => {
             </div>
 
             <div>
-              <div
-                style={{
-                  backgroundColor: "#FAFAFA",
-                  border: " 0.705342px solid #EFEFEF",
-                  height: "230px",
-                }}
-                className="cardReviewDoctors"
-              >
-                <div
-                  style={{ width: "150px" }}
-                  className="card-head display_grid"
-                >
+              <div className="cardReviewDoctors">
+                <div className="display_grid doctor-fav">
                   <img
-                    style={{ height: "100%" }}
                     id="doctorImage"
                     src={reviewDoctor}
                   />
@@ -456,10 +421,7 @@ const FavDoctors = () => {
                     src={likeReview}
                   />
                 </div>
-                <div
-                  style={{ width: "769px", paddingLeft: "40px" }}
-                  className="card-body"
-                >
+                <div className="card-body fav-card-body">
                   <div
                     style={{
                       display: "flex",
@@ -611,48 +573,8 @@ const FavDoctors = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                style={{
-                  backgroundColor: "#FAFAFA",
-                  border: " 0.705342px solid #EFEFEF",
-                  height: "230px",
-                }}
-                className="cardReviewDoctors"
-              >
-                <div
-                  style={{ width: "150px" }}
-                  className="card-head display_grid"
-                >
-                  <img
-                    style={{ height: "100%" }}
-                    id="doctorImage"
-                    src={reviewDoctor}
-                  />
-                  <img
-                    style={{
-                      gridColumn: "12/13",
-                      gridRow: "1/2",
-                      paddingTop: "9px",
-                      objectFit: "cover",
-                      width: "30px",
-                    }}
-                    id="likeImage"
-                    src={likeReview}
-                  />
-                </div>
-                <div
-                  style={{ width: "769px", paddingLeft: "40px" }}
-                  className="card-body"
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                      gap: "10px",
-                      height: "30px",
-                    }}
-                  >
+                <div className="card-body fav-card-mob">
+                  <div>
                     <div>
                       {" "}
                       <p
@@ -663,23 +585,31 @@ const FavDoctors = () => {
                       >
                         Главный врач
                       </p>
-                    </div>
-                    <div style={{ marginRight: "auto" }}>
-                      {" "}
-                      <img src={Iconstars} />
-                    </div>
-                    <div>
-                      <p
+                      <h3
                         style={{
-                          margin: "0 !important",
-                          fontSize: "16px",
-                          fontWeight: "400",
+                          color: "#000",
+                          fontSize: "24px !important",
+                          margin: "0px",
+                          paddingTop: "10px",
                         }}
                       >
-                        Bеликолепно{" "}
+                        Dr. Алина Леонидовна
+                      </h3>
+                      <p
+                        style={{
+                          color: "#5282FF",
+                          fontSize: "14px",
+                          margin: "0px",
+                          paddingTop: "10px",
+                        }}
+                      >
+                        <EnvironmentOutlined
+                          style={{ marginRight: "6px", color: "#5282FF" }}
+                        />
+                        Больница Американ
                       </p>
                     </div>
-                    <div>
+                    <div style={{display:"flex", alignItems:"center",gap:"9px",fontSize:"12px"}}>
                       <p
                         style={{
                           backgroundColor: "#5282FF",
@@ -695,51 +625,31 @@ const FavDoctors = () => {
                       >
                         9.0
                       </p>
+                      <img src={Iconstars} />
+                      <p
+                        style={{
+                          margin: "0 !important",
+                          fontSize: "16px",
+                          fontWeight: "400",
+                        }}
+                      >
+                        Bеликолепно{" "}
+                      </p>
+                      <p
+                        style={{ color: "#5282FF", textAlign: "right" }}
+                      >
+                        <span>23</span> отзыва
+                      </p>
                     </div>
                   </div>
-
                   <div>
                     <div
                       style={{
                         display: "flex",
                         justifyContent: "space-between",
-                      }}
-                    >
-                      <h3
-                        style={{
-                          color: "#000",
-                          fontSize: "24px !important",
-                          margin: "0px",
-                          paddingTop: "10px",
-                        }}
-                      >
-                        Dr. Алина Леонидовна
-                      </h3>
-                      <div>
-                        <p
-                          className="comment"
-                          style={{ color: "#5282FF", textAlign: "right" }}
-                        >
-                          <span>23</span> отзыва
-                        </p>
-                        Соотношение цена/качество
-                      </div>
+                      }}>
+                      <div>Соотношение цена/качество</div>
                     </div>
-
-                    <p
-                      style={{
-                        color: "#5282FF",
-                        fontSize: "14px",
-                        margin: "0px",
-                        paddingTop: "10px",
-                      }}
-                    >
-                      <EnvironmentOutlined
-                        style={{ marginRight: "6px", color: "#5282FF" }}
-                      />
-                      Больница Американ
-                    </p>
-
                     <div
                       style={{
                         display: "flex",
@@ -780,36 +690,15 @@ const FavDoctors = () => {
                           <img src={experience} />
                           20 лет опыта
                         </p>
-                      </div>
-                      <div>
-                        <Button
-                          style={{
-                            width: "155.37px",
-                            height: "45px",
-                            marginBottom: "10px",
-                          }}
-                          type="primary"
-                        >
-                          Посмотреть Врачи
-                        </Button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div
-                style={{
-                  backgroundColor: "#FAFAFA",
-                  border: " 0.705342px solid #EFEFEF",
-                  height: "230px",
-                }}
-                className="cardReviewDoctors"
-              >
-                <div
-                  style={{ width: "150px" }}
-                  className="card-head display_grid"
-                >
+
+              <div className="cardReviewDoctors">
+                <div className="display_grid doctor-fav">
                   <img
                     style={{ height: "100%" }}
                     id="doctorImage"
@@ -827,10 +716,7 @@ const FavDoctors = () => {
                     src={likeReview}
                   />
                 </div>
-                <div
-                  style={{ width: "769px", paddingLeft: "40px" }}
-                  className="card-body"
-                >
+                <div className="card-body fav-card-body">
                   <div
                     style={{
                       display: "flex",
@@ -978,23 +864,144 @@ const FavDoctors = () => {
                         >
                           Посмотреть Врачи
                         </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="card-body fav-card-mob">
+                  <div>
+                    <div>
+                      {" "}
+                      <p
+                        style={{
+                          margin: "0 15px 0 0",
+                          paddingTop: "0px !important",
+                        }}
+                      >
+                        Главный врач
+                      </p>
+                      <h3
+                        style={{
+                          color: "#000",
+                          fontSize: "24px !important",
+                          margin: "0px",
+                          paddingTop: "10px",
+                        }}
+                      >
+                        Dr. Алина Леонидовна
+                      </h3>
+                      <p
+                        style={{
+                          color: "#5282FF",
+                          fontSize: "14px",
+                          margin: "0px",
+                          paddingTop: "10px",
+                        }}
+                      >
+                        <EnvironmentOutlined
+                          style={{ marginRight: "6px", color: "#5282FF" }}
+                        />
+                        Больница Американ
+                      </p>
+                    </div>
+                    <div style={{display:"flex", alignItems:"center",gap:"9px",fontSize:"12px"}}>
+                      <p
+                        style={{
+                          backgroundColor: "#5282FF",
+                          color: "white",
+                          width: "30px",
+                          height: "24.71px",
+                          borderRadius: "4.41px",
+                          margin: "0 0 0 0",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        9.0
+                      </p>
+                      <img src={Iconstars} />
+                      <p
+                        style={{
+                          margin: "0 !important",
+                          fontSize: "16px",
+                          fontWeight: "400",
+                        }}
+                      >
+                        Bеликолепно{" "}
+                      </p>
+                      <p
+                        style={{ color: "#5282FF", textAlign: "right" }}
+                      >
+                        <span>23</span> отзыва
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+
+                      <div>
+
+                        Соотношение цена/качество
+                      </div>
+                    </div>
+
+
+
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "flex-end",
+                      }}
+                    >
+                      <div>
+                        <p
+                          style={{
+                            color: "#000",
+                            backgroundColor: "#F4F4F4",
+                            border: "1px solid #EFEFEF",
+                            borderRadius: "15px",
+                            fontSize: "12px",
+                            padding: "10px 10px",
+                            width: "151px",
+                            textAlign: "center",
+                          }}
+                        >
+                          Сосудистая хирургия
+                        </p>
+                        <p
+                          style={{
+                            color: "#000",
+                            backgroundColor: "#F4F4F4",
+                            border: "1px solid #EFEFEF",
+                            borderRadius: "15px",
+                            fontSize: "12px",
+                            padding: "10px 10px",
+                            width: "124px",
+                            textAlign: "center",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "10px",
+                          }}
+                        >
+                          <img src={experience} />
+                          20 лет опыта
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                style={{
-                  backgroundColor: "#FAFAFA",
-                  border: " 0.705342px solid #EFEFEF",
-                  height: "230px",
-                }}
-                className="cardReviewDoctors"
-              >
-                <div
-                  style={{ width: "150px" }}
-                  className="card-head display_grid"
-                >
+
+              <div className="cardReviewDoctors">
+                <div className="display_grid doctor-fav">
                   <img
                     style={{ height: "100%" }}
                     id="doctorImage"
@@ -1012,10 +1019,7 @@ const FavDoctors = () => {
                     src={likeReview}
                   />
                 </div>
-                <div
-                  style={{ width: "769px", paddingLeft: "40px" }}
-                  className="card-body"
-                >
+                <div className="card-body fav-card-body">
                   <div
                     style={{
                       display: "flex",
@@ -1163,6 +1167,438 @@ const FavDoctors = () => {
                         >
                           Посмотреть Врачи
                         </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="card-body fav-card-mob">
+                  <div>
+                    <div>
+                      {" "}
+                      <p
+                        style={{
+                          margin: "0 15px 0 0",
+                          paddingTop: "0px !important",
+                        }}
+                      >
+                        Главный врач
+                      </p>
+                      <h3
+                        style={{
+                          color: "#000",
+                          fontSize: "24px !important",
+                          margin: "0px",
+                          paddingTop: "10px",
+                        }}
+                      >
+                        Dr. Алина Леонидовна
+                      </h3>
+                      <p
+                        style={{
+                          color: "#5282FF",
+                          fontSize: "14px",
+                          margin: "0px",
+                          paddingTop: "10px",
+                        }}
+                      >
+                        <EnvironmentOutlined
+                          style={{ marginRight: "6px", color: "#5282FF" }}
+                        />
+                        Больница Американ
+                      </p>
+                    </div>
+                    <div style={{display:"flex", alignItems:"center",gap:"9px",fontSize:"12px"}}>
+                      <p
+                        style={{
+                          backgroundColor: "#5282FF",
+                          color: "white",
+                          width: "30px",
+                          height: "24.71px",
+                          borderRadius: "4.41px",
+                          margin: "0 0 0 0",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        9.0
+                      </p>
+                      <img src={Iconstars} />
+                      <p
+                        style={{
+                          margin: "0 !important",
+                          fontSize: "16px",
+                          fontWeight: "400",
+                        }}
+                      >
+                        Bеликолепно{" "}
+                      </p>
+                      <p
+                        style={{ color: "#5282FF", textAlign: "right" }}
+                      >
+                        <span>23</span> отзыва
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+
+                      <div>
+
+                        Соотношение цена/качество
+                      </div>
+                    </div>
+
+
+
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "flex-end",
+                      }}
+                    >
+                      <div>
+                        <p
+                          style={{
+                            color: "#000",
+                            backgroundColor: "#F4F4F4",
+                            border: "1px solid #EFEFEF",
+                            borderRadius: "15px",
+                            fontSize: "12px",
+                            padding: "10px 10px",
+                            width: "151px",
+                            textAlign: "center",
+                          }}
+                        >
+                          Сосудистая хирургия
+                        </p>
+                        <p
+                          style={{
+                            color: "#000",
+                            backgroundColor: "#F4F4F4",
+                            border: "1px solid #EFEFEF",
+                            borderRadius: "15px",
+                            fontSize: "12px",
+                            padding: "10px 10px",
+                            width: "124px",
+                            textAlign: "center",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "10px",
+                          }}
+                        >
+                          <img src={experience} />
+                          20 лет опыта
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="cardReviewDoctors">
+                <div className="display_grid doctor-fav">
+                  <img
+                    style={{ height: "100%" }}
+                    id="doctorImage"
+                    src={reviewDoctor}
+                  />
+                  <img
+                    style={{
+                      gridColumn: "12/13",
+                      gridRow: "1/2",
+                      paddingTop: "9px",
+                      objectFit: "cover",
+                      width: "30px",
+                    }}
+                    id="likeImage"
+                    src={likeReview}
+                  />
+                </div>
+                <div className="card-body fav-card-body">
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "baseline",
+                      gap: "10px",
+                      height: "30px",
+                    }}
+                  >
+                    <div>
+                      {" "}
+                      <p
+                        style={{
+                          margin: "0 15px 0 0",
+                          paddingTop: "0px !important",
+                        }}
+                      >
+                        Главный врач
+                      </p>
+                    </div>
+                    <div style={{ marginRight: "auto" }}>
+                      {" "}
+                      <img src={Iconstars} />
+                    </div>
+                    <div>
+                      <p
+                        style={{
+                          margin: "0 !important",
+                          fontSize: "16px",
+                          fontWeight: "400",
+                        }}
+                      >
+                        Bеликолепно{" "}
+                      </p>
+                    </div>
+                    <div>
+                      <p
+                        style={{
+                          backgroundColor: "#5282FF",
+                          color: "white",
+                          width: "30px",
+                          height: "24.71px",
+                          borderRadius: "4.41px",
+                          margin: "0 0 0 0",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        9.0
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <h3
+                        style={{
+                          color: "#000",
+                          fontSize: "24px !important",
+                          margin: "0px",
+                          paddingTop: "10px",
+                        }}
+                      >
+                        Dr. Алина Леонидовна
+                      </h3>
+                      <div>
+                        <p
+                          className="comment"
+                          style={{ color: "#5282FF", textAlign: "right" }}
+                        >
+                          <span>23</span> отзыва
+                        </p>
+                        Соотношение цена/качество
+                      </div>
+                    </div>
+
+                    <p
+                      style={{
+                        color: "#5282FF",
+                        fontSize: "14px",
+                        margin: "0px",
+                        paddingTop: "10px",
+                      }}
+                    >
+                      <EnvironmentOutlined
+                        style={{ marginRight: "6px", color: "#5282FF" }}
+                      />
+                      Больница Американ
+                    </p>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "flex-end",
+                      }}
+                    >
+                      <div>
+                        <p
+                          style={{
+                            color: "#000",
+                            backgroundColor: "#F4F4F4",
+                            border: "1px solid #EFEFEF",
+                            borderRadius: "15px",
+                            fontSize: "12px",
+                            padding: "10px 10px",
+                            width: "151px",
+                            textAlign: "center",
+                          }}
+                        >
+                          Сосудистая хирургия
+                        </p>
+                        <p
+                          style={{
+                            color: "#000",
+                            backgroundColor: "#F4F4F4",
+                            border: "1px solid #EFEFEF",
+                            borderRadius: "15px",
+                            fontSize: "12px",
+                            padding: "10px 10px",
+                            width: "124px",
+                            textAlign: "center",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "10px",
+                          }}
+                        >
+                          <img src={experience} />
+                          20 лет опыта
+                        </p>
+                      </div>
+                      <div>
+                        <Button
+                          style={{
+                            width: "155.37px",
+                            height: "45px",
+                            marginBottom: "10px",
+                          }}
+                          type="primary"
+                        >
+                          Посмотреть Врачи
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="card-body fav-card-mob">
+                  <div>
+                    <div>
+                      {" "}
+                      <p
+                        style={{
+                          margin: "0 15px 0 0",
+                          paddingTop: "0px !important",
+                        }}
+                      >
+                        Главный врач
+                      </p>
+                      <h3
+                        style={{
+                          color: "#000",
+                          fontSize: "24px !important",
+                          margin: "0px",
+                          paddingTop: "10px",
+                        }}
+                      >
+                        Dr. Алина Леонидовна
+                      </h3>
+                      <p
+                        style={{
+                          color: "#5282FF",
+                          fontSize: "14px",
+                          margin: "0px",
+                          paddingTop: "10px",
+                        }}
+                      >
+                        <EnvironmentOutlined
+                          style={{ marginRight: "6px", color: "#5282FF" }}
+                        />
+                        Больница Американ
+                      </p>
+                    </div>
+                    <div style={{display:"flex", alignItems:"center",gap:"9px",fontSize:"12px"}}>
+                      <p
+                        style={{
+                          backgroundColor: "#5282FF",
+                          color: "white",
+                          width: "30px",
+                          height: "24.71px",
+                          borderRadius: "4.41px",
+                          margin: "0 0 0 0",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        9.0
+                      </p>
+                      <img src={Iconstars} />
+                      <p
+                        style={{
+                          margin: "0 !important",
+                          fontSize: "16px",
+                          fontWeight: "400",
+                        }}
+                      >
+                        Bеликолепно{" "}
+                      </p>
+                      <p
+                        style={{ color: "#5282FF", textAlign: "right" }}
+                      >
+                        <span>23</span> отзыва
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+
+                      <div>
+
+                        Соотношение цена/качество
+                      </div>
+                    </div>
+
+
+
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "flex-end",
+                      }}
+                    >
+                      <div>
+                        <p
+                          style={{
+                            color: "#000",
+                            backgroundColor: "#F4F4F4",
+                            border: "1px solid #EFEFEF",
+                            borderRadius: "15px",
+                            fontSize: "12px",
+                            padding: "10px 10px",
+                            width: "151px",
+                            textAlign: "center",
+                          }}
+                        >
+                          Сосудистая хирургия
+                        </p>
+                        <p
+                          style={{
+                            color: "#000",
+                            backgroundColor: "#F4F4F4",
+                            border: "1px solid #EFEFEF",
+                            borderRadius: "15px",
+                            fontSize: "12px",
+                            padding: "10px 10px",
+                            width: "124px",
+                            textAlign: "center",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "10px",
+                          }}
+                        >
+                          <img src={experience} />
+                          20 лет опыта
+                        </p>
                       </div>
                     </div>
                   </div>

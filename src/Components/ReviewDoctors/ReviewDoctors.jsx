@@ -407,10 +407,7 @@ const ReviewDoctors = () => {
                   <img id="doctorImage" src={reviewDoctor} />
                   <img id="likeImage" src={likeReview} />
                 </div>
-                <div
-                  style={{ width: "769px", paddingLeft: "40px" }}
-                  className="card-body"
-                >
+                <div className="card-body">
                   <div
                     style={{ display: "flex", justifyContent: "space-between" }}
                   >
@@ -430,20 +427,63 @@ const ReviewDoctors = () => {
                   </div>
                   <div>
                     <h3
-                      style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
-                      }}
+                      className={"card-title"}
                     >
                       Oтлично! Bсем Cоветую
                     </h3>
                     <p
+                      className={"card-text"}
+                    >
+                      Он очень образованный врач. Нам очень понравилось, он уже
+                      наш <br /> семейный доктор.
+                    </p>
+                  </div>
+                  <div
+                    style={{ display: "flex", justifyContent: "space-between" }}
+                  >
+                    <p style={{ color: "#464646", fontSize: "11.15px" }}>
+                      Review To{" "}
+                      <span style={{ color: "#5282FF", fontSize: "11.15px" }}>
+                        Dr. Алина Леонидовна
+                      </span>
+                    </p>
+                    <p style={{ color: "#BCBCBC", fontSize: "12px" }}>
+                      29 июля - 2022 г.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="cardReviewDoctors">
+                <div className="card-head display_grid">
+                  <img id="doctorImage" src={reviewDoctor} />
+                  <img id="likeImage" src={likeReview} />
+                </div>
+                <div className="card-body">
+                  <div
+                    style={{ display: "flex", justifyContent: "space-between" }}
+                  >
+                    <img src={Iconstars} />
+                    <p
                       style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
+                        backgroundColor: "#FFC224",
+                        color: "#000",
+                        width: "29.16px",
+                        height: "21.53px",
+                        borderRadius: "2.5px",
+                        textAlign: "center",
                       }}
+                    >
+                      9,9
+                    </p>
+                  </div>
+                  <div>
+                    <h3
+                      className={"card-title"}
+                    >
+                      Oтлично! Bсем Cоветую
+                    </h3>
+                    <p
+                      className={"card-text"}
                     >
                       Он очень образованный врач. Нам очень понравилось, он уже
                       наш <br /> семейный доктор.
@@ -470,7 +510,6 @@ const ReviewDoctors = () => {
                   <img id="likeImage" src={likeReview} />
                 </div>
                 <div
-                  style={{ width: "769px", paddingLeft: "40px" }}
                   className="card-body"
                 >
                   <div
@@ -491,22 +530,11 @@ const ReviewDoctors = () => {
                     </p>
                   </div>
                   <div>
-                    <h3
-                      style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
-                      }}
+                    <h3 className={"card-title"}
                     >
                       Oтлично! Bсем Cоветую
                     </h3>
-                    <p
-                      style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
-                      }}
-                    >
+                    <p className={"card-text"}>
                       Он очень образованный врач. Нам очень понравилось, он уже
                       наш <br /> семейный доктор.
                     </p>
@@ -531,10 +559,7 @@ const ReviewDoctors = () => {
                   <img id="doctorImage" src={reviewDoctor} />
                   <img id="likeImage" src={likeReview} />
                 </div>
-                <div
-                  style={{ width: "769px", paddingLeft: "40px" }}
-                  className="card-body"
-                >
+                <div className="card-body">
                   <div
                     style={{ display: "flex", justifyContent: "space-between" }}
                   >
@@ -553,84 +578,10 @@ const ReviewDoctors = () => {
                     </p>
                   </div>
                   <div>
-                    <h3
-                      style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
-                      }}
-                    >
+                    <h3 className={"card-title"}>
                       Oтлично! Bсем Cоветую
                     </h3>
-                    <p
-                      style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
-                      }}
-                    >
-                      Он очень образованный врач. Нам очень понравилось, он уже
-                      наш <br /> семейный доктор.
-                    </p>
-                  </div>
-                  <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
-                    <p style={{ color: "#464646", fontSize: "11.15px" }}>
-                      Review To{" "}
-                      <span style={{ color: "#5282FF", fontSize: "11.15px" }}>
-                        Dr. Алина Леонидовна
-                      </span>
-                    </p>
-                    <p style={{ color: "#BCBCBC", fontSize: "12px" }}>
-                      29 июля - 2022 г.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="cardReviewDoctors">
-                <div className="card-head display_grid">
-                  <img id="doctorImage" src={reviewDoctor} />
-                  <img id="likeImage" src={likeReview} />
-                </div>
-                <div
-                  style={{ width: "769px", paddingLeft: "40px" }}
-                  className="card-body"
-                >
-                  <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
-                    <img src={Iconstars} />
-                    <p
-                      style={{
-                        backgroundColor: "#FFC224",
-                        color: "#000",
-                        width: "29.16px",
-                        height: "21.53px",
-                        borderRadius: "2.5px",
-                        textAlign: "center",
-                      }}
-                    >
-                      9,9
-                    </p>
-                  </div>
-                  <div>
-                    <h3
-                      style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
-                      }}
-                    >
-                      Oтлично! Bсем Cоветую
-                    </h3>
-                    <p
-                      style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
-                      }}
-                    >
+                    <p className={"card-text"}>
                       Он очень образованный врач. Нам очень понравилось, он уже
                       наш <br /> семейный доктор.
                     </p>

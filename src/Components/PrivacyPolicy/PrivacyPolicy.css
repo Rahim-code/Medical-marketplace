@@ -1,0 +1,14 @@
+.privacy-desc{
+ padding-left: 100px;
+    line-height: 40px;
+}
+
+@media (max-width: 756px) {
+    .privacy-desc{
+        padding-left: 0;
+        line-height: 25px;
+    }
+    .mb-20{
+        margin-bottom: 20px;
+    }
+}

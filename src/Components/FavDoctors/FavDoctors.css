@@ -1,3 +1,27 @@
 .comment{
     margin: 10px 0px 0px 0px  !important;
 }
+.fav-card-mob{
+    display: none;
+}
+
+@media (max-width: 756px) {
+    .cardReviewDoctors{
+        flex-direction: column;
+    }
+    .doctor-fav{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        width: 275px !important;
+        height: auto !important;
+
+    }
+    .fav-card-body{
+        display: none ;
+    }
+    .fav-card-mob{
+        display: block;
+        margin-top: 19px;
+    }
+
+}

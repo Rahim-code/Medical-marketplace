@@ -24,17 +24,17 @@ const App = () => {
        {/*<MobileLogin />*/}
        {/*<HomePage/>*/}
        {/*<Profile/>*/}
-      <ReviewDoctors/>
+      {/*<ReviewDoctors/>*/}
       {/* <ReviewHospitals/>*/}
-      {/* <FavDoctors/> */}
-      {/* <FavHospitals /> */}
-      {/* <Hospitals/> */}
-      {/* <Doctors/> */}
-      {/* <HospitalsReviewsAll/> */}
-      {/* <DoctorsReviewsAll/> */}
-      {/* <FAQ/> */}
-      {/* <PrivacyPolicy/> */}
-      {/* <ContactUs/> */}
+      {/* <FavDoctors/>*/}
+      {/* <FavHospitals />*/}
+      {/* <Hospitals/>*/}
+      {/* <Doctors/>*/}
+      {/* <HospitalsReviewsAll/>*/}
+      {/* <DoctorsReviewsAll/>*/}
+      {/* <FAQ/>*/}
+      {/* <PrivacyPolicy/>*/}
+       <ContactUs/>
 
       {/* <Slider/> */}
     </>

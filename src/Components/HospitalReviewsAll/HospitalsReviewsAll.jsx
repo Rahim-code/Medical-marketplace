@@ -301,213 +301,157 @@ const HospitalsReviewsAll = () => {
             ]}
           />
         </div>
-        <div
-          style={{
-            backgroundColor: "#5282FF",
-            border: "1px solid #FFF",
-            borderRadius: "15px",
-            display: "flex",
-            gap: "20px",
-            padding: "20px 50px 20px 20px",
-            alignItems: "center",
-            marginTop: "40px",
-          }}
-        >
-          <div className="HospitalReviewsDisplayGrid">
-            <img
-              style={{
-                height: "210px",
-                width: "299px",
-                borderRadius: "7px",
-                objectFit: "cover",
-              }}
-              id="hospitalReviewImage"
-              src={FavoriteHospitals}
-            />
-            <img id="hospitalReviewLike" src={likeReview} />
-            <img id="hospitalNewRed" src={newRed} />
-          </div>
-          <div style={{ paddingTop: "20px", marginRight: "auto" }}>
-            <img src={Iconstars} />
-            <p
-              style={{
-                color: "#FFF",
-                fontSize: "33px",
-                marginBottom: "10px",
-                marginTop: "10px",
-              }}
-            >
-              LuviMed
-            </p>
-            <p
-              style={{
-                color: "#FFF",
-                fontSize: "14px",
-                marginBottom: "30px",
-              }}
-            >
-              <EnvironmentOutlined
-                style={{ marginRight: "6px", color: "#FFF" }}
+        <div className={"featured-hospital"}>
+          <div className={"featured-hospital-inner"}>
+            <div className="HospitalReviewsDisplayGrid">
+              <img
+                className={"featured-img"}
+                id="hospitalReviewImage"
+                src={FavoriteHospitals}
               />
-              Бейоглу, Стамбул
-            </p>
+              <img id="hospitalReviewLike" src={likeReview} />
+              <img id="hospitalNewRed" src={newRed} />
+            </div>
+            <div className={"featured-body"}>
+              <div style={{ paddingTop: "20px", marginRight: "auto" }}>
+                <img src={Iconstars} />
+                <p
+                  style={{
+                    color: "#FFF",
+                    fontSize: "33px",
+                    marginBottom: "10px",
+                    marginTop: "10px",
+                  }}
+                >
+                  LuviMed
+                </p>
+                <p
+                  className={"featured-location"}
+                >
+                  <EnvironmentOutlined
+                    style={{ marginRight: "6px", color: "#FFF" }}
+                  />
+                  Бейоглу, Стамбул
+                </p>
+                <div className={"featured-btns"}>
+                  <Button
+                    style={{
+                      backgroundColor: "#FFF",
+                      borderRadius: "5px",
+                      color: "#000",
+                      height: "44px",
+                      width: "175px",
+                      fontSize: "18px",
+                      marginRight: "15px",
+                      marginTop: "10px",
+                    }}
+                    type="primary"
+                  >
+                    Написать отзыв
+                  </Button>
+                  <Button
+                    style={{
+                      backgroundColor: "#FFC224",
+                      borderRadius: "5px",
+                      color: "#000",
+                      width: "200px",
+                      height: "44px",
+                      fontSize: "18px",
+                      marginTop: "10px",
+                    }}
+                    type="primary"
+                  >
+                    Показать на карте
+                  </Button>
+                </div>
+              </div>
+              <div
+                className={"rating-wrapper"}
+              >
+                <div
+                  className={"rating-inner"}
+                >
+                  <div
+                    className={"rating-nums"}
+                  >
+                <span
+                  className={"rating-nums-lg"}
+                >
+                  3
+                </span>
+                    <img className="singleStarIcon" src={SingleStar} />
+                    <span className={"rating-nums-slash"}
+                    >
+                  /
+                </span>
+
+                    <span className={"rating-nums-sm"}
+                    >
+                  5
+                </span>
+                  </div>
+                  <div>
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                      <img
+                        style={{ width: "83px", height: "13px" }}
+                        src={Iconstars}
+                      />
+                    </div>
+                    <p className={"ratings-text"}>
+                      112MED <br /> оценил качество
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={"featured-btns-mobile"}>
             <Button
-              style={{
-                backgroundColor: "#FFF",
-                borderRadius: "5px",
-                color: "#000",
-                height: "44px",
-                width: "175px",
-                fontSize: "18px",
-                marginRight: "15px",
-                marginTop: "10px",
-              }}
+              className={"button-1"}
+
               type="primary"
             >
               Написать отзыв
             </Button>
             <Button
-              style={{
-                backgroundColor: "#FFC224",
-                borderRadius: "5px",
-                color: "#000",
-                width: "200px",
-                height: "44px",
-                fontSize: "18px",
-                marginTop: "10px",
-              }}
+              className={"button-2"}
               type="primary"
             >
               Показать на карте
             </Button>
           </div>
-          <div
-            style={{
-              backgroundColor: "#FCFCFC",
-              borderRadius: "10px",
-              width: "165px",
-              height: "165px",
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "column",
-              paddingTop: "10px",
-            }}
-          >
-            <div
-              style={{
-                backgroundColor: "#5282FF",
-                borderRadius: "5px",
-                width: "143px",
-                height: "82px",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "baseline",
-                }}
-              >
-                <span
-                  style={{ fontSize: "75px", color: "#FFF", fontWeight: "700" }}
-                >
-                  3
-                </span>
-                <img className="singleStarIcon" src={SingleStar} />
-                <span
-                  style={{ fontSize: "35px", color: "#FFF", fontWeight: "700" }}
-                >
-                  /
-                </span>
-
-                <span
-                  style={{ fontSize: "35px", color: "#FFF", fontWeight: "700" }}
-                >
-                  5
-                </span>
-              </div>
-              <div style={{ display: "flex", justifyContent: "center" }}>
-                <img
-                  style={{ width: "83px", height: "13px" }}
-                  src={Iconstars}
-                />
-              </div>
-              <p
-                style={{
-                  color: "#000",
-                  fontSize: "14px",
-                  fontWeight: "400",
-                  textAlign: "center",
-                }}
-              >
-                112MED <br /> оценил качество
-              </p>
-            </div>
-          </div>
         </div>
         <div
-          style={{ width: "979px", marginTop: "40px" }}
+          style={{ marginTop: "40px" }}
           className="buttonsNav"
         >
           <Button
-            style={{
-              height: "36px",
-              color: "white",
-              backgroundColor: "#5282FF",
-              paddingLeft: "29px",
-              paddingRight: "29px",
-            }}
+            className={"doc-nav-btn"}
             type="primary"
           >
             Наши рекомендации
           </Button>
           <Button
-            style={{
-              backgroundColor: "#ECECEC",
-              color: "#000",
-              height: "36px",
-              paddingLeft: "29px",
-              paddingRight: "29px",
-            }}
+            className={"doc-nav-btn"}
             type="primary"
           >
             Самая низкая цена в начале
           </Button>
           <Button
-            style={{
-              backgroundColor: "#ECECEC",
-              color: "#000",
-              height: "36px",
-              paddingLeft: "29px",
-              paddingRight: "29px",
-            }}
+            className={"doc-nav-btn doc-nav-btn-active"}
             type="primary"
           >
             Количество звезд и цена
           </Button>
           <Button
-            style={{
-              backgroundColor: "#ECECEC",
-              color: "#000",
-              height: "36px",
-              paddingLeft: "29px",
-              paddingRight: "29px",
-            }}
+            className={"doc-nav-btn"}
             type="primary"
           >
             Оценка + кол-во отзывов
           </Button>
         </div>
-        <div
-          style={{
-            backgroundColor: "#FFF",
-            border: "1px solid #FFF",
-            borderRadius: "15px",
-            width: "100%",
-            marginTop: "20px",
-            padding: "20px",
-          }}
-        >
+
+        <div className={"hospital-reviews-card"}>
           <div style={{ display: "flex" }}>
             <div className="userIconOrFlag">
               <img src={userIcon} />
@@ -523,13 +467,7 @@ const HospitalsReviewsAll = () => {
               }}
             >
               <div>
-                <p
-                  style={{
-                    color: "#0032A0",
-                    fontSize: "19px",
-                    marginBottom: "0px",
-                  }}
-                >
+                <p className={'reviews-name'}>
                   Надежда Р.
                 </p>
                 <img
@@ -542,7 +480,7 @@ const HospitalsReviewsAll = () => {
                 style={{ paddingTop: "5px", marginRight: "8px" }}
                 src={check}
               />
-              <p style={{ fontSize: "14px", color: "#BCBCBC" }}>
+              <p className={"reviews-category"}>
                 Травмотология
               </p>
             </div>
@@ -554,7 +492,7 @@ const HospitalsReviewsAll = () => {
                 gap: "10px",
               }}
             >
-              <p style={{ color: "#5F5F5F", fontSize: "16px" }}>Великолепно </p>
+              <p className={'reviews-rating'}>Великолепно </p>
               <div
                 style={{
                   backgroundColor: "#FFC224",
@@ -572,13 +510,13 @@ const HospitalsReviewsAll = () => {
               </div>
             </div>
           </div>
-          <p style={{ marginBottom: "5px" }}>Oтлично! Bсем Cоветую</p>
-          <p style={{ marginTop: "5px" }}>
+          <p className={"reviews-body-title"} style={{ marginBottom: "5px" }}>Oтлично! Bсем Cоветую</p>
+          <p className={"reviews-body-desc"} style={{ marginTop: "5px" }}>
             “Great location with montain view. Helpful and responsive owners.
             Well equipped and nicely designed cottage / challenge. <br />{" "}
             Playground for kids outside as well as toys inside...”
           </p>
-          <div style={{ display: "flex", gap: "25px" }}>
+          <div className={"reviews-reacts"}>
             <p style={{ color: "#BCBCBC", marginRight: "auto" }}>
               29 июля - 2022 г.
             </p>
@@ -592,16 +530,7 @@ const HospitalsReviewsAll = () => {
             </p>
           </div>
         </div>
-        <div
-          style={{
-            backgroundColor: "#FFF",
-            border: "1px solid #FFF",
-            borderRadius: "15px",
-            width: "100%",
-            marginTop: "20px",
-            padding: "20px",
-          }}
-        >
+        <div className={"hospital-reviews-card"}>
           <div style={{ display: "flex" }}>
             <div className="userIconOrFlag">
               <img src={userIcon} />
@@ -617,13 +546,7 @@ const HospitalsReviewsAll = () => {
               }}
             >
               <div>
-                <p
-                  style={{
-                    color: "#0032A0",
-                    fontSize: "19px",
-                    marginBottom: "0px",
-                  }}
-                >
+                <p className={'reviews-name'}>
                   Надежда Р.
                 </p>
                 <img
@@ -636,7 +559,7 @@ const HospitalsReviewsAll = () => {
                 style={{ paddingTop: "5px", marginRight: "8px" }}
                 src={check}
               />
-              <p style={{ fontSize: "14px", color: "#BCBCBC" }}>
+              <p className={"reviews-category"}>
                 Травмотология
               </p>
             </div>
@@ -648,7 +571,7 @@ const HospitalsReviewsAll = () => {
                 gap: "10px",
               }}
             >
-              <p style={{ color: "#5F5F5F", fontSize: "16px" }}>Великолепно </p>
+              <p className={'reviews-rating'}>Великолепно </p>
               <div
                 style={{
                   backgroundColor: "#FFC224",
@@ -666,13 +589,13 @@ const HospitalsReviewsAll = () => {
               </div>
             </div>
           </div>
-          <p style={{ marginBottom: "5px" }}>Oтлично! Bсем Cоветую</p>
-          <p style={{ marginTop: "5px" }}>
+          <p className={"reviews-body-title"} style={{ marginBottom: "5px" }}>Oтлично! Bсем Cоветую</p>
+          <p className={"reviews-body-desc"} style={{ marginTop: "5px" }}>
             “Great location with montain view. Helpful and responsive owners.
             Well equipped and nicely designed cottage / challenge. <br />{" "}
             Playground for kids outside as well as toys inside...”
           </p>
-          <div style={{ display: "flex", gap: "25px" }}>
+          <div className={"reviews-reacts"}>
             <p style={{ color: "#BCBCBC", marginRight: "auto" }}>
               29 июля - 2022 г.
             </p>
@@ -686,16 +609,7 @@ const HospitalsReviewsAll = () => {
             </p>
           </div>
         </div>
-        <div
-          style={{
-            backgroundColor: "#FFF",
-            border: "1px solid #FFF",
-            borderRadius: "15px",
-            width: "100%",
-            marginTop: "20px",
-            padding: "20px",
-          }}
-        >
+        <div className={"hospital-reviews-card"}>
           <div style={{ display: "flex" }}>
             <div className="userIconOrFlag">
               <img src={userIcon} />
@@ -711,13 +625,7 @@ const HospitalsReviewsAll = () => {
               }}
             >
               <div>
-                <p
-                  style={{
-                    color: "#0032A0",
-                    fontSize: "19px",
-                    marginBottom: "0px",
-                  }}
-                >
+                <p className={'reviews-name'}>
                   Надежда Р.
                 </p>
                 <img
@@ -730,7 +638,7 @@ const HospitalsReviewsAll = () => {
                 style={{ paddingTop: "5px", marginRight: "8px" }}
                 src={check}
               />
-              <p style={{ fontSize: "14px", color: "#BCBCBC" }}>
+              <p className={"reviews-category"}>
                 Травмотология
               </p>
             </div>
@@ -742,7 +650,7 @@ const HospitalsReviewsAll = () => {
                 gap: "10px",
               }}
             >
-              <p style={{ color: "#5F5F5F", fontSize: "16px" }}>Великолепно </p>
+              <p className={'reviews-rating'}>Великолепно </p>
               <div
                 style={{
                   backgroundColor: "#FFC224",
@@ -760,13 +668,13 @@ const HospitalsReviewsAll = () => {
               </div>
             </div>
           </div>
-          <p style={{ marginBottom: "5px" }}>Oтлично! Bсем Cоветую</p>
-          <p style={{ marginTop: "5px" }}>
+          <p className={"reviews-body-title"} style={{ marginBottom: "5px" }}>Oтлично! Bсем Cоветую</p>
+          <p className={"reviews-body-desc"} style={{ marginTop: "5px" }}>
             “Great location with montain view. Helpful and responsive owners.
             Well equipped and nicely designed cottage / challenge. <br />{" "}
             Playground for kids outside as well as toys inside...”
           </p>
-          <div style={{ display: "flex", gap: "25px" }}>
+          <div className={"reviews-reacts"}>
             <p style={{ color: "#BCBCBC", marginRight: "auto" }}>
               29 июля - 2022 г.
             </p>

@@ -397,14 +397,7 @@ const ContactUs = () => {
             </Form>
           </div>
           <div
-            style={{
-              backgroundColor: "#5282FF",
-              border: "1px solid #CDCDCD",
-              borderRadius: "5px",
-              width: "407px",
-              height: "365px",
-              padding: "20px",
-            }}
+            className={"faq-contact"}
           >
             <p style={{ color: "#FFF", fontSize: "24px" }}>Hужна помощь</p>
             <hr style={{ marginBottom: "50px" }} />
@@ -439,11 +432,11 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div style={{ width: "1198px", height: "409px",backgroundColor:"#FBFBFB",padding:"40px",marginBottom:"20px" }}>
+        <div style={{ width: "100%", height: "409px",backgroundColor:"#FBFBFB",padding:"40px",marginBottom:"20px" }}>
           <iframe
             style={{ border: "none" }}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17439.59682519633!2d49.97557041806164!3d40.39300414904405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403063737e96e061%3A0x5b925e8db0b28d35!2sBaku%20Medical%20Plaza!5e0!3m2!1sen!2saz!4v1682591396345!5m2!1sen!2saz"
-            width="1123"
+            width="100%"
             height="323"
             allowFullScreen=""
             loading="lazy"

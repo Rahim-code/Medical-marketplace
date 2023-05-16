@@ -1,11 +1,36 @@
 @font-face {
     font-family: "Inter";
     src: url("../../../src/Fonts/Inter/static/Inter-Regular.ttf");
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Gilroy";
     src: url("../../../src//Fonts/gilroy/Gilroy-Regular.ttf");
-  }
+}
+
+.buttonsSort {
+    justify-content: space-between;
+    margin-top: 20px;
+    display: none;
+}
+
+.menuNav-hospitals {
+    border: none;
+    height: 100vh;
+    width: 325px;
+}
+
+@media (max-width: 756px) {
+    .buttonsSort {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .menuNav-hospitals {
+        display: none !important;
+    }
+}
+
 
  

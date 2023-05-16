@@ -13,3 +13,25 @@
     padding-top: 9px;
     object-fit:cover
 }
+
+@media (max-width: 756px) {
+    .cardHospitals{
+        height: 100% ;
+        padding: 5px;
+    }
+    .display_grid{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        width: 220px;
+        height: 140px;
+    }
+    #doctorImage{
+        width: 100%;
+        height: 100% !important;
+    }
+    .doc-nav-btn{
+        padding-left: 9px;
+        padding-right: 9px;
+        font-size: 12px;
+    }
+}

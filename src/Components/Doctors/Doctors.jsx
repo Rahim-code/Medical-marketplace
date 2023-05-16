@@ -29,8 +29,11 @@ import instagram from "../../assets/Images/instagram.png";
 import vk from "../../assets/Images/vk.png";
 import reviewDoctor from "../../assets/Images/reviewDoctor.png";
 import CheckDoctor from "../../assets/Images/checkdoctor.png";
+import "./Doctors.css"
 
 import { ArrowRightOutlined, EnvironmentOutlined } from "@ant-design/icons";
+import FavoriteHospitals from "../../assets/Images/FavoriteHospitals.png";
+import Sponsored from "../../assets/Svg/sponsored.svg";
 
 const { Panel } = Collapse;
 
@@ -274,6 +277,7 @@ const Doctors = () => {
           </div>
         </div>
       </header>
+
       <div style={{ paddingTop: "30px" }} className="container">
         <div style={{ borderBottom: "1px solid #E7E7E7", padding: "20px 0" }}>
           <Breadcrumb
@@ -304,10 +308,7 @@ const Doctors = () => {
 
       <div className="container">
         <div className="displayGridReviewDr">
-          <div
-            style={{ height: "2000px", border: "none", width: "325px" }}
-            className="menuNav"
-          >
+          <div className="menuNav menuNav-hospitals">
             <Collapse
               expandIconPosition="end"
               bordered={false}
@@ -863,11 +864,10 @@ const Doctors = () => {
 
           <div className="menuRight">
             <div>
-              <p style={{ color: "#5282FF", fontSize: "20px" }}>
+              <p className={"result-text"}>
                 <span
                   style={{
                     color: "black",
-                    fontSize: "20px",
                     paddingRight: "5px",
                     marginTop: "10px",
                   }}
@@ -879,49 +879,25 @@ const Doctors = () => {
             </div>
             <div className="buttonsNav">
               <Button
-                style={{
-                  height: "36px",
-                  color: "white",
-                  backgroundColor: "#5282FF",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn doc-nav-btn-active"}
                 type="primary"
               >
                 Наши рекомендации
               </Button>
               <Button
-                style={{
-                  backgroundColor: "#ECECEC",
-                  color: "#000",
-                  height: "36px",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn"}
                 type="primary"
               >
                 Самая низкая цена в начале
               </Button>
               <Button
-                style={{
-                  backgroundColor: "#ECECEC",
-                  color: "#000",
-                  height: "36px",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn"}
                 type="primary"
               >
                 Количество звезд и цена
               </Button>
               <Button
-                style={{
-                  backgroundColor: "#ECECEC",
-                  color: "#000",
-                  height: "36px",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn"}
                 type="primary"
               >
                 Оценка + кол-во отзывов
@@ -929,47 +905,23 @@ const Doctors = () => {
             </div>
 
             <div>
-              <div
-                style={{
-                  backgroundColor: "#5282FF",
-                  border: " 0.705342px solid #EFEFEF",
-                  height: "230px",
-                }}
-                className="cardReviewDoctors"
-              >
-                <div
-                  style={{ width: "186px" }}
-                  className="card-head display_grid"
-                >
+              <div className="doctors-card doctors-card-active">
+                <div className="doctors-img img-wrapper">
                   <img
-                    style={{ height: "100%" }}
+                    className={"cardFavHospitals-img"}
                     id="doctorImage"
                     src={CheckDoctor}
                   />
                   <img
-                    style={{
-                      gridColumn: "12/13",
-                      gridRow: "1/2",
-                      paddingTop: "9px",
-                      objectFit: "cover",
-                      width: "30px",
-                    }}
-                    id="likeImage"
+                    className={"doctors-heart"}
+                    id="likeImageFavHospitals"
                     src={likeReview}
                   />
                 </div>
                 <div
-                  style={{ width: "769px", paddingLeft: "80px" }}
-                  className="card-body"
+                  className="doctors-card-body"
                 >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                      gap: "10px",
-                      height: "30px",
-                    }}
-                  >
+                  <div className={"card-ratings"}>
                     <div>
                       <p
                         style={{
@@ -1032,14 +984,16 @@ const Doctors = () => {
                       >
                         Dr. Алина Леонидовна
                       </h3>
-                      <div style={{ color: "#FFF" }}>
+                      <div style={{ color: "#FFF" }} >
                         <p
                           className="comment"
                           style={{ color: "#FFF", textAlign: "right" }}
                         >
                           <span>23</span> отзыва
                         </p>
+                        <span className={"sort-text"}>
                         Соотношение цена/качество
+                        </span>
                       </div>
                     </div>
 
@@ -1100,13 +1054,7 @@ const Doctors = () => {
                       </div>
                       <div>
                         <Button
-                          style={{
-                            width: "155.37px",
-                            height: "45px",
-                            marginBottom: "10px",
-                            backgroundColor: "#FFF",
-                            color: "#5282FF",
-                          }}
+                          className={"doctors-more-btn"}
                           type="primary"
                         >
                           Посмотреть Врачи
@@ -1116,54 +1064,24 @@ const Doctors = () => {
                   </div>
                 </div>
               </div>
-              <div
-                style={{
-                  backgroundColor: "#FAFAFA",
-                  border: " 0.705342px solid #EFEFEF",
-                  height: "230px",
-                }}
-                className="cardReviewDoctors"
-              >
-                <div
-                  style={{ width: "186px" }}
-                  className="card-head display_grid"
-                >
+              <div className="doctors-card ">
+                <div className="doctors-img img-wrapper">
                   <img
-                    style={{
-                      height: "100%",
-                      width: "198.4px",
-                      borderRadius: "6.5px",
-                    }}
+                    className={"cardFavHospitals-img"}
                     id="doctorImage"
-                    src={reviewDoctor}
+                    src={CheckDoctor}
                   />
                   <img
-                    style={{
-                      gridColumn: "10/13",
-                      gridRow: "1/2",
-                      paddingTop: "9px",
-                      objectFit: "cover",
-                      width: "30px",
-                      marginLeft: "10px",
-                    }}
-                    id="likeImage"
+                    className={"doctors-heart"}
+                    id="likeImageFavHospitals"
                     src={likeReview}
                   />
                 </div>
                 <div
-                  style={{ width: "769px", paddingLeft: "80px" }}
-                  className="card-body"
+                  className="doctors-card-body"
                 >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                      gap: "10px",
-                      height: "30px",
-                    }}
-                  >
+                  <div className={"card-ratings"}>
                     <div>
-                      {" "}
                       <p
                         style={{
                           margin: "0 15px 0 0",
@@ -1174,198 +1092,6 @@ const Doctors = () => {
                       </p>
                     </div>
                     <div style={{ marginRight: "auto" }}>
-                      {" "}
-                      <img src={Iconstars} />
-                    </div>
-                    <div>
-                      <p
-                        style={{
-                          margin: "0 !important",
-                          fontSize: "16px",
-                          fontWeight: "400",
-                        }}
-                      >
-                        Bеликолепно{" "}
-                      </p>
-                    </div>
-                    <div>
-                      <p
-                        style={{
-                          backgroundColor: "#5282FF",
-                          color: "white",
-                          width: "30px",
-                          height: "24.71px",
-                          borderRadius: "4.41px",
-                          margin: "0 0 0 0",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                        }}
-                      >
-                        9.0
-                      </p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <h3
-                        style={{
-                          color: "#000",
-                          fontSize: "24px !important",
-                          margin: "0px",
-                          paddingTop: "10px",
-                        }}
-                      >
-                        Dr. Алина Леонидовна
-                      </h3>
-                      <div>
-                        <p
-                          className="comment"
-                          style={{ color: "#5282FF", textAlign: "right" }}
-                        >
-                          <span>23</span> отзыва
-                        </p>
-                        Соотношение цена/качество
-                      </div>
-                    </div>
-
-                    <p
-                      style={{
-                        color: "#5282FF",
-                        fontSize: "14px",
-                        margin: "0px",
-                        paddingTop: "10px",
-                      }}
-                    >
-                      <EnvironmentOutlined
-                        style={{ marginRight: "6px", color: "#5282FF" }}
-                      />
-                      Больница Американ
-                    </p>
-
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "flex-end",
-                      }}
-                    >
-                      <div>
-                        <p
-                          style={{
-                            color: "#000",
-                            backgroundColor: "#F4F4F4",
-                            border: "1px solid #EFEFEF",
-                            borderRadius: "15px",
-                            fontSize: "12px",
-                            padding: "10px 10px",
-                            width: "151px",
-                            textAlign: "center",
-                          }}
-                        >
-                          Сосудистая хирургия
-                        </p>
-                        <p
-                          style={{
-                            color: "#000",
-                            backgroundColor: "#F4F4F4",
-                            border: "1px solid #EFEFEF",
-                            borderRadius: "15px",
-                            fontSize: "12px",
-                            padding: "10px 10px",
-                            width: "124px",
-                            textAlign: "center",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "10px",
-                          }}
-                        >
-                          <img src={experience} />
-                          20 лет опыта
-                        </p>
-                      </div>
-                      <div>
-                        <Button
-                          style={{
-                            width: "155.37px",
-                            height: "45px",
-                            marginBottom: "10px",
-                          }}
-                          type="primary"
-                        >
-                          Посмотреть Врачи
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                style={{
-                  backgroundColor: "#FAFAFA",
-                  border: " 0.705342px solid #EFEFEF",
-                  height: "230px",
-                }}
-                className="cardReviewDoctors"
-              >
-                <div
-                  style={{ width: "186px" }}
-                  className="card-head display_grid"
-                >
-                  <img
-                    style={{
-                      height: "100%",
-                      width: "198.4px",
-                      borderRadius: "6.5px",
-                    }}
-                    id="doctorImage"
-                    src={reviewDoctor}
-                  />
-                  <img
-                    style={{
-                      gridColumn: "10/13",
-                      gridRow: "1/2",
-                      paddingTop: "9px",
-                      objectFit: "cover",
-                      width: "30px",
-                      marginLeft: "10px",
-                    }}
-                    id="likeImage"
-                    src={likeReview}
-                  />
-                </div>
-                <div
-                  style={{ width: "769px", paddingLeft: "80px" }}
-                  className="card-body"
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                      gap: "10px",
-                      height: "30px",
-                    }}
-                  >
-                    <div>
-                      {" "}
-                      <p
-                        style={{
-                          margin: "0 15px 0 0",
-                          paddingTop: "0px !important",
-                        }}
-                      >
-                        Главный врач
-                      </p>
-                    </div>
-                    <div style={{ marginRight: "auto" }}>
-                      {" "}
                       <img src={Iconstars} />
                     </div>
                     <div>
@@ -1382,8 +1108,8 @@ const Doctors = () => {
                     <div>
                       <p
                         style={{
-                          backgroundColor: "#5282FF",
-                          color: "white",
+                          backgroundColor: "#FFC224",
+                          color: "#000",
                           width: "30px",
                           height: "24.71px",
                           borderRadius: "4.41px",
@@ -1407,7 +1133,6 @@ const Doctors = () => {
                     >
                       <h3
                         style={{
-                          color: "#000",
                           fontSize: "24px !important",
                           margin: "0px",
                           paddingTop: "10px",
@@ -1415,27 +1140,28 @@ const Doctors = () => {
                       >
                         Dr. Алина Леонидовна
                       </h3>
-                      <div>
+                      <div  >
                         <p
                           className="comment"
-                          style={{ color: "#5282FF", textAlign: "right" }}
+                          style={{  textAlign: "right" }}
                         >
                           <span>23</span> отзыва
                         </p>
+                        <span className={"sort-text"}>
                         Соотношение цена/качество
+                        </span>
                       </div>
                     </div>
 
                     <p
                       style={{
-                        color: "#5282FF",
                         fontSize: "14px",
                         margin: "0px",
                         paddingTop: "10px",
                       }}
                     >
                       <EnvironmentOutlined
-                        style={{ marginRight: "6px", color: "#5282FF" }}
+                        style={{ marginRight: "6px",  }}
                       />
                       Больница Американ
                     </p>
@@ -1483,11 +1209,7 @@ const Doctors = () => {
                       </div>
                       <div>
                         <Button
-                          style={{
-                            width: "155.37px",
-                            height: "45px",
-                            marginBottom: "10px",
-                          }}
+                          className={"doctors-more-btn"}
                           type="primary"
                         >
                           Посмотреть Врачи
@@ -1497,54 +1219,24 @@ const Doctors = () => {
                   </div>
                 </div>
               </div>
-              <div
-                style={{
-                  backgroundColor: "#FAFAFA",
-                  border: " 0.705342px solid #EFEFEF",
-                  height: "230px",
-                }}
-                className="cardReviewDoctors"
-              >
-                <div
-                  style={{ width: "186px" }}
-                  className="card-head display_grid"
-                >
+              <div className="doctors-card ">
+                <div className="doctors-img img-wrapper">
                   <img
-                    style={{
-                      height: "100%",
-                      width: "198.4px",
-                      borderRadius: "6.5px",
-                    }}
+                    className={"cardFavHospitals-img"}
                     id="doctorImage"
-                    src={reviewDoctor}
+                    src={CheckDoctor}
                   />
                   <img
-                    style={{
-                      gridColumn: "10/13",
-                      gridRow: "1/2",
-                      paddingTop: "9px",
-                      objectFit: "cover",
-                      width: "30px",
-                      marginLeft: "10px",
-                    }}
-                    id="likeImage"
+                    className={"doctors-heart"}
+                    id="likeImageFavHospitals"
                     src={likeReview}
                   />
                 </div>
                 <div
-                  style={{ width: "769px", paddingLeft: "80px" }}
-                  className="card-body"
+                  className="doctors-card-body"
                 >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                      gap: "10px",
-                      height: "30px",
-                    }}
-                  >
+                  <div className={"card-ratings"}>
                     <div>
-                      {" "}
                       <p
                         style={{
                           margin: "0 15px 0 0",
@@ -1555,7 +1247,6 @@ const Doctors = () => {
                       </p>
                     </div>
                     <div style={{ marginRight: "auto" }}>
-                      {" "}
                       <img src={Iconstars} />
                     </div>
                     <div>
@@ -1566,14 +1257,14 @@ const Doctors = () => {
                           fontWeight: "400",
                         }}
                       >
-                        Bеликолепно{" "}
+                        Bеликолепно
                       </p>
                     </div>
                     <div>
                       <p
                         style={{
-                          backgroundColor: "#5282FF",
-                          color: "white",
+                          backgroundColor: "#FFC224",
+                          color: "#000",
                           width: "30px",
                           height: "24.71px",
                           borderRadius: "4.41px",
@@ -1597,7 +1288,6 @@ const Doctors = () => {
                     >
                       <h3
                         style={{
-                          color: "#000",
                           fontSize: "24px !important",
                           margin: "0px",
                           paddingTop: "10px",
@@ -1605,27 +1295,28 @@ const Doctors = () => {
                       >
                         Dr. Алина Леонидовна
                       </h3>
-                      <div>
+                      <div  >
                         <p
                           className="comment"
-                          style={{ color: "#5282FF", textAlign: "right" }}
+                          style={{  textAlign: "right" }}
                         >
                           <span>23</span> отзыва
                         </p>
+                        <span className={"sort-text"}>
                         Соотношение цена/качество
+                        </span>
                       </div>
                     </div>
 
                     <p
                       style={{
-                        color: "#5282FF",
                         fontSize: "14px",
                         margin: "0px",
                         paddingTop: "10px",
                       }}
                     >
                       <EnvironmentOutlined
-                        style={{ marginRight: "6px", color: "#5282FF" }}
+                        style={{ marginRight: "6px",  }}
                       />
                       Больница Американ
                     </p>
@@ -1673,11 +1364,7 @@ const Doctors = () => {
                       </div>
                       <div>
                         <Button
-                          style={{
-                            width: "155.37px",
-                            height: "45px",
-                            marginBottom: "10px",
-                          }}
+                          className={"doctors-more-btn"}
                           type="primary"
                         >
                           Посмотреть Врачи
@@ -1687,386 +1374,8 @@ const Doctors = () => {
                   </div>
                 </div>
               </div>
-              <div
-                style={{
-                  backgroundColor: "#FAFAFA",
-                  border: " 0.705342px solid #EFEFEF",
-                  height: "230px",
-                }}
-                className="cardReviewDoctors"
-              >
-                <div
-                  style={{ width: "186px" }}
-                  className="card-head display_grid"
-                >
-                  <img
-                    style={{
-                      height: "100%",
-                      width: "198.4px",
-                      borderRadius: "6.5px",
-                    }}
-                    id="doctorImage"
-                    src={reviewDoctor}
-                  />
-                  <img
-                    style={{
-                      gridColumn: "10/13",
-                      gridRow: "1/2",
-                      paddingTop: "9px",
-                      objectFit: "cover",
-                      width: "30px",
-                      marginLeft: "10px",
-                    }}
-                    id="likeImage"
-                    src={likeReview}
-                  />
-                </div>
-                <div
-                  style={{ width: "769px", paddingLeft: "80px" }}
-                  className="card-body"
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                      gap: "10px",
-                      height: "30px",
-                    }}
-                  >
-                    <div>
-                      {" "}
-                      <p
-                        style={{
-                          margin: "0 15px 0 0",
-                          paddingTop: "0px !important",
-                        }}
-                      >
-                        Главный врач
-                      </p>
-                    </div>
-                    <div style={{ marginRight: "auto" }}>
-                      {" "}
-                      <img src={Iconstars} />
-                    </div>
-                    <div>
-                      <p
-                        style={{
-                          margin: "0 !important",
-                          fontSize: "16px",
-                          fontWeight: "400",
-                        }}
-                      >
-                        Bеликолепно{" "}
-                      </p>
-                    </div>
-                    <div>
-                      <p
-                        style={{
-                          backgroundColor: "#5282FF",
-                          color: "white",
-                          width: "30px",
-                          height: "24.71px",
-                          borderRadius: "4.41px",
-                          margin: "0 0 0 0",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                        }}
-                      >
-                        9.0
-                      </p>
-                    </div>
-                  </div>
 
-                  <div>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <h3
-                        style={{
-                          color: "#000",
-                          fontSize: "24px !important",
-                          margin: "0px",
-                          paddingTop: "10px",
-                        }}
-                      >
-                        Dr. Алина Леонидовна
-                      </h3>
-                      <div>
-                        <p
-                          className="comment"
-                          style={{ color: "#5282FF", textAlign: "right" }}
-                        >
-                          <span>23</span> отзыва
-                        </p>
-                        Соотношение цена/качество
-                      </div>
-                    </div>
 
-                    <p
-                      style={{
-                        color: "#5282FF",
-                        fontSize: "14px",
-                        margin: "0px",
-                        paddingTop: "10px",
-                      }}
-                    >
-                      <EnvironmentOutlined
-                        style={{ marginRight: "6px", color: "#5282FF" }}
-                      />
-                      Больница Американ
-                    </p>
-
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "flex-end",
-                      }}
-                    >
-                      <div>
-                        <p
-                          style={{
-                            color: "#000",
-                            backgroundColor: "#F4F4F4",
-                            border: "1px solid #EFEFEF",
-                            borderRadius: "15px",
-                            fontSize: "12px",
-                            padding: "10px 10px",
-                            width: "151px",
-                            textAlign: "center",
-                          }}
-                        >
-                          Сосудистая хирургия
-                        </p>
-                        <p
-                          style={{
-                            color: "#000",
-                            backgroundColor: "#F4F4F4",
-                            border: "1px solid #EFEFEF",
-                            borderRadius: "15px",
-                            fontSize: "12px",
-                            padding: "10px 10px",
-                            width: "124px",
-                            textAlign: "center",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "10px",
-                          }}
-                        >
-                          <img src={experience} />
-                          20 лет опыта
-                        </p>
-                      </div>
-                      <div>
-                        <Button
-                          style={{
-                            width: "155.37px",
-                            height: "45px",
-                            marginBottom: "10px",
-                          }}
-                          type="primary"
-                        >
-                          Посмотреть Врачи
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                style={{
-                  backgroundColor: "#FAFAFA",
-                  border: " 0.705342px solid #EFEFEF",
-                  height: "230px",
-                }}
-                className="cardReviewDoctors"
-              >
-                <div
-                  style={{ width: "186px" }}
-                  className="card-head display_grid"
-                >
-                  <img
-                    style={{
-                      height: "100%",
-                      width: "198.4px",
-                      borderRadius: "6.5px",
-                    }}
-                    id="doctorImage"
-                    src={reviewDoctor}
-                  />
-                  <img
-                    style={{
-                      gridColumn: "10/13",
-                      gridRow: "1/2",
-                      paddingTop: "9px",
-                      objectFit: "cover",
-                      width: "30px",
-                      marginLeft: "10px",
-                    }}
-                    id="likeImage"
-                    src={likeReview}
-                  />
-                </div>
-                <div
-                  style={{ width: "769px", paddingLeft: "80px" }}
-                  className="card-body"
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                      gap: "10px",
-                      height: "30px",
-                    }}
-                  >
-                    <div>
-                      {" "}
-                      <p
-                        style={{
-                          margin: "0 15px 0 0",
-                          paddingTop: "0px !important",
-                        }}
-                      >
-                        Главный врач
-                      </p>
-                    </div>
-                    <div style={{ marginRight: "auto" }}>
-                      {" "}
-                      <img src={Iconstars} />
-                    </div>
-                    <div>
-                      <p
-                        style={{
-                          margin: "0 !important",
-                          fontSize: "16px",
-                          fontWeight: "400",
-                        }}
-                      >
-                        Bеликолепно{" "}
-                      </p>
-                    </div>
-                    <div>
-                      <p
-                        style={{
-                          backgroundColor: "#5282FF",
-                          color: "white",
-                          width: "30px",
-                          height: "24.71px",
-                          borderRadius: "4.41px",
-                          margin: "0 0 0 0",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                        }}
-                      >
-                        9.0
-                      </p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <h3
-                        style={{
-                          color: "#000",
-                          fontSize: "24px !important",
-                          margin: "0px",
-                          paddingTop: "10px",
-                        }}
-                      >
-                        Dr. Алина Леонидовна
-                      </h3>
-                      <div>
-                        <p
-                          className="comment"
-                          style={{ color: "#5282FF", textAlign: "right" }}
-                        >
-                          <span>23</span> отзыва
-                        </p>
-                        Соотношение цена/качество
-                      </div>
-                    </div>
-
-                    <p
-                      style={{
-                        color: "#5282FF",
-                        fontSize: "14px",
-                        margin: "0px",
-                        paddingTop: "10px",
-                      }}
-                    >
-                      <EnvironmentOutlined
-                        style={{ marginRight: "6px", color: "#5282FF" }}
-                      />
-                      Больница Американ
-                    </p>
-
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "flex-end",
-                      }}
-                    >
-                      <div>
-                        <p
-                          style={{
-                            color: "#000",
-                            backgroundColor: "#F4F4F4",
-                            border: "1px solid #EFEFEF",
-                            borderRadius: "15px",
-                            fontSize: "12px",
-                            padding: "10px 10px",
-                            width: "151px",
-                            textAlign: "center",
-                          }}
-                        >
-                          Сосудистая хирургия
-                        </p>
-                        <p
-                          style={{
-                            color: "#000",
-                            backgroundColor: "#F4F4F4",
-                            border: "1px solid #EFEFEF",
-                            borderRadius: "15px",
-                            fontSize: "12px",
-                            padding: "10px 10px",
-                            width: "124px",
-                            textAlign: "center",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "10px",
-                          }}
-                        >
-                          <img src={experience} />
-                          20 лет опыта
-                        </p>
-                      </div>
-                      <div>
-                        <Button
-                          style={{
-                            width: "155.37px",
-                            height: "45px",
-                            marginBottom: "10px",
-                          }}
-                          type="primary"
-                        >
-                          Посмотреть Врачи
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div
                 style={{
                   display: "flex",

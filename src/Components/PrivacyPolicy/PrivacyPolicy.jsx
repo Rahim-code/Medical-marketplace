@@ -16,6 +16,7 @@ import heart from "../../assets/Images/heart.png";
 import facebook from "../../assets/Images/facebook.png";
 import instagram from "../../assets/Images/instagram.png";
 import vk from "../../assets/Images/vk.png";
+import "./PrivacyPolicy.css"
 
 import { ArrowRightOutlined} from "@ant-design/icons";
 
@@ -287,14 +288,9 @@ const PrivacyPolicy = () => {
 
       <div className="container">
         <div className="displayGridReviewDr">
-          <div style={{ border: "none", width: "325px" }} className="menuNav">
+          <div className="menuNav faq-nav-wrapper mb-20">
             <Collapse
-              style={{
-                borderRadius: "10px",
-                backgroundColor: "#FFF",
-                border: "1px solid #CDCDCD",
-                width: "407px",
-              }}
+              className={"faq-nav"}
               bordered={false}
               defaultActiveKey={["1"]}
             >
@@ -337,7 +333,7 @@ const PrivacyPolicy = () => {
           </div>
 
           <div className="menuRight">
-            <p style={{ paddingLeft: "100px", lineHeight: "40px" }}>
+            <p className={"privacy-desc"}>
               Это первый и, наверное, самый главный вопрос, который приходит на
               ум, когда речь <br /> заходит о медицинском туризме. <br /> Любая
               медицинская операция или процедура, где бы она ни проводилась,

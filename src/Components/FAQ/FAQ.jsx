@@ -16,6 +16,7 @@ import heart from "../../assets/Images/heart.png";
 import facebook from "../../assets/Images/facebook.png";
 import instagram from "../../assets/Images/instagram.png";
 import vk from "../../assets/Images/vk.png";
+import "./FAQ.css"
 
 import { ArrowRightOutlined} from "@ant-design/icons";
 
@@ -287,14 +288,9 @@ const FAQ = () => {
 
       <div className="container">
         <div className="displayGridReviewDr">
-          <div style={{ border: "none", width: "325px" }} className="menuNav">
+          <div  className="menuNav faq-nav-wrapper">
             <Collapse
-              style={{
-                borderRadius: "10px",
-                backgroundColor: "#FFF",
-                border: "1px solid #CDCDCD",
-                width: "407px",
-              }}
+              className={"faq-nav"}
               bordered={false}
               defaultActiveKey={["1"]}
             >
@@ -334,16 +330,7 @@ const FAQ = () => {
                 key="7"
               ></Panel>
             </Collapse>
-            <div
-              style={{
-                backgroundColor: "#5282FF",
-                border: "1px solid #CDCDCD",
-                borderRadius: "10px",
-                width: "407px",
-                height: "365px",
-                marginTop: "20px",
-                padding: "20px",
-              }}
+            <div className={"faq-contact"}
             >
               <p style={{ color: "#FFF", fontSize: "24px" }}>Hужна помощь</p>
               <hr style={{ marginBottom: "50px" }} />
@@ -379,7 +366,7 @@ const FAQ = () => {
           </div>
 
           <div className="menuRight">
-            <p style={{ paddingLeft: "100px", lineHeight: "40px" }}>
+            <p className={"faq-desc"} >
               Это первый и, наверное, самый главный вопрос, который приходит на
               ум, когда речь <br /> заходит о медицинском туризме. <br /> Любая
               медицинская операция или процедура, где бы она ни проводилась,

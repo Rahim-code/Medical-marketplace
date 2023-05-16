@@ -14,9 +14,13 @@
     display: flex !important;
     border: 0.705342px solid #DADADA;
     border-radius: 11px;
-    height: 178px;
+    height: 260px;
     padding: 15px;
     margin-top: 20px;
+    background-color: #FAFAFA;
+}
+.cardReviewDoctors-active{
+    background-color: #5282FF;
 }
 
 #doctorImage{
@@ -46,6 +50,21 @@
     color: white;
     background-color: #5282FF;
 }
+.card-body{
+    width: 769px;
+    padding-left: 40px;
+}
+
+.card-title{
+    color: #464646;
+    font-size: 16px;
+    margin: 0;
+}
+.card-text{
+    color: #464646;
+    font-size: 16px;
+    margin: 0;
+}
 
 @media (max-width: 1024px) {
     .displayGridReviewDr{
@@ -68,15 +87,14 @@
 
 @media (max-width: 756px) {
     .cardReviewDoctors{
-        flex-direction: column;
+        /*flex-direction: column;*/
         height: auto;
         align-items: center;
     }
     .display_grid{
-        display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(1,1fr);
-        width: 275px;
+        width: 170px;
     }
     #doctorImage{
         width: 100%;
@@ -85,6 +103,15 @@
         padding-left: 9px;
         padding-right: 9px;
         font-size: 12px;
+    }
+    .card-title{
+        font-size: 10px;
+    }
+    .card-text{
+        font-size: 10px;
+    }
+    .card-body{
+        padding-left: 15px;
     }
 }
 

@@ -375,49 +375,25 @@ const ReviewHospitals = () => {
           <div className="menuRight">
             <div className="buttonsNav">
               <Button
-                style={{
-                  height: "36px",
-                  color: "white",
-                  backgroundColor: "#5282FF",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn doc-nav-btn-active"}
                 type="primary"
               >
                 Наши рекомендации
               </Button>
               <Button
-                style={{
-                  backgroundColor: "#ECECEC",
-                  color: "#000",
-                  height: "36px",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn"}
                 type="primary"
               >
                 Самая низкая цена в начале
               </Button>
               <Button
-                style={{
-                  backgroundColor: "#ECECEC",
-                  color: "#000",
-                  height: "36px",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn"}
                 type="primary"
               >
                 Количество звезд и цена
               </Button>
               <Button
-                style={{
-                  backgroundColor: "#ECECEC",
-                  color: "#000",
-                  height: "36px",
-                  paddingLeft: "29px",
-                  paddingRight: "29px",
-                }}
+                className={"doc-nav-btn"}
                 type="primary"
               >
                 Оценка + кол-во отзывов
@@ -431,7 +407,6 @@ const ReviewHospitals = () => {
                   <img id="likeImageHospitals" src={likeReview} />
                 </div>
                 <div
-                  style={{ width: "769px", paddingLeft: "40px" }}
                   className="card-body"
                 >
                   <div
@@ -453,24 +428,10 @@ const ReviewHospitals = () => {
                     </p>
                   </div>
                   <div>
-                    <p
-                      style={{
-                        color: "#464646",
-                        fontSize: "15.52px",
-                        margin: "0px",
-                        paddingBottom:"10px"
-                      }}
-                    >
+                    <p className={"card-title"}>
                       Oтлично! Bсем Cоветую
                     </p>
-                    <p
-                      style={{
-                        color: "#464646",
-                        fontSize: "14.11px",
-                        margin: "0px",
-                        color:"#464646"
-                      }}
-                    >
+                    <p className={"card-title"}>
                       “Great location with montain view. Helpful and <br/> responsive
                       owners. Well equipped and nicely designed cottage /
                       challenge. Playground for kids outside as well as toys <br/>
@@ -497,10 +458,7 @@ const ReviewHospitals = () => {
                   <img style={{height:"166px"}}  id="doctorImage" src={Hospitals} />
                   <img id="likeImageHospitals" src={likeReview} />
                 </div>
-                <div
-                  style={{ width: "769px", paddingLeft: "40px" }}
-                  className="card-body"
-                >
+                <div className="card-body">
                   <div
                     style={{ display: "flex", justifyContent: "space-between",alignItems:"flex-start",paddingTop:"10px" }}
                   >
@@ -520,23 +478,10 @@ const ReviewHospitals = () => {
                     </p>
                   </div>
                   <div>
-                    <p
-                      style={{
-                        color: "#464646",
-                        fontSize: "15.52px",
-                        margin: "0px",
-                        paddingBottom:"10px"
-                      }}
-                    >
+                    <p className={"card-title"}>
                       Oтлично! Bсем Cоветую
                     </p>
-                    <p
-                      style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
-                      }}
-                    >
+                    <p className={"card-text"}>
                       “Great location with montain view. Helpful and <br/> responsive
                       owners. Well equipped and nicely designed cottage /
                       challenge. Playground for kids outside as well as toys <br/>
@@ -563,10 +508,7 @@ const ReviewHospitals = () => {
                   <img style={{height:"166px"}}  id="doctorImage" src={Hospitals} />
                   <img id="likeImageHospitals" src={likeReview} />
                 </div>
-                <div
-                  style={{ width: "769px", paddingLeft: "40px" }}
-                  className="card-body"
-                >
+                <div className="card-body">
                   <div
                     style={{ display: "flex", justifyContent: "space-between",alignItems:"flex-start",paddingTop:"10px" }}
                   >
@@ -586,23 +528,10 @@ const ReviewHospitals = () => {
                     </p>
                   </div>
                   <div>
-                    <p
-                      style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
-                        paddingBottom:"10px"
-                      }}
-                    >
+                    <p className={"card-title"}>
                       Oтлично! Bсем Cоветую
                     </p>
-                    <p
-                      style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
-                      }}
-                    >
+                    <p className={"card-text"}>
                      “Great location with montain view. Helpful and <br/> responsive
                       owners. Well equipped and nicely designed cottage /
                       challenge. Playground for kids outside as well as toys <br/>
@@ -630,7 +559,6 @@ const ReviewHospitals = () => {
                   <img id="likeImageHospitals" src={likeReview} />
                 </div>
                 <div
-                  style={{ width: "769px", paddingLeft: "40px" }}
                   className="card-body"
                 >
                   <div
@@ -652,23 +580,10 @@ const ReviewHospitals = () => {
                     </p>
                   </div>
                   <div>
-                    <p
-                      style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
-                        paddingBottom:"10px"
-                      }}
-                    >
+                    <p className={"card-title"}>
                       Oтлично! Bсем Cоветую
                     </p>
-                    <p
-                      style={{
-                        color: "#464646",
-                        fontSize: "16px",
-                        margin: "0px",
-                      }}
-                    >
+                    <p className={"card-text"}>
                       “Great location with montain view. Helpful and <br/> responsive
                       owners. Well equipped and nicely designed cottage /
                       challenge. Playground for kids outside as well as toys <br/>
