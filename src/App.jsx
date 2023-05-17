@@ -22,19 +22,19 @@ const App = () => {
   return (
     <>
        {/*<MobileLogin />*/}
-       <HomePage/>
-       {/*<Profile/>*/}
-      {/*<ReviewDoctors/>*/}
-      {/* <ReviewHospitals/>*/}
-      {/* <FavDoctors/>*/}
-      {/* <FavHospitals />*/}
-      {/* <Hospitals/>*/}
-      {/* <Doctors/>*/}
-      {/* <HospitalsReviewsAll/>*/}
-      {/* <DoctorsReviewsAll/>*/}
-      {/* <FAQ/>*/}
-      {/* <PrivacyPolicy/>*/}
-      {/* <ContactUs/>*/}
+       {/* <HomePage/> */}
+       {/* <Profile/> */}
+      {/* <ReviewDoctors/> */}
+      {/* <ReviewHospitals/> */}
+      {/* <FavDoctors/> */}
+      {/* <FavHospitals /> */}
+      {/* <Hospitals/> */}
+      {/* <Doctors/> */}
+      {/* <HospitalsReviewsAll/> */}
+      {/* <DoctorsReviewsAll/> */}
+      {/* <FAQ/> */}
+      {/* <PrivacyPolicy/> */}
+      {/* <ContactUs/> */}
 
       {/* <Slider/> */}
     </>
