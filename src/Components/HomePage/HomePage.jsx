@@ -48,6 +48,8 @@ import menuIcon from "../../assets/Svg/menuIcon.svg";
 
 import "../HomePage/HomePage.css";
 import MobileMenu from "../MobileMenu/index.js";
+import LoginModal from "../LoginModal/index.js";
+import RegisterModal from "../../RegisterModal/index.js";
 
 const handleMenuClick = (e) => {
   console.log("click", e);
@@ -208,11 +210,31 @@ const menuPropsFlag = {
 
 const HomePage = () => {
   const [showMenu, setShowMenu] = useState(false)
+  const [openLogin, setOpenLogin] = useState(false)
+  const [openRegister, setOpenRegister] = useState(false)
 
   const handleMenu = () =>{
-    console.log('show')
     setShowMenu(!showMenu)
   }
+
+  const onOpenLogin = () => {
+    setOpenLogin(true)
+  }
+
+  const onCloseLogin = () =>{
+    setOpenLogin(false)
+  }
+
+  const onCloseRegister= () =>{
+    setOpenRegister(false)
+  }
+
+  const onOpenRegister = () => {
+    setOpenRegister(true)
+    setOpenLogin(false)
+  }
+
+
   return (
     <>
       <div id="bg">
@@ -284,6 +306,7 @@ const HomePage = () => {
                   className="button"
                   type="primary"
                   icon={<ArrowRightOutlined className="Arrow" />}
+                  onClick={onOpenLogin}
                 >
                   Bойти
                 </Button>
@@ -292,7 +315,7 @@ const HomePage = () => {
             <ul className={"mobileList"}>
               {showMenu ?
                 <><Button type="text" size={"large"} style={{display:"flex", alignItems:"center"}}>
-                  <img id="flag" src={userLogin} />
+                  <img id="flag" src={userLogin} onClick={onOpenLogin} />
                 </Button>
                   <Button type="text" size={"large"} style={{display:"flex", alignItems:"center"}} onClick={handleMenu}>
                     <img id="flag" src={menuIcon} />
@@ -761,6 +784,9 @@ const HomePage = () => {
           © All rights reserved 2023. 112 Med
         </p>
       </div>
+
+      <LoginModal openLogin={openLogin} onCloseLogin={onCloseLogin} onOpenRegister={onOpenRegister}/>
+      <RegisterModal openRegister={openRegister} onCloseRegister={onCloseRegister}/>
     </>
   );
 };
