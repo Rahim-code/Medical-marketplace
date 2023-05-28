@@ -54,7 +54,6 @@ const HospitalDetail = () => {
       <QualityRating/>
       <GetService/>
       <PaySection/>
-
       <Footer/>
     </div>
   );

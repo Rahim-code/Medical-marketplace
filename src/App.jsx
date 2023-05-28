@@ -17,6 +17,7 @@ import ContactUs from "./Components/ContactUs/ContactUs";
 
 import Slider from "./Components/Slider";
 import HospitalDetail from "./Components/HospitalDetail";
+import DoctorDetail from "./Components/DoctorDetail/index.js";
 
 
 
@@ -33,11 +34,12 @@ const App = () => {
       {/* <Hospitals/> */}
       {/* <Doctors/> */}
       {/* <HospitalsReviewsAll/> */}
-      {/* <DoctorsReviewsAll/> */}
+      {/* <DoctorsReviewsAll/>*/}
       {/* <FAQ/> */}
       {/* <PrivacyPolicy/> */}
       {/* <ContactUs/> */}
-      <HospitalDetail/>
+      {/*<HospitalDetail/>*/}
+      <DoctorDetail/>
 
       {/* <Slider/> */}
     </>
