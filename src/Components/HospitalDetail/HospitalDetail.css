@@ -1,0 +1,912 @@
+.detail__info-btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 3rem auto 2rem ;
+}
+.detail__info-btn{
+    background-color: #D8E6FF;
+    padding: 1rem 2rem;
+    border: none;
+}
+
+.hospital-detail_content{
+    display: flex;
+    gap: 21px;
+}
+
+.hospital-detail_content--search{
+
+}
+.content__search{
+    background-color: #5282ff;
+    color: #fff;
+    margin-bottom: 1rem;
+    padding-top: 0.3rem;
+}
+.hospital-detail_content--search{
+    max-width: 30%;
+    width: 325px;
+}
+.hospital-detail_content--search p{
+    padding: 0 1rem;
+}
+.content__search-checkbox span{
+    color: #fff !important;
+}
+
+.content__location{
+    background-color: #fff;
+    padding: 1.5rem;
+}
+
+.hospital-detail_content--info{
+    padding: 32px 43px;
+    background-color: #fff;
+    width: 70%;
+}
+
+.content__info-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content__info-header-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.right__share--price-btn{
+    display: flex;
+}
+
+.right__share{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.right__share--price-btn{
+    margin-top: 18px;
+    background-color: #D3DBFF;
+    padding: 12px 16px;
+    border: none;
+    display: flex;
+    gap: 16px;
+    align-self: flex-end;
+}
+.right__share--price-btn img {
+    background-color: #5282ff;
+    padding: 3px 5px;
+    border-radius: 50%;
+}
+
+.hospital-detail_img-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 135px);
+    gap: 22px;
+}
+.hospital-detail_img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hospital-detail_img-lg{
+    grid-column: span 2;
+    grid-row: span 3;
+    position: relative;
+}
+.detail_img-lg--rating{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;background-color: #fff;
+    padding: 7px 13px;
+    gap: 5px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+
+}
+.detail_img-lg--rating-num{
+    background-color: #5282ff;
+    padding: 5px;
+    color: #fff;
+}
+
+.detail_img-lg--desc{
+    position: absolute;
+    font-size: 12px;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    max-width: 262px;
+    padding: 18px;
+    border-radius: 4px;
+}
+.img-lg-desc-btn{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border: none;
+    background-color: #5282ff;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 2px;
+}
+.img-lg-desc-btn img {
+    width: 17px;
+    height: 17px;
+}
+.img-lg-desc-num{
+border-radius: 2px;
+    background-color: #fff;
+    color: #084BC2;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.hospital-detail_img-more{
+    position: relative;
+}
+.hospital-detail_img-more-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(40, 64, 181, 0.66);
+    color: #fff;
+}
+.hospital-detail_img-slider{
+    display: none !important;
+}
+
+.detail__clinic-btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+    margin: 20px 0;
+}
+.detail__clinic-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background-color: #fff;
+    padding: 13px 30px;
+    border-radius: 5px;
+}
+
+.hospital__info-content{
+    display: flex;
+    gap:62px;
+    margin-bottom: 70px !important;
+}
+.info__content-left{
+    width: 70%;
+}
+.info__content-left--title{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 38px;
+    text-align: justify;
+    text-transform: capitalize;
+    color: #5282FF;
+    margin: 10px 0;
+}
+.info__content-left--subtitle{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: justify;
+}
+
+.info__content-left--desc{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: justify;
+}
+.info__content-left--desc p {
+    margin: 4px 0;
+}
+.info__content-right{
+    width: 30%;
+}
+.info__content-right--benefit{
+    background: #F2F7FF;
+    padding: 25px;
+}
+.info__content-right--benefit ul {
+    padding-left: 0.8rem;
+}
+.info__content-right--benefit ul li {
+    list-style: inside;
+    font-size: 14px;
+}
+.info__content-right--benefit-title{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    text-transform: capitalize;
+    color: #5282FF;
+    margin: 10px 0;
+}
+.info__content-right--benefit-subtitle{
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    text-transform: capitalize;
+    margin:  0;
+}
+
+.info__content-right--info{
+    background: #F2F7FF;
+    padding: 25px;
+    margin-top: 20px;
+}
+.info__content-right--info-title{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    text-transform: capitalize;
+    color: #398509;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.info__content-right--info-desc{
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.hospital-detail__hint{
+    background: #5282FF;
+    border-radius: 10px;
+    color: #fff;
+    padding: 34px 82px;
+    margin-bottom: 60px;
+}
+.hospital-detail__hint-title{
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 28px;
+}
+.hospital-detail__hint-subtitle{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.categories__title{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 38px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+.categories__carousel-item{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 85%;
+}
+.categories__carousel-item-btn{
+    background: #EEEEEE;
+    border-radius: 5px;
+    padding: 10px 28px;
+    border: none;
+    width: 90%;
+}
+.btn-left{
+    transform: translateX(-10%);
+}
+.btn-first{
+    width: 100%;
+}
+
+.hospital-detail__reviews{
+    background-color: #5282ff;
+    margin-bottom: 41px;
+    padding: 51px 0;
+}
+.reviews__header{
+
+    color: #fff;
+}
+.reviews__header-title{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    margin: 10px 0;
+}
+.reviews__header-subtitle{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.subtitle__rating{
+    background-color: #fff;
+    color: #000;
+    padding: 6px 9px;
+    border-radius: 4px;
+}
+.reviews__header-subtitle a{
+    display: inline-block;
+    color: #fff;
+    margin-right: 5px;
+}
+.reviews__carousel-item{
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.reviews__carousel-item-content{
+    padding: 28px 35px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    color: #464646;
+}
+.reviews__carousel-item-content a {
+    color: #5282FF;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+}
+.reviews__carousel-item-footer{
+    background-color: #FFC224;
+    padding: 16px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reviews__carousel-item-footer p {
+    display: flex;
+    align-items: center;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: justify;
+    color: #0032A0;
+    gap: 1rem;
+}
+.item__footer-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D5CEFF;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.item__footer-rating {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.hospital-detail__reviews-btn{
+    background-color: #ffffff;
+    border: none;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    padding: 15px 17px;
+    border-radius: 5px;
+    /*display: inline-block;*/
+    margin-left: 3.5%;
+}
+
+.hospital-detail__questions{
+    margin-bottom: 50px;
+}
+
+.detail-questions__header-title{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.detail-questions__header-subtitle{
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+.detail-questions__items{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.detail-questions__item{
+    width: 50%;
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+    padding: 31px;
+}
+.detail-question__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail-question__header-author{
+    font-family: 'Gilroy';
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: justify;
+    color: #808D9A;
+}
+.detail-question__header-date{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: #A4A4A4;
+}
+.detail-question__header span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    background: #B1A7EB;
+    color: #fff;
+    font-size: 20px;
+}
+.detail-questions__content{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: justify;
+    color: #1D1D1D;
+    margin: 10px 0;
+}
+.dashed-divider{
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #C2C2C2;
+}
+
+.detail-questions__answer-author{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: justify;
+    color: #808D9A;
+}
+.detail-questions__answer-desc{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: justify;
+    color: #1D1D1D;
+    margin: 0;
+}
+.detail-questions__answer-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #A4A4A4;
+    font-family: 'Gilroy';
+}
+.answer__footer-right-desc{
+    font-size: 14px;
+}
+.answer__footer-right-btns{
+    display: flex;
+    gap: 10px;
+}
+.answer__footer-right-btn {
+    border: none;
+    background: #F2F5F9;
+    border-radius: 22px;
+    padding: 8px 14px;
+    display: flex;
+    gap: 10px;
+    color: #929292;
+    font-size: 12px;
+}
+.answer__footer-left{
+    font-size: 14px;
+}
+.detail-questions__btn{
+    background: #5282FF;
+    border: 1px solid #5282FF;
+    border-radius: 5px;
+    padding: 15px 17px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.quality-rating{
+    background: #5282FF;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    padding: 25px;
+    margin-bottom: 50px;
+    gap: 57px;
+    align-items: center;
+}
+.quality-rating__left{
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 12px;
+}
+.quality-rating__left-nums{
+    background-color: #5282ff;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.quality-rating__left-num-main{
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 87px;
+}
+.quality-rating__left-num-star{
+    position: absolute;
+    top: 25px;
+}
+.quality-rating__left-num-slash,.quality-rating__left-num-second{
+    font-size: 35px;
+    font-weight: 900;
+}
+.quality-rating__left-stars{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+}
+.quality-rating__left-desc{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+.quality-rating__right-title{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+.quality-rating__right-desc{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    width: 75%;
+}
+.quality-rating__icon{
+    margin-right: 60px;
+}
+.quality-rating__icon img {
+    width: 82px;
+}
+.get-service{
+    margin-bottom: 50px;
+}
+
+.get-service__content{
+    background: #EBF3FF;
+    padding: 40px;
+    border-radius: 10px;
+}
+.get-service__content-item{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 23px;
+}
+.get-service__content-item-path{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    width: 20%;
+}
+.get-service__content-item-desc{
+    display: flex;
+    flex-direction: column;
+}
+.pay-section__title{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.pay-section-items{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.pay-section-item {
+    width: 90px;
+}
+.pay-section-item img {
+    width: 100%;
+}
+
+@media (max-width: 780px) {
+    .hospital-detail_content{
+        flex-direction: column-reverse;
+    }
+    .hospital-detail_content--info{
+        padding: 20px;
+        width: 100%;
+    }
+    .hospital-detail_content--search{
+        max-width: 100%;
+        width: 100%;
+    }
+    .content__search{
+        display: none;
+    }
+    .hospital-detail_img-box{
+        display: none;
+    }
+    .hospital-detail_img-slider{
+        display: block!important;
+    }
+    .hospital-detail_img-slider img {
+        width: 100%;
+        height: 210px;
+        object-fit: cover;
+    }
+    .hospital__info-content{
+        flex-direction: column;
+    }
+    .info__content-left{
+        width: 100%;
+    }
+    .info__content-right{
+        width: 100%;
+    }
+    .info__content-left--title{
+        font-size: 18px;
+    }
+    .info__content-left--desc, .info__content-left--subtitle {
+        font-size: 14px;
+    }
+    .detail-questions__items{
+        flex-direction: column;
+    }
+    .detail-questions__item{
+        width: 100%;
+    }
+    .quality-rating{
+        gap: 16px;
+        padding: 10px;
+    }
+    .quality-rating__left-num-main{
+        font-size: 35px;
+    }
+    .quality-rating__left-num-star{
+        width: 10px;
+        top: 30px;
+    }
+    .quality-rating__left-nums{
+
+    }
+    .quality-rating__left-num-slash, .quality-rating__left-num-second{
+        font-size: 20px;
+    }
+    .quality-rating__icon{
+        margin-right: 0;
+    }
+
+    .quality-rating__icon img {
+        display: none;
+
+    }
+    .quality-rating__right-title{
+        font-size: 14px;
+    }
+    .quality-rating__right-desc{
+        width: 100%;
+        font-size: 12px;
+    }
+    .get-service__content-item{
+     flex-direction: column;
+        gap: 10px;
+        font-size: 14px;
+    }
+    .get-service__content-item-path{
+        width: auto;
+    }
+    .pay-section__title{
+        font-size: 16px;
+    }
+    .pay-section-items {
+        gap: 10px;
+    }
+    .pay-section-item {
+        width: 45px;
+    }
+}
+
+@media (max-width: 576px) {
+    .detail__info-btns{
+        display: none;
+    }
+    .content__info-header{
+        align-items: center;
+    }
+    .right__share button {
+        display: none;
+    }
+    .right__share--price-btn{
+        display: none;
+    }
+    .right__share--btn{
+        display: none;
+    }
+    .content__info-header-left{
+        font-size: 12px;
+    }
+    .detail__clinic-btns{
+        gap: 8px;
+        justify-content: space-between;
+    }
+    .detail__clinic-btn{
+        flex-direction: column;
+        align-items: center;
+        font-size: 11px;
+        padding: 13px 20px;
+    }
+
+    .hospital-detail__hint{
+        padding: 18px 22px;
+    }
+    .hospital-detail__hint-title{
+        font-size: 18px;
+    }
+    .hospital-detail__hint-subtitle{
+        font-size: 14px;
+    }
+
+    .categories__title{
+        font-size: 18px;
+    }
+    .reviews__header-title{
+        font-size: 18px;
+    }
+    .reviews__header-subtitle{
+        font-size: 14px;
+    }
+    .reviews__carousel-item-content{
+        font-size: 12px;
+        padding: 1rem;
+    }
+    .reviews__carousel-item-content p{
+        margin: 0;
+
+    }
+    .reviews__carousel-item-content a{
+        display: none;
+    }
+    .reviews__carousel-item-footer{
+        padding: 8px 18px;
+    }
+    .reviews__carousel-item-footer p{
+        gap: 10px;
+        font-size: 12px;
+    }
+    .item__footer-icon{
+        font-size: 12px;
+        width: 24px;
+        height: 24px;
+    }
+    .item__footer-rating{
+        display: none;
+    }
+    .hospital-detail__reviews-btn{
+        font-size: 13px;
+        padding: 9px 12px;
+        margin-left: 10%;
+    }
+    .detail-questions__header-title{
+        font-size: 18px;
+    }
+    .detail-questions__header-subtitle{
+        font-size: 12px;
+    }
+    .detail-question__header{
+        font-size: 12px;
+    }
+    .detail-question__header span {
+        width: 21px;
+        height: 21px;
+        font-size: 12px;
+    }
+    .detail-question__header-author{
+        font-size: 12px;
+    }
+    .detail-question__header-date{
+        font-size: 12px;
+    }
+    .detail-questions__content{
+        font-size: 12px;
+    }
+    .detail-questions__answer-author{
+        font-size: 12px;
+        gap: 5px;
+    }
+    .detail-questions__answer-author-img{
+        width: 22px;
+        height: 22px;
+    }
+    .detail-questions__answer-desc{
+        font-size: 12px;
+    }
+    .answer__footer-right-desc{
+        font-size: 12px;
+    }
+    .answer__footer-right-btn{
+        font-size: 12px;
+    }
+    .answer__footer-left{
+        font-size: 12px;
+    }
+    .detail-questions__btn{
+        font-size: 13px;
+    }
+
+
+
+}

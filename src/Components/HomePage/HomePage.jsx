@@ -49,7 +49,8 @@ import menuIcon from "../../assets/Svg/menuIcon.svg";
 import "../HomePage/HomePage.css";
 import MobileMenu from "../MobileMenu/index.js";
 import LoginModal from "../LoginModal/index.js";
-import RegisterModal from "../../RegisterModal/index.js";
+import RegisterModal from "../RegisterModal/index.js";
+
 
 const handleMenuClick = (e) => {
   console.log("click", e);

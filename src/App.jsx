@@ -16,15 +16,17 @@ import ContactUs from "./Components/ContactUs/ContactUs";
 
 
 import Slider from "./Components/Slider";
+import HospitalDetail from "./Components/HospitalDetail";
+
 
 
 const App = () => {
   return (
     <>
        {/*<MobileLogin />*/}
-        <HomePage/>
+       {/* <HomePage/>*/}
        {/* <Profile/> */}
-      {/* <ReviewDoctors/> */}
+       {/*<ReviewDoctors/>*/}
       {/* <ReviewHospitals/> */}
       {/* <FavDoctors/> */}
       {/* <FavHospitals /> */}
@@ -35,6 +37,7 @@ const App = () => {
       {/* <FAQ/> */}
       {/* <PrivacyPolicy/> */}
       {/* <ContactUs/> */}
+      <HospitalDetail/>
 
       {/* <Slider/> */}
     </>
