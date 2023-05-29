@@ -18,6 +18,7 @@ import ContactUs from "./Components/ContactUs/ContactUs";
 import Slider from "./Components/Slider";
 import HospitalDetail from "./Components/HospitalDetail";
 import DoctorDetail from "./Components/DoctorDetail/index.js";
+import AboutUs from "./Components/AboutUs/index.js";
 
 
 
@@ -39,7 +40,8 @@ const App = () => {
       {/* <PrivacyPolicy/> */}
       {/* <ContactUs/> */}
       {/*<HospitalDetail/>*/}
-      <DoctorDetail/>
+      {/*<DoctorDetail/>*/}
+      <AboutUs/>
 
       {/* <Slider/> */}
     </>
