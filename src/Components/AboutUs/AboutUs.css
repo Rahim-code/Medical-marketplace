@@ -1,0 +1,507 @@
+.welcome {
+    background: #5282FF;
+    border-radius: 30px;
+    position: relative;
+    padding: 50px 80px;
+    margin-bottom: 50px;
+}
+
+.welcome__content {
+    color: #fff;
+}
+
+.welcome__content-title {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 93px;
+    margin: 0;
+}
+
+.welcome__content-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.welcome__logo {
+    position: absolute;
+    top: 50px;
+    right: 79px;
+    width: 247px;
+    height: 242px;
+}
+
+.welcome__logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.stats {
+    margin: 40px 0 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats__item-num {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 40px;
+    color: #242424;
+}
+
+.stats__item-name {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    color: #8B8888;
+    margin: 0;
+}
+
+.discount {
+    display: flex;
+    gap: 21px;
+    margin-bottom: 80px;
+}
+
+.discount__item {
+    text-align: center;
+    transition: 0.4s ease-in-out;
+    width: 30%;
+}
+
+.discount__item.active .discount__item-img {
+    background: #5282FF;
+}
+
+.discount__item.second .discount__item-img {
+    background: #FAFFDE;
+}
+
+.discount__item.third .discount__item-img {
+    background: #DEFFE9;
+}
+
+.discount__item.fourth .discount__item-img {
+    background: #FFDEEA;
+}
+
+.discount__item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 292px;
+    width: 100%;
+    height: 319px;
+    font-size: 70px;
+    font-weight: 900;
+    border-radius: 21px;
+}
+
+.discount__item-img img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.discount__item-footer-percent {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 36px;
+    margin: 40px 0 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.discount__item:hover .discount__item-footer-percent {
+    transition: 0.4s ease-in-out;
+    color: #5282ff;
+}
+
+.discount__item-footer-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #8B8888;
+}
+
+.aboutUs-info {
+    display: flex;
+    gap: 44px;
+    margin-bottom: 80px;
+}
+
+.aboutUs-info__img-wrapper {
+    max-width: 414px;
+    width: 30%;
+    height: 425px;
+    background: #EFEFEF;
+    border-radius: 20px;
+}
+
+.aboutUs-info__img {
+
+}
+
+.aboutUs-info__img-header {
+    display: none;
+}
+
+.aboutUs-info__content {
+    width: 70%;
+}
+
+.aboutUs-info__content-header {
+    display: flex;
+    gap: 23px;
+    margin-bottom: 30px;
+}
+
+.aboutUs__content-header-title {
+    font-weight: 500;
+    font-size: 33.25px;
+    line-height: 40px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.aboutUs__content-header-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    margin: 8px 0;
+}
+
+.aboutUs-info__content-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: justify;
+    color: #464646;
+    position: relative;
+    background: linear-gradient(180deg, rgba(255, 246, 246, 0) 0%, #FFFFFF 100%);
+}
+
+.aboutUs-info__content-text:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 246, 246, 0) 0%, #fff 100%);
+}
+
+.aboutUs-info__btn {
+    margin-top: 36px;
+    color: #5282ff;
+    border: 1px solid #5282FF;
+    border-radius: 5px;
+    width: 165px;
+    height: 56px;
+}
+
+.aboutUs-companies {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 90px;
+}
+
+.aboutUs-companies__header {
+    text-align: center;
+}
+
+.aboutUs-companies__header-title {
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 36px;
+    margin: 0 0 10px;
+}
+
+.aboutUs-companies__header-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #2A353D;
+    margin: 0 auto;
+}
+
+.aboutUs-companies__items {
+    display: flex;
+    margin-top: 80px;
+    gap: 5%;
+    align-items: center;
+}
+
+.aboutUs-companies__item {
+    width: 30%;
+    position: relative;
+}
+
+.aboutUs-companies__item img {
+    width: auto;
+}
+
+.aboutUs-companies__item:not(:first-child) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aboutUs-companies__item:not(:first-child):after {
+    position: absolute;
+    content: '';
+    top: 10%;
+    left: 0;
+    width: 1px;
+    height: 50px;
+    background-color: #BCBCBC;
+}
+
+.certified__header{
+    text-align: center;
+}
+.certified__header-title{
+    font-size: 33px;
+    line-height: 36px;
+    margin: 52px 0 0;
+}
+.certified__header-subtitle{
+    font-size: 20px;
+    line-height: 36px;
+    color: #2A353D;
+    margin: 10px 0 40px;
+}
+
+.certified__item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.geography{
+    text-align: center;
+    padding: 67px 0 78px;
+}
+.geography__header-title{
+    font-size: 33px;
+    line-height: 36px;
+    margin: 0;
+}
+.geography__header-subtitle{
+    font-size: 20px;
+    line-height: 36px;
+    color: #2A353D;
+    margin: 6px 0 60px;
+}
+.geography__items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.geography__item-text{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+
+@media (max-width: 825px) {
+    .welcome {
+        padding: 15px 21px;
+    }
+
+    .welcome__content-title {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .welcome__content-subtitle {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .welcome__logo {
+        position: absolute;
+        right: 11.87%;
+        top: 8.16%;
+        width: 65px;
+        height: 64px;
+    }
+
+    .stats__item-num {
+        font-size: 24px;
+        line-height: 15px;
+    }
+
+    .stats__item-name {
+        font-size: 11px;
+        line-height: 15px;
+        margin-top: 10px;
+    }
+
+    .discount {
+        gap: 10px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .discount__item {
+        width: auto;
+    }
+
+    .discount__item-img {
+        width: 72px;
+        height: 79px;
+        font-size: 30px;
+    }
+
+    .discount__item-footer-percent {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .discount__item-footer-text {
+        font-size: 8px;
+        line-height: 11px;
+    }
+
+    .aboutUs-info {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .aboutUs-info__content-header {
+        display: none;
+    }
+
+    .aboutUs-info__img-wrapper {
+        max-width: 100%;
+        width: 100%;
+        height: 111px;
+        background: #5282ff;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+    }
+
+    .aboutUs-info__img {
+        background: #EFEFEF;
+        width: 50%;
+        height: 100%;
+    }
+
+    .aboutUs-info__img-header {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .aboutUs-info__img-header-logo {
+        width: 31px;
+    }
+
+    .aboutUs-info__img-header-title {
+        color: #fff;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: capitalize;
+        margin: 0 0 8px;
+    }
+
+    .aboutUs-info__img-header-subtitle {
+        font-size: 6px;
+        line-height: 8px;
+        text-transform: capitalize;
+        color: #fff;
+        margin: 0;
+    }
+
+    .aboutUs-info__content {
+        width: 100%;
+    }
+
+    .aboutUs-info__content-text {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .aboutUs-info__btn {
+        display: none;
+    }
+
+    .aboutUs-companies {
+        width: 100%;
+    }
+    .aboutUs-companies__header-title{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .aboutUs-companies__header-subtitle{
+        font-size: 10px;
+        line-height: 36px;
+    }
+    .aboutUs-companies__items{
+        margin-top: 27px;
+        display: flex;
+        align-items: center;
+    }
+    .aboutUs-companies__item{
+        display: flex;
+        align-items: center;
+    }
+    .aboutUs-companies__item:not(:first-child):after {
+        top: 30%;
+        height: 20px;
+    }
+    .aboutUs-companies__item img {
+        width: 80%;
+    }
+
+    .aboutUs-companies__item:not(:first-child):after {
+        left: -10%;
+    }
+    .certified__header-title{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .certified__header-subtitle{
+        font-size: 10px;
+        line-height: 36px;
+        margin: 10px 0;
+    }
+
+    .certified__item img{
+        width: 80%;
+    }
+    .geography__header-title{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .geography__header-subtitle{
+        font-size: 10px;
+        line-height: 36px;
+        margin: 6px 0 20px;
+    }
+    .geography__items{
+        gap: 21px;
+    }
+    .geography__item{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    .geography__items img{
+        width: 28px;
+        height: 28px;
+    }
+    .geography__item-text{
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+}

@@ -13,19 +13,35 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Provider store={store}>
         <ConfigProvider
-          theme={
-            {
-             
-              components:{
-                Button:{
-                  // colorPrimary:"#00b98b",
-                  // colorBgContainer:"blue",
-                  // colorBorderBg:"red",
-                  colorBgTextHover:"transparent"
-                }
-               }
-            }
-          }
+          theme={{
+            components: {
+              Button: {
+                colorBgTextHover: "transparent",
+              },
+              Breadcrumb: {
+                colorText: "#5F5F5F",
+                fontSize: 18,
+                fontFamily: "Gilroy",
+                colorBgTextHover: "transparent",
+              },
+              Select: {
+                borderRadius: 0,
+                colorBgContainer: "#f9f9f9",
+              },
+              Input: {
+                colorBgContainer: "#f9f9f9",
+              },
+              Pagination: {
+                borderRadius: 16,
+                colorPrimary: "#5282FF",
+                colorText: "#000",
+                fontSize: 19,
+              },
+              Checkbox:{
+                colorBgContainer:"white"
+              }
+            },
+          }}
         >
           <App />
         </ConfigProvider>

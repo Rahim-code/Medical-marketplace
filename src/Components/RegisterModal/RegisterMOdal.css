@@ -1,0 +1,50 @@
+.active-tab{
+    background-color: #4096ff;
+    color: #fff;
+}
+
+.custom-tab{
+    background-color: red;
+    color: #fff
+}
+
+.ant-tabs-ink-bar {
+    border-bottom: 2px solid #FF5230;
+}
+
+.input{
+    padding: 0.8rem;
+    background: #F4F4F4;
+    border: 1px solid #DEDEDE;
+}
+
+.select{
+    /*width: 100%;*/
+    padding: 0.8rem;
+    border: 1px solid #DEDEDE;
+    background: #F4F4F4;
+    border-radius: 5px;
+}
+.ant-select-selector{
+    border: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 756px) {
+    .modal-content {
+        width: 90%; /* Adjust the width as needed */
+    }
+}

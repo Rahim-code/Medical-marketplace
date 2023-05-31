@@ -1,0 +1,19 @@
+.login-title{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.login-input{
+    padding: 0.8rem;
+    background: #F4F4F4;
+    border: 1px solid #DEDEDE;
+}
+
+@media (max-width: 756px) {
+    .modal-content {
+        width: 90%; /* Adjust the width as needed */
+    }
+}

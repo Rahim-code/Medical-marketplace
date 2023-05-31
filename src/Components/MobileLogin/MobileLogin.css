@@ -1,0 +1,124 @@
+* {
+  /* margin: 0 !important;
+  padding: 0 !important; */
+  box-sizing: border-box !important;
+  /* font-family: "Gilroy"; */
+}
+
+body {
+  margin: 0;
+}
+.bg {
+  width: 100% !important;
+  height: 15vh !important;
+  background-color: #5282ff !important;
+}
+.bgUl{
+  background-color: #5282ff !important;
+  margin: 0;
+  
+}
+
+#vector {
+  position: absolute !important;
+  top: 45% !important;
+  right: 0 !important;
+}
+.container {
+  width: 90% !important;
+  margin: 0 auto !important;
+}
+#topPanel {
+  display: flex !important;
+  height: 10vh !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 50px  0px 10px !important;
+  
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.29) !important; */
+}
+h1 {
+  /*font-size: 16.59px !important;*/
+  font-weight: 500 !important;
+}
+h2 {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+#content {
+  margin-right: auto !important;
+}
+/* img {
+  object-fit: cover;
+} */
+.user {
+  width: 16px !important;
+}
+.white {
+  color: white !important;
+}
+#langFlag {
+  width: 46.72px !important;
+}
+#d-flex {
+  display: flex !important;
+  gap: 10px;
+  align-items: center !important;
+}
+
+#whiteCircle {
+  width: 46.72px !important;
+  height: 46.72px !important;
+  border-radius: 50% !important;
+  background-color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.li {
+  /* gap: 50px !important; */
+  padding: 20px 0 !important;
+}
+.ul {
+  padding: 20px 0 !important;
+  list-style: none !important;
+  margin: 0;
+}
+b {
+  font-size: 20px !important;
+  font-family: "Inter";
+  font-weight: 900 !important;
+}
+#up {
+  text-transform: uppercase !important;
+}
+
+.contactBtn {
+  background-color: white !important;
+  color: #000000 !important;
+  font-weight: 600;
+  margin-right: auto !important;
+  padding: 10px 33px 30px 39px;
+}
+.footer {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  padding: 0 20px 50px 20px;
+}
+.ft {
+  height: 42vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../Fonts/gilroy/Gilroy-Regular.ttf");
+}
+
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../../Fonts/gilroy/Gilroy-SemiBold.ttf");
+}

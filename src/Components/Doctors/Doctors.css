@@ -1,0 +1,79 @@
+.result-text {
+    color: #5282FF;
+    font-size: 20px;
+}
+
+.card-body-doctors {
+    padding-left: 80px !important;
+}
+
+.card-ratings {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    height: 30px;
+}
+.doctors-more-btn{
+    width: 155px;
+    height: 45px;
+    margin-bottom: 10px;
+    background-color: #FFF;
+    color: #5282FF;
+}
+.display_grid-doctors{
+    display: grid;
+}
+.doctors-card{
+    display: flex;
+    height: 260px;
+    border: 1px solid #DADADA;
+    border-radius: 11px;
+    height: 260px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.doctors-card-active{
+    background-color: #5282FF;
+}
+.doctors-img{
+    width: 30%;
+    position: relative;
+}
+.doctors-heart{
+    position: absolute;
+    right: 20%;
+}
+.doctors-card-body{
+    width: 70%;
+}
+
+@media (max-width: 756px) {
+
+    .result-text {
+        font-size: 14px;
+    }
+
+    .card-body-doctors {
+        padding-left: 0;
+    }
+
+    .card-ratings {
+        margin-top: 10px;
+        align-items: center;
+    }
+    .sort-text{
+        display: none;
+    }
+    .doctors-more-btn{
+        display: none;
+    }
+    .doctors-card{
+        flex-direction: column;
+        height: auto;
+    }
+    .doctors-img{
+        width: 100%;
+        height: auto;
+    }
+}
