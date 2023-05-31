@@ -38,6 +38,9 @@ const CertifiedClinics = () => {
             <div className="certified__item">
               <img src={efqmLogo} alt=""/>
             </div>
+            <div className="certified__item">
+              <img src={efqmLogo} alt=""/>
+            </div>
           </Carousel>
         </div>
       </div>

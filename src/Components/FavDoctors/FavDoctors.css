@@ -1,27 +1,51 @@
-.comment{
-    margin: 10px 0px 0px 0px  !important;
+.comment {
+    margin: 10px 0px 0px 0px !important;
 }
-.fav-card-mob{
+
+.fav-card-mob {
     display: none;
 }
 
+.cardFavDoctors {
+    display: flex;
+    height: 226px;
+    margin: 24px 0 12px;
+}
+#favDoctorImage{
+    margin-top: 10px;
+    width: 194px;
+    height: 194px;
+}
+.doctor-fav {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    width: 194px !important;
+    height: auto !important;
+}
+
 @media (max-width: 756px) {
-    .cardReviewDoctors{
+    .cardReviewDoctors {
         flex-direction: column;
     }
-    .doctor-fav{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(1,1fr);
-        width: 275px !important;
-        height: auto !important;
+    .cardFavDoctors{
+        flex-direction: column;
+        /*align-items: center;*/
+        height: auto;
+    }
+    .fav-card-body {
+        display: none;
+    }
 
-    }
-    .fav-card-body{
-        display: none ;
-    }
-    .fav-card-mob{
+    .fav-card-mob {
         display: block;
         margin-top: 19px;
     }
+    #favDoctorImage{
+        margin-top: 10px;
+        width: 80vw;
+        height: auto;
+    }
+    .doctorFav{
+        margin-right: 40%;}
 
 }

@@ -29,6 +29,8 @@ import FavoriteHospitals from "../../assets/Images/FavoriteHospitals.png";
 import { ArrowRightOutlined, EnvironmentOutlined } from "@ant-design/icons";
 
 import "../FavHospitals/FavHospitals.css";
+import Header from "../Header/index.js";
+import Footer from "../Footer/index.js";
 
 const items = [
   {
@@ -191,81 +193,7 @@ const menuPropsFlag = {
 const FavHospitals = () => {
   return (
     <>
-      <header>
-        <div id="bg">
-          <div className="container container1">
-            <div>
-              <img src={Vector} />
-            </div>
-            <div className="mR">
-              <h1 className="textMed">112 Med</h1>
-              <p className="medMarket">Медицинский маркетплейс</p>
-            </div>
-            <div className="dropdownBefore">
-              <ul className="ul" id="ulList">
-                <li style={{ paddingBottom: "15px" }}>
-                  <Dropdown menu={menuProps}>
-                    <Button type="text">
-                      <Space>
-                        <img id="rubl" src={RUB} />
-                        <span
-                          style={{
-                            fontFamily: "Gilroy",
-                            fontSize: "17.5px",
-                            fontWeight: "500",
-                            color: "white",
-                          }}
-                        >
-                          RUB
-                        </span>
-                      </Space>
-                    </Button>
-                  </Dropdown>
-                </li>
-                <li style={{ paddingBottom: "15px" }}>
-                  <Dropdown menu={menuPropsFlag}>
-                    <Button type="text">
-                      <Space>
-                        <img id="flag" src={russianFlag} />
-                        <span
-                          style={{
-                            fontFamily: "Gilroy",
-                            fontSize: "17.5px",
-                            fontWeight: "500",
-                            color: "white",
-                          }}
-                        >
-                          RU
-                        </span>
-                      </Space>
-                    </Button>
-                  </Dropdown>
-                </li>
-                <li style={{ paddingBottom: "15px" }} className="dFlex">
-                  <div className="question">
-                    <img src={question} />
-                  </div>
-                  <div>
-                    <p>связаться с нами </p>
-                  </div>
-                </li>
-                <li style={{ paddingBottom: "15px" }}>
-                  <img className="heart" src={heart} />
-                </li>
-                <li style={{ paddingBottom: "15px" }}>
-                  <Button
-                    className="button"
-                    type="primary"
-                    icon={<ArrowRightOutlined className="Arrow" />}
-                  >
-                    Bойти
-                  </Button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header/>
 
       <div style={{ paddingTop: "30px" }} className="container">
         <div style={{ borderBottom: "1px solid #E7E7E7", padding: "20px 0" }}>
@@ -406,7 +334,7 @@ const FavHospitals = () => {
                 <div className="display_grid img-wrapper">
                   <img
                     className={"cardFavHospitals-img"}
-                    id="doctorImage"
+                    id="hospitalsImage"
                     src={FavoriteHospitals}
                   />
                   <img id="sponsoredImage" src={Sponsored} />
@@ -712,7 +640,7 @@ const FavHospitals = () => {
                 <div className="display_grid img-wrapper">
                   <img
                     className={"cardFavHospitals-img"}
-                    id="doctorImage"
+                    id="hospitalsImage"
                     src={FavoriteHospitals}
                   />
                   <img id="sponsoredImage" src={Sponsored} />
@@ -733,14 +661,13 @@ const FavHospitals = () => {
                     <h3
                       style={{
                         margin: "0px",
-                        color: "white",
                         paddingLeft: "15px",
                       }}
                     >
                       LuviMed
                     </h3>
                     <div style={{ display: "flex", gap: "10px" }}>
-                      <p style={{ margin: "0px", color: "white" }}>Hеплохо</p>
+                      <p style={{ margin: "0px"}}>Hеплохо</p>
 
                       <p
                         style={{
@@ -774,30 +701,29 @@ const FavHospitals = () => {
                     >
                       <p
                         style={{
-                          color: "white",
                           fontSize: "14px",
                           margin: "0px",
                         }}
                       >
                         <EnvironmentOutlined
-                          style={{ marginRight: "6px", color: "white" }}
+                          style={{ marginRight: "6px" }}
                         />
                         Бейоглу, Стамбул
                       </p>
-                      <a href="#" style={{ margin: "0px", color: "#ffff" }}>
+                      <a href="#" style={{ margin: "0px" }}>
                         Показать на карте
                       </a>
                     </div>
                     <div>
                       <p
                         className="comment_hospitals"
-                        style={{ color: "#FFFF", textAlign: "right" }}
+                        style={{ textAlign: "right" }}
                       >
-                        <a style={{ color: "#FFFF" }} href="#">
+                        <a style={{ color: "#000" }} href="#">
                           45 отзыва
                         </a>
                       </p>
-                      <p style={{ color: "#FFFF", margin: "0px" }}>
+                      <p style={{ margin: "0px" }}>
                         Соотношение цена/качество
                       </p>
                     </div>
@@ -903,7 +829,7 @@ const FavHospitals = () => {
                       }}
                     >
                       <EnvironmentOutlined
-                        style={{ marginRight: "6px"}}
+                        style={{ marginRight: "6px", }}
                       />
                       Бейоглу, Стамбул
                     </p>
@@ -930,9 +856,9 @@ const FavHospitals = () => {
                         6.0
                       </p>
                       <img src={Iconstars} />
-                      <p style={{ margin: "0px" }}>Hеплохо</p>
+                      <p style={{ margin: "0px", }}>Hеплохо</p>
                       <p
-                        style={{textAlign: "right" }}
+                        style={{ textAlign: "right" }}
                       >
                         <a style={{ color: "#000" }} href="#">
                           45 отзыва
@@ -1016,7 +942,7 @@ const FavHospitals = () => {
                 <div className="display_grid img-wrapper">
                   <img
                     className={"cardFavHospitals-img"}
-                    id="doctorImage"
+                    id="hospitalsImage"
                     src={FavoriteHospitals}
                   />
                   <img id="sponsoredImage" src={Sponsored} />
@@ -1037,14 +963,13 @@ const FavHospitals = () => {
                     <h3
                       style={{
                         margin: "0px",
-                        color: "white",
                         paddingLeft: "15px",
                       }}
                     >
                       LuviMed
                     </h3>
                     <div style={{ display: "flex", gap: "10px" }}>
-                      <p style={{ margin: "0px", color: "white" }}>Hеплохо</p>
+                      <p style={{ margin: "0px"}}>Hеплохо</p>
 
                       <p
                         style={{
@@ -1078,30 +1003,29 @@ const FavHospitals = () => {
                     >
                       <p
                         style={{
-                          color: "white",
                           fontSize: "14px",
                           margin: "0px",
                         }}
                       >
                         <EnvironmentOutlined
-                          style={{ marginRight: "6px", color: "white" }}
+                          style={{ marginRight: "6px" }}
                         />
                         Бейоглу, Стамбул
                       </p>
-                      <a href="#" style={{ margin: "0px", color: "#ffff" }}>
+                      <a href="#" style={{ margin: "0px" }}>
                         Показать на карте
                       </a>
                     </div>
                     <div>
                       <p
                         className="comment_hospitals"
-                        style={{ color: "#FFFF", textAlign: "right" }}
+                        style={{ textAlign: "right" }}
                       >
-                        <a style={{ color: "#FFFF" }} href="#">
+                        <a style={{ color: "#000" }} href="#">
                           45 отзыва
                         </a>
                       </p>
-                      <p style={{ color: "#FFFF", margin: "0px" }}>
+                      <p style={{ margin: "0px" }}>
                         Соотношение цена/качество
                       </p>
                     </div>
@@ -1207,7 +1131,7 @@ const FavHospitals = () => {
                       }}
                     >
                       <EnvironmentOutlined
-                        style={{ marginRight: "6px"}}
+                        style={{ marginRight: "6px", }}
                       />
                       Бейоглу, Стамбул
                     </p>
@@ -1234,9 +1158,9 @@ const FavHospitals = () => {
                         6.0
                       </p>
                       <img src={Iconstars} />
-                      <p style={{ margin: "0px" }}>Hеплохо</p>
+                      <p style={{ margin: "0px", }}>Hеплохо</p>
                       <p
-                        style={{textAlign: "right" }}
+                        style={{ textAlign: "right" }}
                       >
                         <a style={{ color: "#000" }} href="#">
                           45 отзыва
@@ -1317,14 +1241,7 @@ const FavHospitals = () => {
                 </div>
               </div>
 
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  paddingTop: "25px",
-                  paddingBottom: "50px",
-                }}
-              >
+              <div className={'review-doctors-pagination'}>
                 <Pagination
                   showSizeChanger={false}
                   defaultCurrent={1}
@@ -1336,205 +1253,7 @@ const FavHospitals = () => {
         </div>
       </div>
 
-      <footer>
-        <div className="bgFooter">
-          <div style={{ paddingTop: "100px" }} className="container">
-            <div className="rowGrid">
-              <div id="textFooterid" style={{ paddingLeft: "15px" }}>
-                <ul style={{ listStyle: "none" }}>
-                  <li
-                    style={{
-                      color: "white",
-                      fontSize: "33.25px",
-                      fontWeight: "500",
-                      lineHeight: "45px",
-                    }}
-                  >
-                    112 Med
-                  </li>
-                  <li style={{ color: "white", fontSize: "18px" }}>
-                    Медицинский <br />
-                    маркетплейс
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul style={{ listStyle: "none" }}>
-                  <li
-                    style={{
-                      color: "white",
-                      fontWeight: "500px",
-                      fontFamily: "Inter",
-                      fontSize: "22px",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    Для пациентов
-                  </li>
-                  <li
-                    style={{
-                      color: "#B6D0FF",
-                      fontFamily: "Gilroy",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    Врачи{" "}
-                  </li>
-                  <li
-                    style={{
-                      color: "#B6D0FF",
-                      fontFamily: "Gilroy",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    Больницы
-                  </li>
-                  <li
-                    style={{
-                      color: "#B6D0FF",
-                      fontFamily: "Gilroy",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    Услуги
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul style={{ listStyle: "none" }}>
-                  <li
-                    style={{
-                      color: "white",
-                      fontWeight: "500px",
-                      fontFamily: "Inter",
-                      fontSize: "22px",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    O Hас
-                  </li>
-                  <li
-                    style={{
-                      color: "#B6D0FF",
-                      fontFamily: "Gilroy",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    Условия Эксплуатации
-                  </li>
-                  <li
-                    style={{
-                      color: "#B6D0FF",
-                      fontFamily: "Gilroy",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    {" "}
-                    Политика Oтзывов
-                  </li>
-                  <li
-                    style={{
-                      color: "#B6D0FF",
-                      fontFamily: "Gilroy",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    О «112 мед».
-                  </li>
-                  <li
-                    style={{
-                      color: "#B6D0FF",
-                      fontFamily: "Gilroy",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    FAQ
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul style={{ listStyle: "none" }}>
-                  <li
-                    style={{
-                      color: "white",
-                      fontWeight: "500px",
-                      fontFamily: "Inter",
-                      fontSize: "22px",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    Для партнеров
-                  </li>
-                  <li
-                    style={{
-                      color: "#B6D0FF",
-                      fontFamily: "Gilroy",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    Добавить больницу
-                  </li>
-                  <li
-                    style={{
-                      color: "#B6D0FF",
-                      fontFamily: "Gilroy",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    {" "}
-                    добавить врача
-                  </li>
-                  <li
-                    style={{
-                      color: "#B6D0FF",
-                      fontFamily: "Gilroy",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    Войти как партнер
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div style={{ padding: "100px 0" }} className="footerIcons">
-              <div>
-                <img style={{ width: "30.66px" }} src={facebook} />
-              </div>
-              <div>
-                <img style={{ width: "36.66px" }} src={vk} />
-              </div>
-              <div>
-                <img style={{ width: "30.66px" }} src={instagram} />
-              </div>
-
-              <div style={{ paddingLeft: "30px" }}>
-                <Button
-                  style={{
-                    fontFamily: "Gilroy",
-                    fontSize: "20px",
-                    fontWeight: "600",
-                  }}
-                  className="pad"
-                >
-                  КОНТАКТ
-                </Button>
-              </div>
-            </div>
-          </div>
-          <p
-            className="white"
-            style={{
-              textAlign: "center",
-              paddingBottom: "15px",
-              paddingTop: "15px",
-              backgroundColor: "#2A52BA",
-              margin: "0",
-            }}
-          >
-            © All rights reserved 2023. 112 Med
-          </p>
-        </div>
-      </footer>
+      <Footer/>
     </>
   );
 };

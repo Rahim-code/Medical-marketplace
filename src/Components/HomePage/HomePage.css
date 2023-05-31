@@ -372,7 +372,9 @@ ul, li {
 
 .bgFooter {
     background-color: #5282ff !important;
-
+}
+.footer-wrapper {
+    padding-top: 100px;
 }
 
 .rowGrid {
@@ -388,6 +390,9 @@ ul, li {
     display: inline-block;
     line-height: 45px;
 }
+.textFooterid{
+    padding-left: 15px;
+}
 
 #textFooterid:before {
     content: url("../../assets/Images/Vector.svg");
@@ -402,6 +407,10 @@ ul, li {
     gap: 30px;
     align-items: center;
     height: 10vh;
+    padding: 100px 0;
+}
+.pad-wrapper{
+    padding-left: 30px;
 }
 
 .pad {
@@ -497,6 +506,9 @@ ul, li {
     height: 51px;
     font-size: 14px;
     font-weight: 700;
+    display: none;
+}
+.footerIcons-header{
     display: none;
 }
 
@@ -619,6 +631,24 @@ ul, li {
 
     #textFooterid {
         grid-column: span 2;
+    }
+    .footer-wrapper {
+        padding-top: 25px;
+    }
+    .rowGrid ul {
+        padding-left: 0;
+    }
+    .textFooterid{
+        padding-left: 0;
+    }
+    .footerIcons{
+        padding: 20px 0;
+    }
+    .pad-wrapper{
+        padding-left: 0;
+    }
+    .footer-med{
+        margin-left: 10px;
     }
 }
 
@@ -788,5 +818,28 @@ ul, li {
     }
     .footer-copy{
         font-size: 10px;
+    }
+    .footerIcons-header{
+        display: block;
+        color: #fff;
+    }
+    .footerIcons-header h4 {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: capitalize;
+        margin: 20px 0 5px;
+    }
+    .footerIcons-header a{
+        font-family: 'Gilroy';
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 14px;
+        text-transform: lowercase;
+        margin: 0;
+        color: #fff;
+        display: flex;
+        gap: 8px;
     }
 }

@@ -15,7 +15,6 @@ const AboutUs = () => {
   return (
     <div style={{background: "#f6f6f6"}}>
       <Header/>
-      {/*breadcrumbs*/}
       <div style={{background: "#fff"}}>
         <BreadCrumbs/>
         <WelcomeSection/>

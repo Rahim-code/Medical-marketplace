@@ -50,6 +50,8 @@ import "../HomePage/HomePage.css";
 import MobileMenu from "../MobileMenu/index.js";
 import LoginModal from "../LoginModal/index.js";
 import RegisterModal from "../RegisterModal/index.js";
+import Header from "../Header/index.js";
+import Footer from "../Footer/index.js";
 
 
 const handleMenuClick = (e) => {
@@ -238,98 +240,7 @@ const HomePage = () => {
 
   return (
     <>
-      <div id="bg">
-        <div className="container container1">
-          <div>
-            <img src={Vector} />
-          </div>
-          <div className="mR">
-            <h1 className="textMed">112 Med</h1>
-            <p className="medMarket">Медицинский маркетплейс</p>
-          </div>
-          <div className="dropdownBefore">
-            <ul className="ul" id="ulList">
-              <li style={{ paddingBottom: "15px" }}>
-                <Dropdown menu={menuProps}>
-                  <Button type="text">
-                    <Space>
-                      <img id="rubl" src={RUB} />
-                      <span
-                        style={{
-                          fontFamily: "Gilroy",
-                          fontSize: "17.5px",
-                          fontWeight: "500",
-                          color: "white",
-                        }}
-                      >
-                        RUB
-                      </span>
-                    </Space>
-                  </Button>
-                </Dropdown>
-              </li>
-              <li style={{ paddingBottom: "15px" }}>
-                <Dropdown menu={menuPropsFlag}>
-                  <Button type="text">
-                    <Space>
-                      <img id="flag" src={russianFlag} />
-                      <span
-                        style={{
-                          fontFamily: "Gilroy",
-                          fontSize: "17.5px",
-                          fontWeight: "500",
-                          color: "white",
-                        }}
-                      >
-                        RU
-                      </span>
-                    </Space>
-                  </Button>
-                </Dropdown>
-              </li>
-              <li style={{ paddingBottom: "15px" }} className="dFlex">
-                <div className="question">
-                  <img src={question} />
-                </div>
-                <div>
-                  <p>связаться с нами </p>
-                </div>
-              </li>
-              <li style={{ paddingBottom: "15px" }}>
-                <img
-                  style={{ objectFit: "cover !important" }}
-                  className="heart"
-                  src={heart}
-                />
-              </li>
-              <li style={{ paddingBottom: "15px" }}>
-                <Button
-                  className="button"
-                  type="primary"
-                  icon={<ArrowRightOutlined className="Arrow" />}
-                  onClick={onOpenLogin}
-                >
-                  Bойти
-                </Button>
-              </li>
-            </ul>
-            <ul className={"mobileList"}>
-              {showMenu ?
-                <><Button type="text" size={"large"} style={{display:"flex", alignItems:"center"}}>
-                  <img id="flag" src={userLogin} onClick={onOpenLogin} />
-                </Button>
-                  <Button type="text" size={"large"} style={{display:"flex", alignItems:"center"}} onClick={handleMenu}>
-                    <img id="flag" src={menuIcon} />
-                  </Button>
-                </>:
-                <Button type="text" size={"large"} style={{display:"flex", alignItems:"center"}} onClick={handleMenu}>
-                  <CloseOutlined onClick={handleMenu} className="white" style={{fontSize:"36px"}} />
-                </Button>
-              }
-            </ul>
-          </div>
-        </div>
-      </div>
+      <Header/>
 {/*<MobileMenu menuProps={menuProps} menuPropsFlag={menuPropsFlag} showMenu={showMenu} handleMenu={handleMenu} />*/}
       <div id="bgHome">
         <div className="container heroTitle">
@@ -692,99 +603,7 @@ const HomePage = () => {
         <SliderThird />
       </div>
 
-      <div className="bgFooter">
-        <div style={{ paddingTop: "100px" }} className="container">
-          <div className="rowGrid">
-            <div id="textFooterid" style={{ paddingLeft: "15px" }}>
-              <ul style={{ listStyle: "none" }}>
-                <li className={"footer-title"}
-                >
-                  112 Med
-                </li>
-                <li className={"footer-subtitle"} >
-                  Медицинский <br />
-                  маркетплейс
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul style={{ listStyle: "none" }}>
-                <li className={"footer-nav-title"}>
-                  Для пациентов
-                </li>
-                <li className={"footer-nav-link"}>
-                  Врачи{" "}
-                </li>
-                <li className={"footer-nav-link"}>
-                  Больницы
-                </li>
-                <li className={"footer-nav-link"}>
-                  Услуги
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul style={{ listStyle: "none" }}>
-                <li className={"footer-nav-title"}>
-                  O Hас
-                </li>
-                <li className={"footer-nav-link"}>
-                  Условия Эксплуатации
-                </li>
-                <li className={"footer-nav-link"}>
-                  {" "}
-                  Политика Oтзывов
-                </li>
-                <li className={"footer-nav-link"}>
-                  О «112 мед».
-                </li>
-                <li className={"footer-nav-link"}>
-                  FAQ
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul style={{ listStyle: "none" }}>
-                <li className={"footer-nav-title"}>
-                  Для партнеров
-                </li>
-                <li className={"footer-nav-link"}>
-                  Добавить больницу
-                </li>
-                <li className={"footer-nav-link"}>
-                  {" "}
-                  добавить врача
-                </li>
-                <li className={"footer-nav-link"}>
-                  Войти как партнер
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div style={{ padding: "100px 0" }} className="footerIcons">
-            <div style={{display:"flex", gap:"16px",marginTop:"10px"}}>
-              <div >
-                <img className={"footer-social"} src={facebook} />
-              </div>
-              <div>
-                <img className={"footer-social"} src={vk} />
-              </div>
-              <div>
-                <img className={"footer-social"} src={instagram} />
-              </div>
-            </div>
-
-            <div style={{ paddingLeft: "30px" }}>
-              <Button className="pad">
-                КОНТАКТ
-              </Button>
-            </div>
-          </div>
-        </div>
-        <p className="footer-copy">
-          © All rights reserved 2023. 112 Med
-        </p>
-      </div>
+      <Footer/>
 
       <LoginModal openLogin={openLogin} onCloseLogin={onCloseLogin} onOpenRegister={onOpenRegister}/>
       <RegisterModal openRegister={openRegister} onCloseRegister={onCloseRegister}/>
