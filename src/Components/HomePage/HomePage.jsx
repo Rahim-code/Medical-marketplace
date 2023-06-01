@@ -559,6 +559,7 @@ const HomePage = () => {
       <div className="containerSliderSecond">
         {" "}
         <Slider />
+
       </div>
 
       <div
