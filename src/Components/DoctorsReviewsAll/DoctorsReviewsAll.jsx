@@ -192,7 +192,7 @@ const menuPropsFlag = {
   onClick: handleMenuFlagClick,
 };
 
-const DoctorsReviewsAll = () => {
+const  DoctorsReviewsAll = () => {
   return (
     <div style={{ backgroundColor: "#F4F4F4" }}>
       <Header/>

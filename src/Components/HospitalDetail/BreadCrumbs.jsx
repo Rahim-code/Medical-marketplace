@@ -4,7 +4,7 @@ import {Breadcrumb} from "antd";
 const BreadCrumbs = () => {
   return (
     <div style={{ paddingTop: "30px" }} className="container">
-      <div style={{ borderBottom: "1px solid #E7E7E7", padding: "20px 0" }}>
+      <div className={"breadcrumbs"}>
         <Breadcrumb
           separator={
             <span

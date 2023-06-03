@@ -41,7 +41,7 @@ const App = () => {
        {/*<ContactUs/>*/}
       {/*<HospitalDetail/>*/}
       {/*<DoctorDetail/>*/}
-      {/*<AboutUs/>*/}
+      {/*< AboutUs/>*/}
 
       {/* <Slider/> */}
     </>

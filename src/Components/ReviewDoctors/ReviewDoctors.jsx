@@ -30,6 +30,7 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 import "../ReviewDoctors/ReviewDoctors.css";
 import Header from "../Header/index.js";
 import Footer from "../Footer/index.js";
+import FilterButtons from "../FilterButtons/index.js";
 
 const items = [
   {
@@ -189,7 +190,7 @@ const menuPropsFlag = {
   onClick: handleMenuFlagClick,
 };
 
-const ReviewDoctors = () => {
+const  ReviewDoctors = () => {
   return (
     <>
       <Header/>
@@ -328,7 +329,7 @@ const ReviewDoctors = () => {
                 Оценка + кол-во отзывов
               </Button>
             </div>
-
+            <FilterButtons/>
             <div>
               <div className="cardReviewDoctors-main">
                 <div className="card-head display_grid">

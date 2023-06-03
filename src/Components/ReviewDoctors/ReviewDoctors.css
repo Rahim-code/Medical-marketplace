@@ -73,7 +73,10 @@
     justify-content: center;
     padding: 25px 0;
 }
-
+.breadcrumbs {
+    border-bottom: 1px solid #E7E7E7;
+    padding: 20px -0px;
+}
 
 @media (max-width: 1024px) {
     .displayGridReviewDr{
@@ -86,6 +89,7 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
+        display: none;
     }
     .card-body{
         width: auto!important;
@@ -125,6 +129,10 @@
     }
     .review-doctors-pagination{
         display: none;
+    }
+    .breadcrumbs {
+        border-bottom: none;
+        padding: 0;
     }
 
 }

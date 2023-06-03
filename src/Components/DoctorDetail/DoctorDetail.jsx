@@ -7,6 +7,7 @@ import Reviews from "../HospitalDetail/Reviews.jsx";
 import DoctorCard from "./DoctorCard.jsx";
 import DoctorBookingModal from "./DoctorBookingModal.jsx";
 import DoctorInfo from "./DoctorInfo.jsx";
+import FilterButtons from "../FilterButtons/index.js";
 
 const DoctorDetail = () => {
 
@@ -24,6 +25,7 @@ const DoctorDetail = () => {
       <Header/>
       {/*breadcrumbs*/}
       <BreadCrumbs/>
+      <FilterButtons/>
       <DoctorCard onOpenBookingModal={onOpenBookingModal}/>
       <DoctorInfo/>
       <Reviews/>

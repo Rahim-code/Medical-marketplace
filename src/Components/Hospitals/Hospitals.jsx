@@ -37,6 +37,7 @@ import Footer from "../Footer/index.js";
 import LoginModal from "../LoginModal/index.js";
 import RegisterModal from "../RegisterModal/index.js";
 import PageLoginBox from "../PageLoginBox/index.js";
+import FilterButtons from "../FilterButtons/index.js";
 
 const { Panel } = Collapse;
 
@@ -202,7 +203,7 @@ const menuPropsFlag = {
   onClick: handleMenuFlagClick,
 };
 
-const Hospitals = () => {
+const  Hospitals = () => {
 
   return (
     <>
@@ -210,7 +211,7 @@ const Hospitals = () => {
 
       <div className="hospitalbg" style={{ backgroundColor: "#F4F4F4" }}>
         <div style={{ paddingTop: "30px" }} className="container">
-          <div style={{ borderBottom: "1px solid #E7E7E7", padding: "20px 0" }}>
+          <div className={"breadcrumbs"}>
             <Breadcrumb
               separator={
                 <span
@@ -839,6 +840,7 @@ const Hospitals = () => {
                   Оценка + кол-во отзывов
                 </Button>
               </div>
+              <FilterButtons/>
               <div className="buttonsSort">
                 <Button
                   className={"doc-nav-btn"}

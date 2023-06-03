@@ -37,6 +37,7 @@ import Sponsored from "../../assets/Svg/sponsored.svg";
 import Header from "../Header/index.js";
 import Footer from "../Footer/index.js";
 import PageLoginBox from "../PageLoginBox/index.js";
+import FilterButtons from "../FilterButtons/index.js";
 
 const { Panel } = Collapse;
 
@@ -207,8 +208,8 @@ const Doctors = () => {
     <div style={{ backgroundColor: "#F4F4F4" }}>
       <Header/>
 
-      <div style={{ paddingTop: "30px" }} className="container">
-        <div style={{ borderBottom: "1px solid #E7E7E7", padding: "20px 0" }}>
+      <div style={{ paddingTop: "30px", paddingBottom:"20px" }} className="container">
+        <div className={"breadcrumbs"}>
           <Breadcrumb
             separator={
               <span
@@ -236,6 +237,7 @@ const Doctors = () => {
       </div>
 
       <div className="container">
+        <FilterButtons/>
         <div className="displayGridReviewDr">
           <div className="menuNav menuNav-hospitals">
             <Collapse

@@ -32,6 +32,7 @@ import { ArrowRightOutlined, EnvironmentOutlined } from "@ant-design/icons";
 import "../FavDoctors/FavDoctors.css";
 import Header from "../Header/index.js";
 import Footer from "../Footer/index.js";
+import FilterButtons from "../FilterButtons/index.js";
 
 const items = [
   {
@@ -191,7 +192,7 @@ const menuPropsFlag = {
   onClick: handleMenuFlagClick,
 };
 
-const FavDoctors = () => {
+const  FavDoctors = () => {
   return (
     <>
       <Header/>
@@ -329,7 +330,7 @@ const FavDoctors = () => {
                 Оценка + кол-во отзывов
               </Button>
             </div>
-
+            <FilterButtons/>
             <div>
               <div className="cardFavDoctors">
                 <div className="display_grid doctor-fav">
