@@ -52,6 +52,10 @@ import LoginModal from "../LoginModal/index.js";
 import RegisterModal from "../RegisterModal/index.js";
 import Header from "../Header/index.js";
 import Footer from "../Footer/index.js";
+import DiscoundSlider from "./DiscoundSlider.jsx";
+import TopClinic from "./TopClinic/index.js";
+import DoctorSearch from "./DoctorSearch/index.js";
+import HomeReviews from "./HomeReviews/index.js";
 
 
 const handleMenuClick = (e) => {
@@ -526,20 +530,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
-      {/*<div style={{ paddingTop: "10px" }} className="container">*/}
-      {/*  <div className="grid_6">*/}
-      {/*    <div>*/}
-      {/*      <img src={group15} />*/}
-      {/*    </div>*/}
-      {/*    <div>*/}
-      {/*      <img src={group16} />*/}
-      {/*    </div>*/}
-      {/*    <div>*/}
-      {/*      <img src={group17} />*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
+      <DiscoundSlider/>
 
       <div style={{ paddingTop: "10px" }} className="container">
         <div>
@@ -602,6 +593,10 @@ const HomePage = () => {
       <div className="containerSliderSecond">
         <SliderThird />
       </div>
+
+      <TopClinic/>
+      <DoctorSearch/>
+      <HomeReviews/>
 
       <Footer/>
 

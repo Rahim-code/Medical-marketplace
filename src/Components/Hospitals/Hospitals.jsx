@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   Dropdown,
   Button,
@@ -34,6 +34,9 @@ import "./Hospitals.css"
 import Iconstars from "../../assets/Svg/starIcon.svg";
 import Header from "../Header/index.js";
 import Footer from "../Footer/index.js";
+import LoginModal from "../LoginModal/index.js";
+import RegisterModal from "../RegisterModal/index.js";
+import PageLoginBox from "../PageLoginBox/index.js";
 
 const { Panel } = Collapse;
 
@@ -200,6 +203,7 @@ const menuPropsFlag = {
 };
 
 const Hospitals = () => {
+
   return (
     <>
       <Header/>
@@ -1767,19 +1771,19 @@ const Hospitals = () => {
                     </div>
                   </div>
                 </div>
-                <div className={'review-doctors-pagination'}>
+                <div className={'hospitals-pagination'}>
                   <Pagination
                     showSizeChanger={false}
                     defaultCurrent={1}
                     total={100}
                   />
                 </div>
+                <PageLoginBox/>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <Footer/>
     </>
   );

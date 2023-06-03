@@ -40,11 +40,9 @@ const DoctorBookingModal = ({onCloseBookingModal, openBooking}) => {
           />
         </Item>
         <Item name={"date"}
-              // style={{display:"flex", gap:"10px"}}
         >
-          <TimePicker style={{width:"48%", marginRight:"2%", padding:"0.8rem"}}/>
-          <DatePicker style={{width:"48%" , padding:"0.8rem"}} />
-          {/*<RangePicker style={{width:"100%", padding:"0.8rem"}}/>*/}
+          <TimePicker className={"booking-modal__time-input"}/>
+          <DatePicker className={"booking-modal__date-input"}/>
         </Item>
         <Button type={'primary'} htmlType={'submit'} block size={'large'} style={{backgroundColor:"#5282ff",display: 'block', marginBottom: '.5rem'}}>бронировать</Button>
       </Form>

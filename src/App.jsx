@@ -26,13 +26,13 @@ const App = () => {
   return (
     <>
        {/*<MobileLogin />*/}
-       {/* <HomePage/>*/}
+        <HomePage/>
        {/* <Profile/>*/}
        {/*<ReviewDoctors/>*/}
        {/*<ReviewHospitals/>*/}
        {/*<FavDoctors/>*/}
        {/*<FavHospitals />*/}
-       <Hospitals/>
+       {/*<Hospitals/>*/}
        {/*<Doctors/>*/}
        {/*<HospitalsReviewsAll/>*/}
        {/*<DoctorsReviewsAll/>*/}

@@ -36,6 +36,7 @@ import FavoriteHospitals from "../../assets/Images/FavoriteHospitals.png";
 import Sponsored from "../../assets/Svg/sponsored.svg";
 import Header from "../Header/index.js";
 import Footer from "../Footer/index.js";
+import PageLoginBox from "../PageLoginBox/index.js";
 
 const { Panel } = Collapse;
 
@@ -834,12 +835,8 @@ const Doctors = () => {
 
             <div>
               <div className="doctors-card doctors-card-active">
-                <div className="doctors-img img-wrapper">
-                  <img
-                    className={"cardFavHospitals-img"}
-                    id="doctorImage"
-                    src={CheckDoctor}
-                  />
+                <div className="doctors-img">
+                  <img className="doctors-img-lg" src={CheckDoctor}/>
                   <img
                     className={"doctors-heart"}
                     id="likeImageFavHospitals"
@@ -861,11 +858,11 @@ const Doctors = () => {
                         Главный врач
                       </p>
                     </div>
-                    <div style={{ marginRight: "auto" }}>
+                    <div className="d-none" style={{ marginRight: "auto" }}>
                       <img src={Iconstars} />
                     </div>
                     <div>
-                      <p
+                      <p className="d-none"
                         style={{
                           margin: "0 !important",
                           fontSize: "16px",
@@ -876,7 +873,7 @@ const Doctors = () => {
                         Bеликолепно
                       </p>
                     </div>
-                    <div>
+                    <div className="d-none">
                       <p
                         style={{
                           backgroundColor: "#FFC224",
@@ -914,7 +911,7 @@ const Doctors = () => {
                       </h3>
                       <div style={{ color: "#FFF" }} >
                         <p
-                          className="comment"
+                          className="comment d-none"
                           style={{ color: "#FFF", textAlign: "right" }}
                         >
                           <span>23</span> отзыва
@@ -938,7 +935,12 @@ const Doctors = () => {
                       />
                       Больница Американ
                     </p>
-
+                    <div className={"doctors-card__ratings white"}>
+                      <p className={"doctors-card__ratings-num"}>9.0</p>
+                      <img src={Iconstars} />
+                      <p>Bеликолепно</p>
+                      <p><span>23</span> отзыва</p>
+                    </div>
                     <div
                       style={{
                         display: "flex",
@@ -993,12 +995,8 @@ const Doctors = () => {
                 </div>
               </div>
               <div className="doctors-card ">
-                <div className="doctors-img img-wrapper">
-                  <img
-                    className={"cardFavHospitals-img"}
-                    id="doctorImage"
-                    src={CheckDoctor}
-                  />
+                <div className="doctors-img">
+                  <img className="doctors-img-lg" src={CheckDoctor}/>
                   <img
                     className={"doctors-heart"}
                     id="likeImageFavHospitals"
@@ -1019,10 +1017,10 @@ const Doctors = () => {
                         Главный врач
                       </p>
                     </div>
-                    <div style={{ marginRight: "auto" }}>
+                    <div style={{ marginRight: "auto" }} className={"d-none"}>
                       <img src={Iconstars} />
                     </div>
-                    <div>
+                    <div className={"d-none"}>
                       <p
                         style={{
                           margin: "0 !important",
@@ -1033,7 +1031,7 @@ const Doctors = () => {
                         Bеликолепно
                       </p>
                     </div>
-                    <div>
+                    <div className={"d-none"}>
                       <p
                         style={{
                           backgroundColor: "#FFC224",
@@ -1051,7 +1049,12 @@ const Doctors = () => {
                       </p>
                     </div>
                   </div>
-
+                  <div className={"doctors-card__ratings"}>
+                    <p className={"doctors-card__ratings-num"}>9.0</p>
+                    <img src={Iconstars} />
+                    <p>Bеликолепно</p>
+                    <p><span>23</span> отзыва</p>
+                  </div>
                   <div>
                     <div
                       style={{
@@ -1148,12 +1151,8 @@ const Doctors = () => {
                 </div>
               </div>
               <div className="doctors-card ">
-                <div className="doctors-img img-wrapper">
-                  <img
-                    className={"cardFavHospitals-img"}
-                    id="doctorImage"
-                    src={CheckDoctor}
-                  />
+                <div className="doctors-img">
+                  <img className="doctors-img-lg" src={CheckDoctor}/>
                   <img
                     className={"doctors-heart"}
                     id="likeImageFavHospitals"
@@ -1174,10 +1173,10 @@ const Doctors = () => {
                         Главный врач
                       </p>
                     </div>
-                    <div style={{ marginRight: "auto" }}>
+                    <div style={{ marginRight: "auto" }} className={"d-none"}>
                       <img src={Iconstars} />
                     </div>
-                    <div>
+                    <div className={"d-none"}>
                       <p
                         style={{
                           margin: "0 !important",
@@ -1188,7 +1187,7 @@ const Doctors = () => {
                         Bеликолепно
                       </p>
                     </div>
-                    <div>
+                    <div className={"d-none"}>
                       <p
                         style={{
                           backgroundColor: "#FFC224",
@@ -1206,7 +1205,12 @@ const Doctors = () => {
                       </p>
                     </div>
                   </div>
-
+                  <div className={"doctors-card__ratings"}>
+                    <p className={"doctors-card__ratings-num"}>9.0</p>
+                    <img src={Iconstars} />
+                    <p>Bеликолепно</p>
+                    <p><span>23</span> отзыва</p>
+                  </div>
                   <div>
                     <div
                       style={{
@@ -1302,7 +1306,6 @@ const Doctors = () => {
                   </div>
                 </div>
               </div>
-
 
               <div
                 style={{
@@ -1314,6 +1317,7 @@ const Doctors = () => {
               >
                 <Pagination defaultCurrent={1} total={50} />
               </div>
+              <PageLoginBox/>
             </div>
           </div>
         </div>

@@ -108,6 +108,15 @@
     right: 0;
     top: 10%;
 }
+.booking-modal__time-input{
+    width: 48%;
+    margin-right: 2%;
+    padding: 0.8rem;
+}
+.booking-modal__date-input{
+    width: 48%;
+    padding: 0.8rem;
+}
 
 @media (max-width: 825px) {
     .doctor-info{
@@ -118,5 +127,16 @@
     }
     .doctor-info__content-mobile{
         display: block;
+    }
+    .booking-modal__date-inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    .booking-modal__time-input{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .booking-modal__date-input{
+        width: 100%;
     }
 }

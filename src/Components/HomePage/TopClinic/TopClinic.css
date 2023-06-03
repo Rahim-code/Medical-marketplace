@@ -1,0 +1,150 @@
+.top-clinic{
+    background-color: #f8f8f8;
+    padding: 40px 0;
+}
+.top-clinic__header-title{
+    font-size: 38px;
+    line-height: 47px;
+    margin: 0 0 25px 0;
+}
+.top-clinic__header-btns{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.top-clinic__header-right-btns{
+    display: flex;
+    align-items: center;
+}
+.right-btn-primary{
+    background-color: #5282ff;
+    font-size: 20px;
+    height: 48px;
+    font-family: 'Inter';
+    line-height: 24px;
+    text-transform: capitalize;
+}
+.right-btn-link{
+    font-family: 'Gilroy';
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 5px;
+}
+.top-clinic__header-left{
+    background-color: #5282ff;
+    height: 57px;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    line-height: 24px;
+}
+.top-clinic__item-top{
+    width: 282px;
+    height: 322px;
+    position: relative;
+}
+.top-clinic__item-img{
+    width: 100%;
+    height: 100%;
+}
+.top-clinic__item-num{
+    position: absolute;
+    top: 0;
+    left: 34px;
+    width: 47px;
+    height: 40px;
+    background-color: #FA1323;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-clinic__item-num::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    bottom: -13px;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-top: 14px solid #f00;
+}
+.top-clinic__item-heart{
+    position: absolute;
+    top: 13px;
+    right: 16px;
+    background-color: #fff;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clinic__item-footer-subtitle{
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 18px;
+    text-transform: capitalize;
+    color: #828282;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.clinic__item-footer-title{
+    margin: 8px 0 12px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+.clinic__item-footer-stars{
+    display: flex;
+    gap: 10px;
+}
+.top-clinic__mobile-items{
+    display: none;
+}
+.d-mobile-block{
+    display: none;
+}
+
+@media (max-width: 756px) {
+    .top-clinic__header-title{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .right-btn-primary{
+        height: 32px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .right-btn-link{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .top-clinic__carousel{
+        display: none;
+    }
+    .top-clinic__mobile-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+    .d-mobile-block{
+        display: block;
+    }
+    .top-clinic__header-left{
+        font-size: 14px;
+        line-height: 17px;
+        height: 35px;
+    }
+}
