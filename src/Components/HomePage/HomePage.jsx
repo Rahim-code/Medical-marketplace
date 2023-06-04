@@ -56,6 +56,7 @@ import DiscoundSlider from "./DiscoundSlider.jsx";
 import TopClinic from "./TopClinic/index.js";
 import DoctorSearch from "./DoctorSearch/index.js";
 import HomeReviews from "./HomeReviews/index.js";
+import MobileLogin from "../MobileLogin/MobileLogin";
 
 
 const handleMenuClick = (e) => {
@@ -215,15 +216,12 @@ const menuPropsFlag = {
   onClick: handleMenuFlagClick,
 };
 
-const HomePage = () => {
-  const [showMenu, setShowMenu] = useState(false)
+const HomePage = ({handleMenu,showMenu,setShowMenu}) => {
+ 
   const [openLogin, setOpenLogin] = useState(false)
   const [openRegister, setOpenRegister] = useState(false)
 
-  const handleMenu = () =>{
-    setShowMenu(!showMenu)
-  }
-
+ 
   const onOpenLogin = () => {
     setOpenLogin(true)
   }
@@ -246,6 +244,7 @@ const HomePage = () => {
     <>
       <Header onOpenLogin={onOpenLogin} handleMenu={handleMenu} />
 <MobileMenu menuProps={menuProps} menuPropsFlag={menuPropsFlag} showMenu={showMenu} handleMenu={handleMenu}/>
+
       <div id="bgHome">
         <div className="container heroTitle">
           <p className="fontMed">

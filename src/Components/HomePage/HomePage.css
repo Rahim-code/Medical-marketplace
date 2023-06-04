@@ -514,6 +514,8 @@ ul, li {
     display: none;
 }
 
+
+
 @media (max-width: 1024px) {
     #ulList {
         display: none !important;
@@ -529,18 +531,21 @@ ul, li {
         flex-direction: column;
         justify-content: space-between;
         position: absolute;
-        right: -100vw;
+        /* right: -100vw; */
         top: 105px;
         width: 100%;
-        height: calc(100vh - 105px);
+        height: 0;
         background: #5282FF;
         transition: 0.5s ease-in-out;
         z-index: 9;
+        
     }
+    
 
     .show {
         right: 0 !important;
         overflow-x: visible !important;
+        height: calc(100vh - 105px);
     }
 
     .hidden {

@@ -250,11 +250,11 @@ const Header = ({handleMenu,onOpenLogin}) =>{
                 </li>
               </ul>
             </div>
-            <div className={"mobile-menu"}>
-              <button onClick={onOpenLogin}>
+            <div style={{display:"flex",gap:"2px"}} className={"mobile-menu"}>
+              <button className="userİconMobileMenu" style={{border:"none"}} onClick={onOpenLogin}>
                 <img src={userIcon} alt=""/>
               </button>
-              <button onClick={handleMenu}>
+              <button className="userİconMobileMenu" style={{border:"none"}} onClick={handleMenu}>
                 <img src={menu} alt=""/>
               </button>
             </div>

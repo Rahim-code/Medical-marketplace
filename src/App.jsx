@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import MobileLogin from "./Components/MobileLogin/MobileLogin";
 import HomePage from "./Components/HomePage/HomePage";
 import Profile from "./Components/Profile/Profile";
@@ -19,14 +19,20 @@ import Slider from "./Components/Slider";
 import HospitalDetail from "./Components/HospitalDetail";
 import DoctorDetail from "./Components/DoctorDetail/index.js";
 import AboutUs from "./Components/AboutUs/index.js";
+import './main.css'
 
 
 
 const App = () => {
+  const [showMenu, setShowMenu] = useState(false)
+
+  const handleMenu = () =>{
+    setShowMenu(!showMenu)
+  }
   return (
-    <>
+    <main className={`${showMenu && 'overflowHidden'} `}>
        {/*<MobileLogin />*/}
-         <HomePage/>
+         <HomePage handleMenu={handleMenu} showMenu={showMenu} setShowMenu={setShowMenu}/>
        {/* <Profile/>*/}
        {/*<ReviewDoctors/>*/}
        {/*<ReviewHospitals/>*/}
@@ -44,7 +50,7 @@ const App = () => {
       {/*< AboutUs/>*/}
 
       {/* <Slider/> */}
-    </>
+    </main>
   );
 };
 

@@ -1,0 +1,16 @@
+.overflowHidden{
+    overflow-y:hidden !important;
+}
+
+
+.userİconMobileMenu{
+    display: none;
+}
+@media (max-width: 850px) {
+    .userİconMobileMenu{
+      display: flex; /* Display the button on mobile devices */
+    }
+  }
+
+ 
+
