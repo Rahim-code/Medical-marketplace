@@ -173,7 +173,7 @@ const menuPropsFlag = {
   onClick: handleMenuFlagClick,
 };
 
-const Header = () =>{
+const Header = ({onOpenLogin}) =>{
     return(
       <header>
         <div id="bg">
@@ -241,6 +241,7 @@ const Header = () =>{
                     className="button"
                     type="primary"
                     icon={<ArrowRightOutlined className="Arrow" />}
+                    onClick={onOpenLogin}
                   >
                     Bойти
                   </Button>
