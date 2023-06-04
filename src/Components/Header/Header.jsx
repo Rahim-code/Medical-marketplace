@@ -13,6 +13,8 @@ import POU from "../../assets/Svg/GroupPound.svg";
 import azFlag from "../../assets/Svg/azFlag.svg";
 import trFlag from "../../assets/Svg/trFlag.svg";
 import absFlag from "../../assets/Svg/absFlag.svg";
+import userIcon from "../../assets/Svg/userLogin.svg"
+import menu from "../../assets/Svg/menuIcon.svg"
 
 
 const items = [
@@ -173,7 +175,7 @@ const menuPropsFlag = {
   onClick: handleMenuFlagClick,
 };
 
-const Header = () =>{
+const Header = ({handleMenu,onOpenLogin}) =>{
     return(
       <header>
         <div id="bg">
@@ -241,11 +243,20 @@ const Header = () =>{
                     className="button"
                     type="primary"
                     icon={<ArrowRightOutlined className="Arrow" />}
+                    onClick={onOpenLogin}
                   >
                     Bойти
                   </Button>
                 </li>
               </ul>
+            </div>
+            <div className={"mobile-menu"}>
+              <button onClick={onOpenLogin}>
+                <img src={userIcon} alt=""/>
+              </button>
+              <button onClick={handleMenu}>
+                <img src={menu} alt=""/>
+              </button>
             </div>
           </div>
         </div>
