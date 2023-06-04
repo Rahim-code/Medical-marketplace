@@ -33,7 +33,7 @@ const App = () => {
        {/*<FavDoctors/>*/}
        {/*<FavHospitals />*/}
        {/*<Hospitals/>*/}
-       <Doctors/>
+       {/* <Doctors/> */}
        {/*<HospitalsReviewsAll/>*/}
        {/*<DoctorsReviewsAll/>*/}
        {/*<FAQ/>*/}

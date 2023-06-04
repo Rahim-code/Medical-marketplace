@@ -3,7 +3,7 @@
     height: 39px;
     border-top: 1px solid #E0E0E0;
     border-bottom: 1px solid #E0E0E0;
-    display: flex;
+    display: none;
     justify-content: space-around;
 }
 .filters-btn{
@@ -20,4 +20,9 @@
 .filters-divider{
     height: 100%;
     border: 1px solid #E0E0E0;
+}
+@media (max-width: 850px) {
+    .filters{
+        display: flex;
+    }
 }
