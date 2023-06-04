@@ -26,7 +26,7 @@ const App = () => {
   return (
     <>
        {/*<MobileLogin />*/}
-        <HomePage/>
+         <HomePage/>
        {/* <Profile/>*/}
        {/*<ReviewDoctors/>*/}
        {/*<ReviewHospitals/>*/}

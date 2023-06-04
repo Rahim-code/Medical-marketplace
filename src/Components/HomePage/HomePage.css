@@ -510,6 +510,9 @@ ul, li {
 .footerIcons-header{
     display: none;
 }
+.mobile-menu{
+    display: none;
+}
 
 @media (max-width: 1024px) {
     #ulList {
@@ -648,6 +651,12 @@ ul, li {
     }
     .footer-med{
         margin-left: 10px;
+    }
+    .dropdownBefore{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
     }
 }
 

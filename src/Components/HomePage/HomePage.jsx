@@ -244,8 +244,8 @@ const HomePage = () => {
 
   return (
     <>
-      <Header onOpenLogin={onOpenLogin} />
-{/* <MobileMenu menuProps={menuProps} menuPropsFlag={menuPropsFlag} showMenu={showMenu} handleMenu={handleMenu} /> */}
+      <Header onOpenLogin={onOpenLogin} handleMenu={handleMenu} />
+<MobileMenu menuProps={menuProps} menuPropsFlag={menuPropsFlag} showMenu={showMenu} handleMenu={handleMenu}/>
       <div id="bgHome">
         <div className="container heroTitle">
           <p className="fontMed">
