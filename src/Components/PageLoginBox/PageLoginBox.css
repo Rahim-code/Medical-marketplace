@@ -1,0 +1,47 @@
+.hospitals__login-wrapper{
+    display: none;
+}
+
+@media (max-width: 567px) {
+    .hospitals__login-wrapper{
+        display: block;
+        background: #FBFBFB;
+        border-radius: 10px;
+        margin-bottom: 23px;
+        padding: 17px 25px 30px;
+    }
+    .hospitals__login-title{
+        font-family: 'Gilroy';
+        font-size: 16px;
+        line-height: 24px;
+        color: #5282FF;
+        letter-spacing: 1.5px;
+    }
+    .hospitals__login-desc{
+        font-family: 'Gilroy';
+        font-size: 16px;
+        line-height: 24px;
+        color: #2A353D;
+        letter-spacing: 1.5px;
+    }
+    .hospitals__login-btns{
+        display: flex;
+        gap: 20px;
+    }
+    .hospitals__login-btn{
+        font-family: 'Inter';
+        height: 38px;
+        background: #5282FF;
+        border-radius: 6px;
+    }
+    .hospitals__reg-btn{
+        font-family: 'Inter';
+        font-size: 12px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: #2A353D;
+    }
+    .hospitals__reg-btn span {
+        text-decoration: underline ;
+    }
+}

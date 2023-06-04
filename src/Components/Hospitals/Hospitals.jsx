@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   Dropdown,
   Button,
@@ -34,6 +34,10 @@ import "./Hospitals.css"
 import Iconstars from "../../assets/Svg/starIcon.svg";
 import Header from "../Header/index.js";
 import Footer from "../Footer/index.js";
+import LoginModal from "../LoginModal/index.js";
+import RegisterModal from "../RegisterModal/index.js";
+import PageLoginBox from "../PageLoginBox/index.js";
+import FilterButtons from "../FilterButtons/index.js";
 
 const { Panel } = Collapse;
 
@@ -199,14 +203,15 @@ const menuPropsFlag = {
   onClick: handleMenuFlagClick,
 };
 
-const Hospitals = () => {
+const  Hospitals = () => {
+
   return (
     <>
       <Header/>
 
       <div className="hospitalbg" style={{ backgroundColor: "#F4F4F4" }}>
         <div style={{ paddingTop: "30px" }} className="container">
-          <div style={{ borderBottom: "1px solid #E7E7E7", padding: "20px 0" }}>
+          <div className={"breadcrumbs"}>
             <Breadcrumb
               separator={
                 <span
@@ -835,6 +840,7 @@ const Hospitals = () => {
                   Оценка + кол-во отзывов
                 </Button>
               </div>
+              <FilterButtons/>
               <div className="buttonsSort">
                 <Button
                   className={"doc-nav-btn"}
@@ -1767,19 +1773,19 @@ const Hospitals = () => {
                     </div>
                   </div>
                 </div>
-                <div className={'review-doctors-pagination'}>
+                <div className={'hospitals-pagination'}>
                   <Pagination
                     showSizeChanger={false}
                     defaultCurrent={1}
                     total={100}
                   />
                 </div>
+                <PageLoginBox/>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <Footer/>
     </>
   );

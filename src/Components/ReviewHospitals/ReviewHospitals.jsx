@@ -30,6 +30,7 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 import "../ReviewHospitals/ReviewHospitals.css";
 import Header from "../Header/index.js";
 import Footer from "../Footer/index.js";
+import FilterButtons from "../FilterButtons/index.js";
 
 const items = [
   {
@@ -327,7 +328,7 @@ const ReviewHospitals = () => {
                 Оценка + кол-во отзывов
               </Button>
             </div>
-
+            <FilterButtons/>
             <div>
               <div className="cardHospitals">
                 <div className="card-head display_grid-hospital">

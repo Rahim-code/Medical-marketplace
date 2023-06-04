@@ -241,38 +241,24 @@ const HospitalsReviewsAll = () => {
               <img id="hospitalNewRed" src={newRed} />
             </div>
             <div className={"featured-body"}>
-              <div style={{ paddingTop: "20px", marginRight: "auto" }}>
-                <img src={Iconstars} />
-                <p
-                  style={{
-                    color: "#FFF",
-                    fontSize: "33px",
-                    marginBottom: "10px",
-                    marginTop: "10px",
-                  }}
-                >
+              <div className={"featured-body-title-wrapper"}>
+                <img className={"featured-body-stars-lg"} src={Iconstars} />
+                <p className={"featured-body-title"}>
                   LuviMed
                 </p>
                 <p
                   className={"featured-location"}
                 >
-                  <EnvironmentOutlined
-                    style={{ marginRight: "6px", color: "#FFF" }}
-                  />
+                  <EnvironmentOutlined className={"featured-location-icon"}/>
                   Бейоглу, Стамбул
                 </p>
+                <div className={"featured__ratings"}>
+                  <div className={'reviews__rating-num'}>6.6</div>
+                  <img className={"featured-body-stars-sm"} src={Iconstars} />
+                </div>
                 <div className={"featured-btns"}>
                   <Button
-                    style={{
-                      backgroundColor: "#FFF",
-                      borderRadius: "5px",
-                      color: "#000",
-                      height: "44px",
-                      width: "175px",
-                      fontSize: "18px",
-                      marginRight: "15px",
-                      marginTop: "10px",
-                    }}
+                    className={"featured-btn-review"}
                     type="primary"
                   >
                     Написать отзыв
@@ -336,7 +322,6 @@ const HospitalsReviewsAll = () => {
           <div className={"featured-btns-mobile"}>
             <Button
               className={"button-1"}
-
               type="primary"
             >
               Написать отзыв
@@ -382,10 +367,9 @@ const HospitalsReviewsAll = () => {
         <div className={"hospital-reviews-card"}>
           <div style={{ display: "flex" }}>
             <div className="userIconOrFlag">
-              <img src={userIcon} />
+              <img className="userIconOrFlag-flag" src={userIcon} />
               <img className="userFlag" src={userflag} />
             </div>
-
             <div
               style={{
                 display: "flex",
@@ -399,13 +383,12 @@ const HospitalsReviewsAll = () => {
                   Надежда Р.
                 </p>
                 <img
-                  style={{ width: "67px", height: "11px" }}
+                  className={'reviews-stars'}
                   src={Iconstars}
                 />
               </div>
               <img
                 className="checkIcon"
-                style={{ paddingTop: "5px", marginRight: "8px" }}
                 src={check}
               />
               <p className={"reviews-category"}>
@@ -421,19 +404,7 @@ const HospitalsReviewsAll = () => {
               }}
             >
               <p className={'reviews-rating'}>Великолепно </p>
-              <div
-                style={{
-                  backgroundColor: "#FFC224",
-                  borderRadius: "3.52262px",
-                  color: "#000",
-                  textAlign: "center",
-                  width: "39.92px",
-                  height: "30.53px",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
+              <div className={'reviews__rating-num'}>
                 9.9
               </div>
             </div>
@@ -450,21 +421,20 @@ const HospitalsReviewsAll = () => {
             </p>
             <p style={{ color: "#2A353D", margin: "0px" }}>
               <img className="likeIcon" src={likeIcon} />
-              полезно
+              <span className="likeIcon-desc">полезно</span>
             </p>
             <p style={{ color: "#2A353D", margin: "0px" }}>
               <img className="unlikeIcon" src={unlikeIcon} />
-              Бесполезно
+              <span className="likeIcon-desc">Бесполезно</span>
             </p>
           </div>
         </div>
         <div className={"hospital-reviews-card"}>
           <div style={{ display: "flex" }}>
             <div className="userIconOrFlag">
-              <img src={userIcon} />
+              <img className="userIconOrFlag-flag" src={userIcon} />
               <img className="userFlag" src={userflag} />
             </div>
-
             <div
               style={{
                 display: "flex",
@@ -478,13 +448,12 @@ const HospitalsReviewsAll = () => {
                   Надежда Р.
                 </p>
                 <img
-                  style={{ width: "67px", height: "11px" }}
+                  className={'reviews-stars'}
                   src={Iconstars}
                 />
               </div>
               <img
                 className="checkIcon"
-                style={{ paddingTop: "5px", marginRight: "8px" }}
                 src={check}
               />
               <p className={"reviews-category"}>
@@ -500,19 +469,7 @@ const HospitalsReviewsAll = () => {
               }}
             >
               <p className={'reviews-rating'}>Великолепно </p>
-              <div
-                style={{
-                  backgroundColor: "#FFC224",
-                  borderRadius: "3.52262px",
-                  color: "#000",
-                  textAlign: "center",
-                  width: "39.92px",
-                  height: "30.53px",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
+              <div className={'reviews__rating-num'}>
                 9.9
               </div>
             </div>
@@ -529,21 +486,20 @@ const HospitalsReviewsAll = () => {
             </p>
             <p style={{ color: "#2A353D", margin: "0px" }}>
               <img className="likeIcon" src={likeIcon} />
-              полезно
+              <span className="likeIcon-desc">полезно</span>
             </p>
             <p style={{ color: "#2A353D", margin: "0px" }}>
               <img className="unlikeIcon" src={unlikeIcon} />
-              Бесполезно
+              <span className="likeIcon-desc">Бесполезно</span>
             </p>
           </div>
         </div>
         <div className={"hospital-reviews-card"}>
           <div style={{ display: "flex" }}>
             <div className="userIconOrFlag">
-              <img src={userIcon} />
+              <img className="userIconOrFlag-flag" src={userIcon} />
               <img className="userFlag" src={userflag} />
             </div>
-
             <div
               style={{
                 display: "flex",
@@ -557,13 +513,12 @@ const HospitalsReviewsAll = () => {
                   Надежда Р.
                 </p>
                 <img
-                  style={{ width: "67px", height: "11px" }}
+                  className={'reviews-stars'}
                   src={Iconstars}
                 />
               </div>
               <img
                 className="checkIcon"
-                style={{ paddingTop: "5px", marginRight: "8px" }}
                 src={check}
               />
               <p className={"reviews-category"}>
@@ -579,19 +534,7 @@ const HospitalsReviewsAll = () => {
               }}
             >
               <p className={'reviews-rating'}>Великолепно </p>
-              <div
-                style={{
-                  backgroundColor: "#FFC224",
-                  borderRadius: "3.52262px",
-                  color: "#000",
-                  textAlign: "center",
-                  width: "39.92px",
-                  height: "30.53px",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
+              <div className={'reviews__rating-num'}>
                 9.9
               </div>
             </div>
@@ -608,14 +551,15 @@ const HospitalsReviewsAll = () => {
             </p>
             <p style={{ color: "#2A353D", margin: "0px" }}>
               <img className="likeIcon" src={likeIcon} />
-              полезно
+              <span className="likeIcon-desc">полезно</span>
             </p>
             <p style={{ color: "#2A353D", margin: "0px" }}>
               <img className="unlikeIcon" src={unlikeIcon} />
-              Бесполезно
+              <span className="likeIcon-desc">Бесполезно</span>
             </p>
           </div>
         </div>
+
       </div>
 
       <div

@@ -31,6 +31,7 @@ import { ArrowRightOutlined, EnvironmentOutlined } from "@ant-design/icons";
 import "../FavHospitals/FavHospitals.css";
 import Header from "../Header/index.js";
 import Footer from "../Footer/index.js";
+import FilterButtons from "../FilterButtons/index.js";
 
 const items = [
   {
@@ -196,7 +197,7 @@ const FavHospitals = () => {
       <Header/>
 
       <div style={{ paddingTop: "30px" }} className="container">
-        <div style={{ borderBottom: "1px solid #E7E7E7", padding: "20px 0" }}>
+        <div className={'breadcrumbs'}>
           <Breadcrumb
             separator={
               <span
@@ -328,7 +329,7 @@ const FavHospitals = () => {
                 Оценка + кол-во отзывов
               </Button>
             </div>
-
+            <FilterButtons/>
             <div>
               <div className="cardReviewDoctors cardReviewDoctors-active">
                 <div className="display_grid img-wrapper">

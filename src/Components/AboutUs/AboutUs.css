@@ -270,7 +270,9 @@
     color: #2A353D;
     margin: 10px 0 40px;
 }
-
+.rec .rec-swipable {
+    align-items: center;
+}
 .certified__item{
     display: flex;
     align-items: center;
